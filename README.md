@@ -6,7 +6,6 @@ Welcome to the **Introduction to NLP** course! 🚀 This course covers **Natural
 
 ## 📅 Course Schedule  
 
-This course runs for **12 weeks** with **15 live sessions**.  
 
 ### **Week 1: Course Introduction & Foundations of NLP**  
 - Course overview, objectives, and expectations  
