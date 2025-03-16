@@ -11,8 +11,6 @@ By the end of this course, you will be able to:
 ✅ Use **PyTorch & Hugging Face** to build state-of-the-art NLP applications  
 ✅ Learn about **ethical considerations in NLP** and the **future of AI models**  
 
-We’ll be coding **every day** using **Jupyter Notebooks, PyTorch, and Hugging Face**, so be ready for some hands-on projects!  
-
 ---
 
 # 📅 **Course Schedule 
