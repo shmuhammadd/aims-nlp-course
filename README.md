@@ -15,7 +15,7 @@ We’ll be coding **every day** using **Jupyter Notebooks, PyTorch, and Hugging 
 
 ---
 
-# 📅 **Course Schedule (3 Weeks – 2 Hours Daily)**  
+# 📅 **Course Schedule 
 
 ## 🔹 Week 1: Foundations of NLP & Classical Approaches  
 
