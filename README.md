@@ -1,4 +1,4 @@
-# 📚 **Introduction to NLP – Course Overview**  
+#  **Introduction to NLP – Course Overview**  
 
 Welcome to the **Introduction to NLP** course! 🚀 Over the next **3 weeks**, we’ll take a deep dive into **Natural Language Processing (NLP)**—from fundamental text processing techniques to cutting-edge **deep learning models like transformers**.  
 
@@ -13,7 +13,7 @@ By the end of this course, you will be able to:
 
 ---
 
-# 📅 **Course Schedule 
+#  **Course Schedule 
 
 ## 🔹 Week 1: Foundations of NLP & Classical Approaches  
 
@@ -58,15 +58,15 @@ By the end of this course, you will be able to:
 
 ---
 
-# 📌 **Prerequisites**  
+#  **Prerequisites**  
 - Basic knowledge of **Python & Machine Learning**  
 - Some familiarity with **linear algebra, probability, and statistics** (preferred but not required)  
 
 ---
 
-# 📚 **Additional Books & Resources**  
+# **Additional Books & Resources**  
 
-## 📖 **Books**  
+## **Books**  
 1. **Speech and Language Processing** – Jurafsky & Martin ([Online Draft](https://web.stanford.edu/~jurafsky/slp3/))  
 2. **Natural Language Processing with Python** – Steven Bird, Ewan Klein, Edward Loper ([Free Online](https://www.nltk.org/book/))  
 3. **Transformers for Natural Language Processing** – Denis Rothman  
