@@ -57,13 +57,6 @@ We’ll be coding **every day** using **Jupyter Notebooks, PyTorch, and Hugging 
 | **Day 20** | Ethical Considerations in NLP | [AI Ethics in NLP](https://arxiv.org/abs/1908.10084) |
 | **Day 21** | Final Project & Course Wrap-Up | Student Presentations |
 
----
-
-# 🛠 **Tools & Libraries Used in the Course**  
-- **Python** (Jupyter Notebooks, Google Colab)  
-- **PyTorch** for deep learning  
-- **Hugging Face Transformers** for pre-trained NLP models  
-- **NLTK, spaCy, fastText** for text preprocessing  
 
 ---
 
@@ -82,23 +75,3 @@ We’ll be coding **every day** using **Jupyter Notebooks, PyTorch, and Hugging 
 4. **Deep Learning for NLP** – Palash Goyal, Sumit Pandey, Karan Jain  
 5. **Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow** – Aurélien Géron  
 
-## 🔗 **Online Courses & Tutorials**  
-- **Hugging Face Course**: [https://huggingface.co/course](https://huggingface.co/course)  
-- **Stanford CS224N NLP Course (YouTube)**: [https://www.youtube.com/playlist?list=PLoROMvodv4rO1NB9TD4iUZ3qghGEGtqNX](https://www.youtube.com/playlist?list=PLoROMvodv4rO1NB9TD4iUZ3qghGEGtqNX)  
-- **Fast.ai NLP Course**: [https://course.fast.ai](https://course.fast.ai)  
-
----
-
-# 🔥 **How to Get the Most Out of This Course**  
-✅ **Practice daily**: Experiment with different models and fine-tune parameters.  
-✅ **Engage**: Ask questions, participate in discussions, and explore advanced topics.  
-✅ **Collaborate**: Work with peers to tackle NLP challenges and build projects.  
-
----
-
-# 🤝 **Connect & Support**  
-For any questions, reach out via:  
-📧 Email: [Your Email]  
-📢 Discussion Forum: [Your Course Community Link]  
-
-Let’s build some amazing NLP applications together! 🚀  
