@@ -13,7 +13,7 @@ By the end of this course, you will be able to:
 
 ---
 
-#  **Course Schedule 
+#  **Course Schedule**
 
 ## 🔹 Week 1: Foundations of NLP & Classical Approaches  
 
