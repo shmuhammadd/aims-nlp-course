@@ -17,9 +17,9 @@ We’ll be coding **every day** using **Jupyter Notebooks, PyTorch, and Hugging 
 
 # 📅 **Course Schedule (3 Weeks – 2 Hours Daily)**  
 
-| **Day** | **Slide Topics** | **Reading Materials** |
-|---------|-----------------|-----------------------|
-| **Week 1: Foundations of NLP & Classical Approaches** |
+| **Day**  | **Slide Topics** | **Reading Materials** |
+|----------|-----------------|-----------------------|
+| **🔹 Week 1: Foundations of NLP & Classical Approaches** | **(Spanning the Full Column)** | **(Spanning the Full Column)** |
 | **Day 1** | Course Introduction & NLP Pipeline | [Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/) - Ch.1 |
 | **Day 2** | Text Preprocessing & Tokenization | [NLTK Book](https://www.nltk.org/book/) - Ch.3, spaCy Docs |
 | **Day 3** | Statistical Language Models (n-grams) | [Jurafsky & Martin](https://web.stanford.edu/~jurafsky/slp3/) - Ch.4 |
@@ -27,7 +27,7 @@ We’ll be coding **every day** using **Jupyter Notebooks, PyTorch, and Hugging 
 | **Day 5** | Introduction to Neural Networks | [Deep Learning for NLP](https://arxiv.org/abs/2003.08271) |
 | **Day 6** | RNNs, LSTMs, GRUs | [CS224N Lecture 5](https://www.youtube.com/watch?v=8HyCNIVRbSU) |
 | **Day 7** | Sequence-to-Sequence Models & Decoding | [Attention-based Models](https://arxiv.org/abs/1409.0473) |
-| **Week 2: Transformers, Transfer Learning & Fine-Tuning** |
+| **🔹 Week 2: Transformers, Transfer Learning & Fine-Tuning** | **(Spanning the Full Column)** | **(Spanning the Full Column)** |
 | **Day 8** | Introduction to Transformers | [Attention Is All You Need](https://arxiv.org/abs/1706.03762) |
 | **Day 9** | Building Transformers from Scratch | [Transformers for NLP](https://huggingface.co/course) |
 | **Day 10** | Pretrained Language Models (BERT, GPT, T5) | [BERT Paper](https://arxiv.org/abs/1810.04805) |
@@ -35,7 +35,7 @@ We’ll be coding **every day** using **Jupyter Notebooks, PyTorch, and Hugging 
 | **Day 12** | Prompt Engineering & In-Context Learning | [OpenAI Prompting Guide](https://platform.openai.com/docs/guides/prompt-engineering) |
 | **Day 13** | Reinforcement Learning for NLP (RLHF) | [RLHF in NLP](https://arxiv.org/abs/2009.01325) |
 | **Day 14** | Mid-Course Project (Fine-Tune a Model) | Course Resources |
-| **Week 3: Advanced Topics, Knowledge Graphs & Ethical NLP** |
+| **🔹 Week 3: Advanced Topics, Knowledge Graphs & Ethical NLP** | **(Spanning the Full Column)** | **(Spanning the Full Column)** |
 | **Day 15** | Efficient Adaptation of Large Models | [LoRA & Adapter Papers](https://arxiv.org/abs/2106.09685) |
 | **Day 16** | Interpretability & Explainability in NLP | [SHAP & LIME](https://christophm.github.io/interpretable-ml-book/) |
 | **Day 17** | Knowledge Graphs & Graph Neural Networks | [Graph Representation](https://arxiv.org/abs/1906.05064) |
