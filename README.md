@@ -13,19 +13,19 @@ By the end of this course, you will be able to:
 
 ---
 
-#  **Course Schedule**
+# **Course Schedule**
 
 ## 🔹 Week 1: Foundations of NLP & Classical Approaches  
 
 | **Day**  | **Slide Topics** | **Reading Materials** |
 |----------|-----------------|-----------------------|
-| **Day 1** | Course Introduction & NLP Pipeline | [Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/) - Ch.1 |
-| **Day 2** | Text Preprocessing & Tokenization | [NLTK Book](https://www.nltk.org/book/) - Ch.3, spaCy Docs |
-| **Day 3** | Statistical Language Models (n-grams) | [Jurafsky & Martin](https://web.stanford.edu/~jurafsky/slp3/) - Ch.4 |
-| **Day 4** | Word Embeddings (Word2Vec, fastText, GloVe) | [Word2Vec Paper](https://arxiv.org/abs/1301.3781) |
-| **Day 5** | Introduction to Neural Networks | [Deep Learning for NLP](https://arxiv.org/abs/2003.08271) |
-| **Day 6** | RNNs, LSTMs, GRUs | [CS224N Lecture 5](https://www.youtube.com/watch?v=8HyCNIVRbSU) |
-| **Day 7** | Sequence-to-Sequence Models & Decoding | [Attention-based Models](https://arxiv.org/abs/1409.0473) |
+|          | Course Introduction & NLP Pipeline | |
+|          | Text Preprocessing & Tokenization | |
+|          | Statistical Language Models (n-grams) | |
+|          | Word Embeddings (Word2Vec, fastText, GloVe) | |
+|          | Introduction to Neural Networks | |
+|          | RNNs, LSTMs, GRUs | |
+|          | Sequence-to-Sequence Models & Decoding | |
 
 ---
 
@@ -33,13 +33,13 @@ By the end of this course, you will be able to:
 
 | **Day**  | **Slide Topics** | **Reading Materials** |
 |----------|-----------------|-----------------------|
-| **Day 8** | Introduction to Transformers | [Attention Is All You Need](https://arxiv.org/abs/1706.03762) |
-| **Day 9** | Building Transformers from Scratch | [Transformers for NLP](https://huggingface.co/course) |
-| **Day 10** | Pretrained Language Models (BERT, GPT, T5) | [BERT Paper](https://arxiv.org/abs/1810.04805) |
-| **Day 11** | Fine-Tuning NLP Models | [Hugging Face Fine-Tuning Guide](https://huggingface.co/docs/transformers/training) |
-| **Day 12** | Prompt Engineering & In-Context Learning | [OpenAI Prompting Guide](https://platform.openai.com/docs/guides/prompt-engineering) |
-| **Day 13** | Reinforcement Learning for NLP (RLHF) | [RLHF in NLP](https://arxiv.org/abs/2009.01325) |
-| **Day 14** | Mid-Course Project (Fine-Tune a Model) | Course Resources |
+|          | Introduction to Transformers | |
+|          | Building Transformers from Scratch | |
+|          | Pretrained Language Models (BERT, GPT, T5) | |
+|          | Fine-Tuning NLP Models | |
+|          | Prompt Engineering & In-Context Learning | |
+|          | Reinforcement Learning for NLP (RLHF) | |
+|          | Mid-Course Project (Fine-Tune a Model) | |
 
 ---
 
@@ -47,13 +47,14 @@ By the end of this course, you will be able to:
 
 | **Day**  | **Slide Topics** | **Reading Materials** |
 |----------|-----------------|-----------------------|
-| **Day 15** | Efficient Adaptation of Large Models | [LoRA & Adapter Papers](https://arxiv.org/abs/2106.09685) |
-| **Day 16** | Interpretability & Explainability in NLP | [SHAP & LIME](https://christophm.github.io/interpretable-ml-book/) |
-| **Day 17** | Knowledge Graphs & Graph Neural Networks | [Graph Representation](https://arxiv.org/abs/1906.05064) |
-| **Day 18** | Retrieval-Augmented Generation (RAG) | [RAG Paper](https://arxiv.org/abs/2005.11401) |
-| **Day 19** | Future of NLP & Large-Scale Models | [GPT-4 Technical Report](https://openai.com/research/gpt-4) |
-| **Day 20** | Ethical Considerations in NLP | [AI Ethics in NLP](https://arxiv.org/abs/1908.10084) |
-| **Day 21** | Final Project & Course Wrap-Up | Student Presentations |
+|          | Efficient Adaptation of Large Models | |
+|          | Interpretability & Explainability in NLP | |
+|          | Knowledge Graphs & Graph Neural Networks | |
+|          | Retrieval-Augmented Generation (RAG) | |
+|          | Future of NLP & Large-Scale Models | |
+|          | Ethical Considerations in NLP | |
+|          | Final Project & Course Wrap-Up | |
+
 
 
 ---
