@@ -19,7 +19,7 @@ By the end of this course, you will be able to:
 
 | **Day**  | **Slide Topics** | **Reading Materials** |
 |----------|-----------------|-----------------------|
-|          | Course Introduction & NLP Pipeline | [Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/) - Ch.1, [Natural Language Processing: State of the Art, Current Trends and Challenges](https://doi.org/10.1007/s10462-020-09852-5)  |
+|          | Course Introduction & NLP Pipeline | [Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/) - Ch.1, [Natural Language Processing: State of the Art, Current Trends and Challenges](https://link.springer.com/article/10.1007/s11042-022-13428-4)  |
 |          | Text Preprocessing & Tokenization | [NLTK Book](https://www.nltk.org/book/) - Ch.3, [spaCy Docs](https://spacy.io/usage) |
 |          | Statistical Language Models (n-grams) | |
 |          | Word Embeddings (Word2Vec, fastText, GloVe) | |
