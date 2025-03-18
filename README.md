@@ -1,6 +1,6 @@
 #  **Introduction to NLP – Course Overview**  
 
-Welcome to the **Introduction to NLP** course! 🚀 Over the next **3 weeks**, we’ll take a deep dive into **Natural Language Processing (NLP)**—from fundamental text processing techniques to cutting-edge **deep learning models like transformers**.  
+Welcome to the **Introduction to NLP** course! Over the next **3 weeks**, we’ll take a deep dive into **Natural Language Processing (NLP)**—from fundamental text processing techniques to cutting-edge **deep learning models like transformers**.  
 
 This course is designed for **beginners and intermediate learners** who want to build a solid understanding of NLP, gain **hands-on experience**, and work with **real-world applications**.  
 
