@@ -31,7 +31,7 @@ By the end of this course, you will be able to:
 
 ##  PyTorch Tutorial
 
-PyTorch is extensively used in research and production due to its ease of use and powerful capabilities. To get started, follow the following tutorial on Google Colab: [**PyTorch Tutorial (Google Colab)**](https://colab.research.google.com/drive/1-iiPAYiAWfZc0Mxz1FLLL0_KmLdegFaQ#scrollTo=s2jvK3g_2zrK). After completing the tutorial, complete the two assignments below:
+PyTorch is extensively used in research and production due to its ease of use and powerful capabilities. To get started, follow the following tutorial on Google Colab: [**PyTorch Tutorial (Google Colab)**](https://colab.research.google.com/drive/1-iiPAYiAWfZc0Mxz1FLLL0_KmLdegFaQ#scrollTo=s2jvK3g_2zrK). After completing the tutorial, proceed with the following assignments:
 
 
 ####  **Assignment 1: PyTorch Fundamentals**
