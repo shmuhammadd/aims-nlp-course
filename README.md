@@ -22,6 +22,8 @@ By the end of this course, you will be able to:
 |      18/03/2025    | Course Introduction & NLP Pipeline | [Speech and Language Processing](https://github.com/rain1024/slp2-pdf/tree/master/chapter-wise-pdf) - Ch.1, <br> [Natural Language Processing: State of the Art, Current Trends and Challenges](https://link.springer.com/article/10.1007/s11042-022-13428-4)  |
 |  18/03/2025         | Text Preprocessing & Tokenization | 1.  [Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/2.pdf) - Ch.1  <br> 2. [NLTK Book](https://www.nltk.org/book/) - Ch.3, <br>  3. [spaCy Docs](https://spacy.io/usage) |
 |  19/03/2025         | Statistical Language Models (n-grams) | [Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/3.pdf) - Ch.3     |    
+|  20/03/2025         | Text Classification | [Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/4.pdf) - Ch.4     |    
+
 |          | Word Embeddings (Word2Vec, fastText, GloVe) | |
 |          | Introduction to Neural Networks | |
 |          | RNNs, LSTMs, GRUs | |
