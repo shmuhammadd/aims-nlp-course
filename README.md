@@ -28,6 +28,25 @@ By the end of this course, you will be able to:
 |          | RNNs, LSTMs, GRUs | |
 |          | Sequence-to-Sequence Models & Decoding | |
 
+
+## 🚀 PyTorch Tutorial
+
+PyTorch is extensively used in research and production due to its ease of use and powerful capabilities. To get started, follow the tutorial available at the link below:
+
+🔗 [**PyTorch Tutorial (Google Colab)**](https://colab.research.google.com/drive/1-iiPAYiAWfZc0Mxz1FLLL0_KmLdegFaQ#scrollTo=s2jvK3g_2zrK)
+
+---
+
+##  Assignment 1: PyTorch Essentials
+
+**Objective:** Gain hands-on experience with **PyTorch fundamentals** and the **deep learning workflow** for NLP.
+
+ **Tasks:**
+- [**PyTorch Fundamentals Exercises**](https://github.com/shmuhammadd/aims-nlp-course/blob/main/Assignment_1/00_pytorch_fundamentals_exercises.ipynb) (Tensors, operations, GPU acceleration).
+- [**PyTorch Workflow Exercises**](https://github.com/shmuhammadd/aims-nlp-course/blob/main/Assignment_1/01_pytorch_workflow_exercises.ipynb) (Model training, optimization, evaluation).
+
+
+
 ---
 
 ## 🔹 Week 2: Transformers, Transfer Learning & Fine-Tuning  
