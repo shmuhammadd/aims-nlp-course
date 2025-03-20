@@ -38,7 +38,6 @@ PyTorch is extensively used in research and production due to its ease of use an
 
 ##  Assignment 1: PyTorch Essentials
 
-**Objective:** Gain hands-on experience with **PyTorch fundamentals** and the **deep learning workflow** for NLP.
 
  **Tasks:**
 - [**PyTorch Fundamentals Exercises**](https://github.com/shmuhammadd/aims-nlp-course/blob/main/Assignment_1/00_pytorch_fundamentals_exercises.ipynb) (Tensors, operations, GPU acceleration).
