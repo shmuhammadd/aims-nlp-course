@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/6db0ee89-8b7f-4cc1-ac7c-c989842e8160)#  **Introduction to NLP – Course Overview**  
+**Introduction to NLP – Course Overview**  
 
 Welcome to the **Introduction to NLP** course! Over the next **3 weeks**, we’ll take a deep dive into **Natural Language Processing (NLP)**—from fundamental text processing techniques to cutting-edge **deep learning models like transformers**.  
 
