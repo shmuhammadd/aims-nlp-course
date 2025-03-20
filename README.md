@@ -36,19 +36,16 @@ PyTorch is extensively used in research and production due to its ease of use an
 [**PyTorch Tutorial (Google Colab)**](https://colab.research.google.com/drive/1-iiPAYiAWfZc0Mxz1FLLL0_KmLdegFaQ#scrollTo=s2jvK3g_2zrK)
 
 
-##  Assignment 1: PyTorch Essentials
+###  Assignment 1: PyTorch Essentials
 
 After completing the tutorial, students are required to practice and apply their understanding by working on the following two exercises. These exercises will help reinforce the fundamental concepts of PyTorch
 and its workflow in deep learning applications.
 
- **Tasks:**
-## Assignments
-
-###  **Assignment 1: PyTorch Fundamentals**
+####  **Assignment 1: PyTorch Fundamentals**
 - [**PyTorch Fundamentals Exercises**](https://github.com/shmuhammadd/aims-nlp-course/blob/main/Assignment_1/00_pytorch_fundamentals_exercises.ipynb)  
   *(Tensors, operations, GPU acceleration).*
 
-###  **Assignment 2: PyTorch Workflow**
+####  **Assignment 2: PyTorch Workflow**
 - [**PyTorch Workflow Exercises**](https://github.com/shmuhammadd/aims-nlp-course/blob/main/Assignment_1/01_pytorch_workflow_exercises.ipynb)  
   *(Model training, optimization, evaluation).*
 
