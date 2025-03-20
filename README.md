@@ -42,9 +42,15 @@ After completing the tutorial, students are required to practice and apply their
 and its workflow in deep learning applications.
 
  **Tasks:**
-- [**PyTorch Fundamentals Exercises**](https://github.com/shmuhammadd/aims-nlp-course/blob/main/Assignment_1/00_pytorch_fundamentals_exercises.ipynb) (Tensors, operations, GPU acceleration).
-- [**PyTorch Workflow Exercises**](https://github.com/shmuhammadd/aims-nlp-course/blob/main/Assignment_1/01_pytorch_workflow_exercises.ipynb) (Model training, optimization, evaluation).
+## Assignments
 
+###  **Assignment 1: PyTorch Fundamentals**
+- [**PyTorch Fundamentals Exercises**](https://github.com/shmuhammadd/aims-nlp-course/blob/main/Assignment_1/00_pytorch_fundamentals_exercises.ipynb)  
+  *(Tensors, operations, GPU acceleration).*
+
+###  **Assignment 2: PyTorch Workflow**
+- [**PyTorch Workflow Exercises**](https://github.com/shmuhammadd/aims-nlp-course/blob/main/Assignment_1/01_pytorch_workflow_exercises.ipynb)  
+  *(Model training, optimization, evaluation).*
 
 
 ---
