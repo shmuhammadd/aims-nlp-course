@@ -50,8 +50,6 @@ and its workflow in deep learning applications.
   *(Model training, optimization, evaluation).*
 
 
----
-
 ## 🔹 Week 2: Transformers, Transfer Learning & Fine-Tuning  
 
 | **Day**  | **Slide Topics** | **Reading Materials** |
