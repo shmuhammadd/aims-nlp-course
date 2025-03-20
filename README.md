@@ -31,15 +31,8 @@ By the end of this course, you will be able to:
 
 ##  PyTorch Tutorial
 
-PyTorch is extensively used in research and production due to its ease of use and powerful capabilities. To get started, follow the tutorial available at the link below:
+PyTorch is extensively used in research and production due to its ease of use and powerful capabilities. To get started, follow the following tutorial on Google Colab: [**PyTorch Tutorial (Google Colab)**](https://colab.research.google.com/drive/1-iiPAYiAWfZc0Mxz1FLLL0_KmLdegFaQ#scrollTo=s2jvK3g_2zrK). After completing the tutorial, complete the two assignments below:
 
-[**PyTorch Tutorial (Google Colab)**](https://colab.research.google.com/drive/1-iiPAYiAWfZc0Mxz1FLLL0_KmLdegFaQ#scrollTo=s2jvK3g_2zrK)
-
-
-###  Assignment 1: PyTorch Essentials
-
-After completing the tutorial, students are required to practice and apply their understanding by working on the following two exercises. These exercises will help reinforce the fundamental concepts of PyTorch
-and its workflow in deep learning applications.
 
 ####  **Assignment 1: PyTorch Fundamentals**
 - [**PyTorch Fundamentals Exercises**](https://github.com/shmuhammadd/aims-nlp-course/blob/main/Assigment_1/00_pytorch_fundamentals_exercises.ipynb)  
