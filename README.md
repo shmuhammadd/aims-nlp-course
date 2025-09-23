@@ -1,4 +1,4 @@
-**Introduction to NLP – Course Overview**  
+**Natural Language Processing and Large Language Models**  
 
 Welcome to the **Introduction to NLP** course! Over the next **3 weeks**, we’ll take a deep dive into **Natural Language Processing (NLP)**—from fundamental text processing techniques to cutting-edge **deep learning models like transformers**.  
 
