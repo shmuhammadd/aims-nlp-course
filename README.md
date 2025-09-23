@@ -1,4 +1,4 @@
-# 📘 Natural Language Processing & Large Language Models  
+# Natural Language Processing & Large Language Models  
 **Course Length:** 15 Lectures × 2 Hours  
 **Resources:**  
 - [LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch)  
