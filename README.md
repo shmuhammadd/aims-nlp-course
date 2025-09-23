@@ -1,9 +1,4 @@
 # Natural Language Processing & Large Language Models  
-**Course Length:** 15 Lectures × 2 Hours  
-**Resources:**  
-- [LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch)  
-- [LLM-course](https://github.com/mlabonne/llm-course)  
-
 ---
 
 ## 📑 Course Syllabus
@@ -31,10 +26,12 @@
 # 📚 Additional Books & Resources  
 
 ## **Books**  
-1. **Speech and Language Processing** – Jurafsky & Martin ([Online Draft](https://web.stanford.edu/~jurafsky/slp3/))  
-2. **Natural Language Processing with Python** – Steven Bird, Ewan Klein, Edward Loper ([Free Online](https://www.nltk.org/book/))  
-3. **Transformers for Natural Language Processing** – Denis Rothman  
-4. **Deep Learning for NLP** – Palash Goyal, Sumit Pandey, Karan Jain  
-5. **Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow** – Aurélien Géron  
+1.  [LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch)
+2.  [LLM-course](https://github.com/mlabonne/llm-course)  
+3. **Speech and Language Processing** – Jurafsky & Martin ([Online Draft](https://web.stanford.edu/~jurafsky/slp3/))  
+4. **Natural Language Processing with Python** – Steven Bird, Ewan Klein, Edward Loper ([Free Online](https://www.nltk.org/book/))  
+5. **Transformers for Natural Language Processing** – Denis Rothman  
+6. **Deep Learning for NLP** – Palash Goyal, Sumit Pandey, Karan Jain  
+7. **Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow** – Aurélien Géron  
 
 ---
