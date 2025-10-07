@@ -23,6 +23,19 @@
 
 ---
 
+
+-  Working with Text Data
+-  Ch 1: Understanding Large Language Models	No code	-
+-  Ch 2: Working with Text Data	- ch02.ipynb
+-  Ch 3: Coding Attention Mechanisms	- ch03.ipynb
+-  Ch 4: Implementing a GPT Model from Scratch	- ch04.ipynb
+-  Ch 5: Pretraining on Unlabeled Data	- ch05.ipynb
+-  Ch 6: Finetuning for Text Classification	- ch06.ipynb
+-  Ch 7: Finetuning to Follow Instructions
+-   Understanding reasoning Models	No code
+-   Generating Text with a Pre-trained LLM	- ch02_main.ipynb
+-   Evaluating Reasoning Models
+
 # 📚 Additional Books & Resources  
 
 ## **Books**  
