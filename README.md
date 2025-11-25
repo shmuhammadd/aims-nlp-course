@@ -3,18 +3,16 @@
 
 ## Course Syllabus
 
-| Lecture | Title                                      | Reading                        |
-|---------|---------------------------------------------|-------------------------------|
-| **1**   | Introduction to NLP and LLMs                |  [AfricaNLP Su](#)   |
-| **2**   | How Language Modelling Started (N-grams)    |  [Code](practicals/ngram_language_models_class.ipynb)   |
-| **3**   | Word Embeddings & Distributional Semantics  |  [Code](#)   |
-
-
+| Lecture | Title                                      | Reading                        |  Notebook               |
+|---------|---------------------------------------------|-------------------------------|-------------------------------|
+| **1**   | Introduction to NLP and LLMs                |  [NLP Survery](https://arxiv.org/pdf/1708.05148) \| [AfricaNLP](https://arxiv.org/pdf/2509.25477)   |          |
+| **2**   | How Language Modelling Started (N-grams)    |    [Chapter 3: Jurafsky & Martin](https://web.stanford.edu/~jurafsky/slp3/)   |  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shmuhammadd/aims-nlp-course/blob/main/practicals/ngram_language_models_class.ipynb)   |
+| **3**   | Text Classification |     |   |
 
 ## Practical Sessions
 
 #### **Lecture 2: N-grams and Language Modelling**
-- Practical: [N-gram Notebook](practicals/ngram_practice_huggingface.ipynb)
+- Practical: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shmuhammadd/aims-nlp-course/blob/main/practicals/ngram_practice_huggingface.ipynb)
 - Task: Build Unigram/Bigram Models · Compute Probabilities · Perplexity
 - Exercise: Practice and buld NGram
 
