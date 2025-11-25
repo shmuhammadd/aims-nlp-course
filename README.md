@@ -11,6 +11,14 @@
 
 
 
+### Practical Sessions
+
+#### **Lecture 2: N-grams and Language Modelling**
+- Practical: [N-gram Notebook](#)
+- Dataset: [Toy Corpus](#)
+- Task: Build Unigram/Bigram Models · Compute Probabilities · Perplexity
+
+
 
 
 #  Resources  
