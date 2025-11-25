@@ -16,6 +16,7 @@
 #### **Lecture 2: N-grams and Language Modelling**
 - Practical: [N-gram Notebook](#)
 - Task: Build Unigram/Bigram Models · Compute Probabilities · Perplexity
+- Exercise: Practice and buld NGram
 
 
 
