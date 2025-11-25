@@ -4,7 +4,7 @@
 ## Course Syllabus
 
 | Lecture | Title  | Reading|
-|---------|-------|---------------------|-----------|
+|---------|-------|---------------------|
 | **1** | Introduction to NLP and LLMs  | [Assignment](#) · [Code](#) |
 | **2** | How Language Modelling Started (N-grams)  [Assignment](#) · [Code](#) |
 | **3** | Word Embeddings & Distributional Semantics  [Assignment](#) · [Code](#) |
