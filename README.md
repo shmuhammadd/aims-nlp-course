@@ -7,6 +7,46 @@
 
 ## Course Materials
 
+| Lecture | Description | Course Materials | Suggested Readings | Notebook |
+|---------|-------------|------------------|--------------------|----------|
+
+| **1** | **Introduction to NLP and LLMs**  
+[slides](#) · [notes](#) · [code](#) |  
+--- |  
+1. [NLP Survey (Cambria & White)](https://arxiv.org/pdf/1708.05148)  
+2. [AfricaNLP Overview (Adelani et al.)](https://arxiv.org/pdf/2509.25477) |  
+ |
+
+| **2** | **How Language Modelling Started (N-grams)**  
+[slides](#) · [notes](#) · [code](https://colab.research.google.com/github/shmuhammadd/aims-nlp-course/blob/main/practicals/ngram_language_models_class.ipynb) |  
+--- |  
+1. [SLP3 Ch. 3 — Language Modeling](https://web.stanford.edu/~jurafsky/slp3/)  
+2. [Shannon (1948) — Mathematical Theory of Communication](https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf) |  
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shmuhammadd/aims-nlp-course/blob/main/practicals/ngram_language_models_class.ipynb) |
+
+| **3** | **Text Classification**  
+[slides](#) · [notes](#) · [code](#) |  
+--- |  
+1. [Zhang et al. (2015) — Character-level CNN](https://arxiv.org/pdf/1509.01626)  
+2. [Joulin et al. (2017) — Bag of Tricks](https://arxiv.org/pdf/1607.01759) |  
+ |
+
+| **4** | **Word Vectors**  
+[slides](#) · [notes](#) · [code](#) |  
+--- |  
+1. [Mikolov et al. (2013) — Efficient Estimation](https://arxiv.org/pdf/1301.3781)  
+2. [Mikolov et al. (2013) — Compositionality](https://arxiv.org/pdf/1310.4546) |  
+ |
+
+| **5** | **Neural Networks**  
+[slides](#) · [notes](#) · [code](#) |  
+--- |  
+1. [Goodfellow et al. — Deep Learning (Ch. 6)](https://www.deeplearningbook.org/)  
+2. [Goldberg (2016) — Neural Network Models for NLP](https://arxiv.org/pdf/1510.00726) |  
+ |
+
+
+
 | Lecture | Title                                      | Suggested Readings                                                                                                                                                         | Notebook |
 |---------|---------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
 | **1**   | Introduction to NLP and LLMs                | 1. [NLP Survey (Cambria & White)](https://arxiv.org/pdf/1708.05148) <br> 2. [AfricaNLP Overview (Adelani et al.)](https://arxiv.org/pdf/2509.25477)                         |          |
