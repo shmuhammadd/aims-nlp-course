@@ -5,9 +5,9 @@
 
 | Lecture | Title                                      | Reading                        |
 |---------|---------------------------------------------|-------------------------------|
-| **1**   | Introduction to NLP and LLMs                | [Assignment](#) · [Code](#)   |
-| **2**   | How Language Modelling Started (N-grams)    | [Assignment](#) · [Code](#)   |
-| **3**   | Word Embeddings & Distributional Semantics  | [Assignment](#) · [Code](#)   |
+| **1**   | Introduction to NLP and LLMs                |  [AfricaNLP Su](#)   |
+| **2**   | How Language Modelling Started (N-grams)    |  [Code](#)   |
+| **3**   | Word Embeddings & Distributional Semantics  |  [Code](#)   |
 
 
 
