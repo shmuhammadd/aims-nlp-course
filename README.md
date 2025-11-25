@@ -11,7 +11,7 @@
 
 
 
-### Practical Sessions
+## Practical Sessions
 
 #### **Lecture 2: N-grams and Language Modelling**
 - Practical: [N-gram Notebook](#)
