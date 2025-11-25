@@ -3,11 +3,11 @@
 
 ## Course Syllabus
 
-| Lecture | Title | Topics / Activities | Reading|
+| Lecture | Title  | Reading|
 |---------|-------|---------------------|-----------|
-| **1** | Introduction to NLP and LLMs | What is NLP? Evolution: n-grams → RNNs → Transformers → LLMs. Applications and motivations. Course structure & tools. | [Assignment](#) · [Code](#) |
-| **2** | How Language Modelling Started (N-grams) | Tokenization, normalization, subword models (BPE, SentencePiece). Morphology, syntax, semantics. Classical reps: BoW, TF-IDF, n-grams. | [Assignment](#) · [Code](#) |
-| **3** | Word Embeddings & Distributional Semantics | Word2Vec, GloVe, FastText. Distributional hypothesis. Intrinsic vs extrinsic evaluation. Hands-on: embedding visualization. | [Assignment](#) · [Code](#) |
+| **1** | Introduction to NLP and LLMs  | [Assignment](#) · [Code](#) |
+| **2** | How Language Modelling Started (N-grams)  [Assignment](#) · [Code](#) |
+| **3** | Word Embeddings & Distributional Semantics  [Assignment](#) · [Code](#) |
 
 
 
