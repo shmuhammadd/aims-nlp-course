@@ -1,7 +1,7 @@
 # Natural Language Processing & Large Language Models  
 ---
 
-## 📑 Course Syllabus
+## Course Syllabus
 
 | Lecture | Title | Topics / Activities | Reading|
 |---------|-------|---------------------|-----------|
