@@ -3,11 +3,11 @@
 
 ## Course Syllabus
 
-| Lecture | Title                                      | Reading                        |
-|---------|---------------------------------------------|-------------------------------|
-| **1**   | Introduction to NLP and LLMs                |  [NLP Survery](https://arxiv.org/pdf/1708.05148) \| [AfricaNLP](https://arxiv.org/pdf/2509.25477)   |
-| **2**   | How Language Modelling Started (N-grams)    |  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shmuhammadd/aims-nlp-course/blob/main/practicals/ngram_language_models_class.ipynb)   |
-| **3**   | Word Embeddings & Distributional Semantics  |  [Code](#)   |
+| Lecture | Title                                      | Reading                        |  Notebook               |
+|---------|---------------------------------------------|-------------------------------|-------------------------------|
+| **1**   | Introduction to NLP and LLMs                |  [NLP Survery](https://arxiv.org/pdf/1708.05148) \| [AfricaNLP](https://arxiv.org/pdf/2509.25477)   |          |
+| **2**   | How Language Modelling Started (N-grams)    |  |  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shmuhammadd/aims-nlp-course/blob/main/practicals/ngram_language_models_class.ipynb)   |
+| **3**   | Word Embeddings & Distributional Semantics  |  [Code](#)   |   |
 
 ## Practical Sessions
 
