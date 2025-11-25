@@ -6,7 +6,7 @@
 | Lecture | Title                                      | Reading                        |
 |---------|---------------------------------------------|-------------------------------|
 | **1**   | Introduction to NLP and LLMs                |  [AfricaNLP Su](#)   |
-| **2**   | How Language Modelling Started (N-grams)    |  [Code](#)   |
+| **2**   | How Language Modelling Started (N-grams)    |  [Code](practicals/ngram_language_models_class.ipynb)   |
 | **3**   | Word Embeddings & Distributional Semantics  |  [Code](#)   |
 
 
@@ -14,7 +14,7 @@
 ## Practical Sessions
 
 #### **Lecture 2: N-grams and Language Modelling**
-- Practical: [N-gram Notebook](#)
+- Practical: [N-gram Notebook](practicals/ngram_practice_huggingface.ipynb)
 - Task: Build Unigram/Bigram Models · Compute Probabilities · Perplexity
 - Exercise: Practice and buld NGram
 
