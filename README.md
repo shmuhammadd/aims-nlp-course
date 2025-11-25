@@ -12,7 +12,7 @@
 ## Practical Sessions
 
 #### **Lecture 2: N-grams and Language Modelling**
-- Practical: [N-gram Notebook](practicals/ngram_practice_huggingface.ipynb)
+- Practical: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shmuhammadd/aims-nlp-course/blob/main/practicals/ngram_practice_huggingface.ipynb)
 - Task: Build Unigram/Bigram Models · Compute Probabilities · Perplexity
 - Exercise: Practice and buld NGram
 
