@@ -2,6 +2,21 @@
 
 ## Course Syllabus
 
+
+| Lecture | Title                                      | Suggested Readings                                     | Notebook |
+|---------|---------------------------------------------|---------------------------------------------------------|-----------|
+| **1**   | Introduction to NLP and LLMs                |  • [NLP Survey (Cambria & White)](https://arxiv.org/pdf/1708.05148)  
+|                                             |  • [AfricaNLP Overview (Adelani et al.)](https://arxiv.org/pdf/2509.25477) |           |
+| **2**   | How Language Modelling Started (N-grams)    |  • [Jurafsky & Martin — SLP3, Chapter 3](https://web.stanford.edu/~jurafsky/slp3/)  
+|                                             |  • [Shannon (1948) — A Mathematical Theory of Communication](https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shmuhammadd/aims-nlp-course/blob/main/practicals/ngram_language_models_class.ipynb) |
+| **3**   | Text Classification                         |  • [Zhang et al. (2015) — Character-level CNN](https://arxiv.org/pdf/1509.01626)  
+|                                             |  • [Joulin et al. (2017) — Bag of Tricks for Text Classification](https://arxiv.org/pdf/1607.01759) |  |
+| **4**   | Word Vectors                                |  • [Mikolov et al. (2013) — Efficient Estimation of Word Representations](https://arxiv.org/pdf/1301.3781)  
+|                                             |  • [Mikolov et al. (2013) — Distributed Representations & Compositionality](https://arxiv.org/pdf/1310.4546) | |
+| **5**   | Neural Networks                             |  • [Goodfellow et al. — Deep Learning (Chapter 6)](https://www.deeplearningbook.org/)  
+|                                             |  • [Goldberg (2016) — Neural Network Models for NLP](https://arxiv.org/pdf/1510.00726) | |
+
+
 | Lecture | Title                                      | Suggested Readings:                        |  Notebook               |
 |---------|---------------------------------------------|-------------------------------|-------------------------------|
 | **1**   | Introduction to NLP and LLMs                |  [NLP Survery](https://arxiv.org/pdf/1708.05148) \| [AfricaNLP](https://arxiv.org/pdf/2509.25477)   |          |
