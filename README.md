@@ -16,9 +16,9 @@
 ## Practical Sessions
 
 #### **Lecture 2: N-grams and Language Modelling**
-- Practical: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shmuhammadd/aims-nlp-course/blob/main/practicals/ngram_language_models_class.ipynb)
-- Exercise: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shmuhammadd/aims-nlp-course/blob/main/practicals/ngram_practice_huggingface.ipynb)
-- Task: Build Unigram/Bigram Models · Compute Probabilities · Perplexity
+- Practical: Build Unigram/Bigram Models · Compute Probabilities · Perplexity  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shmuhammadd/aims-nlp-course/blob/main/practicals/ngram_language_models_class.ipynb)
+- Exercise: Practice and buld NGram [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shmuhammadd/aims-nlp-course/blob/main/practicals/ngram_practice_huggingface.ipynb)
+- Task: 
 - Exercise: Practice and buld NGram
 
 
