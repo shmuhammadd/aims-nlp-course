@@ -9,7 +9,7 @@
 [slides](#) · [code](https://colab.research.google.com/github/shmuhammadd/aims-nlp-course/blob/main/practicals/ngram_language_models_class.ipynb) |  
 1. [Jurafsky & Martin — SLP3, Chapter 3](https://web.stanford.edu/~jurafsky/slp3/)  
 2. [Shannon (1948) — A Mathematical Theory of Communication](https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf) |  
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shmuhammadd/aims-nlp-course/blob/main/practicals/ngram_language_models_class.ipynb) |
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shmuhammadd/aims-nlp-course/blob/main/practicals/ngram_language_models_class.ipynb) | |
 
 | **3**   | Text Classification                         | 1. [Zhang et al. (2015) — Character-level CNN](https://arxiv.org/pdf/1509.01626) <br> 2. [Joulin et al. (2017) — Bag of Tricks for Text Classification](https://arxiv.org/pdf/1607.01759) |          |
 | **4**   | Word Vectors                                | 1. [Mikolov et al. (2013) — Efficient Estimation of Word Representations](https://arxiv.org/pdf/1301.3781) <br> 2. [Mikolov et al. (2013) — Distributed Representations & Compositionality](https://arxiv.org/pdf/1310.4546) |          |
