@@ -1,6 +1,8 @@
 # Natural Language Processing & Large Language Models  
 
 
+This course introduces Natural Language Processing (NLP) and transformer-based Large Language Models (LLMs). Students will explore foundational NLP concepts, including tokenization, word embeddings, and language modelling. They will learn the core mechanics of LLMs, such as architecture, training, fine-tuning, reasoning, evaluation, and deployment strategies. The curriculum includes practical applications such as text classification, machine translation, summarization, and zero-/few-shot prompting. Through hands-on work with real-world datasets, students will design NLP pipelines and evaluate model performance in multilingual settings, with particular emphasis on low-resource and under-represented languages. By the end of the course, students will also build a simple language model from scratch.
+
 
 | Lecture | Title                           | Resources            | Suggested Readings                  |
 |---------|---------------------------------|----------------------|-------------------------------------|
