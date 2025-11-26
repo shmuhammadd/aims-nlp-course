@@ -26,7 +26,7 @@
 
 #  Resources  
 
-1.  [Speech and Language Processing** – Jurafsky & Martin ([Online Draft](https://web.stanford.edu/~jurafsky/slp3/))  
+1.  **Speech and Language Processing** – Jurafsky & Martin ([Online Draft](https://web.stanford.edu/~jurafsky/slp3/))  
 2.  [Hands-On Large Language Models: Language Understanding and Generation](https://www.amazon.in/Hands-Large-Language-Models-Understanding/dp/935542552X/ref=pd_sbs_d_sccl_1_1/521-7549942-9569643?pd_rd_w=Ueibj&content-id=amzn1.sym.6d240404-f8ea-42f5-98fe-bf3c8ec77086&pf_rd_p=6d240404-f8ea-42f5-98fe-bf3c8ec77086&pf_rd_r=Z9BASYAF4RW1MVP0D173&pd_rd_wg=ZUKds&pd_rd_r=95ab3bb8-4c74-458a-8089-fa654d4b720c&pd_rd_i=935542552X&psc=1) 
 3.  [LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch)
 4.  [LLM-course](https://github.com/mlabonne/llm-course)  
