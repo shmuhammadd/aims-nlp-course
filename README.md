@@ -43,6 +43,16 @@ Through hands-on work with real-world datasets, students will design NLP pipelin
 - Exercise: Practice and build N-Gram models [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shmuhammadd/aims-nlp-course/blob/main/practicals/ngram_practice_huggingface.ipynb)
 
 
+#### **Lecture 3: Introduction to PyTorch**
+- Practical: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shmuhammadd/aims-nlp-course/blob/main/practicals/ngram_language_models_class.ipynb)
+- What PyTorch is and why it's popular
+- Tensors - the fundamental data structure
+- Automatic differentiation (autograd)
+- Building neural networks
+- Training models with a typical training loop
+- Working with GPUs
+- Build your first classifier
+
 ## Projects and Quizzes
 
 
