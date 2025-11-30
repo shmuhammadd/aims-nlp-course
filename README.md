@@ -63,7 +63,7 @@ The course project will be aligned with **SemEval 2026 Task 9: Detecting Multili
 - **Evaluation and Ranking:** Students will be ranked based on the **accuracy** of their submitted systems in the competition.
 
 
-After the course, students may continue refining their system and paper. You are encouraged to further improve your work and **submit the final version to the SemEval Workshop**, which will take place in the United States.
+After the course, students may continue refining their system and paper. You are encouraged to further improve your work and **submit the final version to the SemEval Workshop**, which will be colocated with ACL2025 in San Diego, USA.
 
 
 
