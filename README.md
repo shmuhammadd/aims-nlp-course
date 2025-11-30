@@ -50,7 +50,9 @@ Through hands-on work with real-world datasets, students will design NLP pipelin
 - Build your first classifier
 
 
-## Course Project: SemEval 2026 Task 9 – Detecting Multilingual, Multicultural, and Multievent Online Polarization
+## Course Project
+
+##### SemEval 2026 Task 9 – Detecting Multilingual, Multicultural, and Multievent Online Polarization
 
 The course project will be aligned with **SemEval 2026 Task 9: Detecting Multilingual, Multicultural and Multievent Online Polarization**. This shared task includes **three subtasks**, and **each student is required to participate in all three** as part of the project.
 
