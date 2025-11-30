@@ -57,6 +57,7 @@ Through hands-on work with real-world datasets, students will design NLP pipelin
   - Spaced repetition is a learning method where you review material at increasing intervals, with the goal of strengthening long-term memory and retention. It combats the natural forgetting curve by re-exposing you to information just before you would forget it, making it easier to recall in the future. Instead of cramming, this approach involves multiple, shorter review sessions spread out over time.
   - NLPSpaceRepitionAPP: https://nlpquiz.hausanlp.org/auth/login
   - Reference Reading : [Make it Stick](https://www.amazon.co.uk/Make-Stick-Science-Successful-Learning/dp/0674729013/ref=tmm_hrd_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.tnqm3RSjqZT89RY_viL58aSPu7Ai1QLazL0YFwnuNhEWXdlRjAFecljfv-SOYKF5AkqzFYmy_5E7vrbDXWfywVXXZPABXMSlxidiZWRLls_I00Yn_SpbBAS-gxLSF3ya2HppV27F8ZU7qtftXDkAMpYwVwmNBTFJQU-224Y3qr-_QX2947V6VAjkuB9sqvXTHXXPurGWR8ffUeJ9xh9ddo8BpoZGjqqVxOWD3FT6Dk4.CgnKMcVMXovGGp6P832N0bf55QlfoaZAXSOmzLgwWbQ&qid=1764506639&sr=8-1)
+  - [Ali Abdallah - The Active Recall Framework](https://www.youtube.com/watch?v=fDbxPVn02VU)
   -  [Ali Abdallah: Spaced Repetition | Evidence-based revision tips](https://www.youtube.com/watch?v=Z-zNHHpXoMM)
 
     
