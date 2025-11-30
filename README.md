@@ -52,16 +52,32 @@ Through hands-on work with real-world datasets, students will design NLP pipelin
 ## Projects and Quizzes
 
 
-## NLP Quiz for Space Repition 
+## Effective Learning Technique: Active Recall and Spaced Repetition
 
-  - Spaced repetition is a learning method where you review material at increasing intervals, with the goal of strengthening long-term memory and retention. It combats the natural forgetting curve by re-exposing you to information just before you would forget it, making it easier to recall in the future. Instead of cramming, this approach involves multiple, shorter review sessions spread out over time.
-  - NLPSpaceRepitionAPP: https://nlpquiz.hausanlp.org/auth/login
-  - Reference Reading : [Make it Stick](https://www.amazon.co.uk/Make-Stick-Science-Successful-Learning/dp/0674729013/ref=tmm_hrd_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.tnqm3RSjqZT89RY_viL58aSPu7Ai1QLazL0YFwnuNhEWXdlRjAFecljfv-SOYKF5AkqzFYmy_5E7vrbDXWfywVXXZPABXMSlxidiZWRLls_I00Yn_SpbBAS-gxLSF3ya2HppV27F8ZU7qtftXDkAMpYwVwmNBTFJQU-224Y3qr-_QX2947V6VAjkuB9sqvXTHXXPurGWR8ffUeJ9xh9ddo8BpoZGjqqVxOWD3FT6Dk4.CgnKMcVMXovGGp6P832N0bf55QlfoaZAXSOmzLgwWbQ&qid=1764506639&sr=8-1)
-  - [Ali Abdallah - The Active Recall Framework](https://www.youtube.com/watch?v=fDbxPVn02VU)
-  -  [Ali Abdallah: Spaced Repetition | Evidence-based revision tips](https://www.youtube.com/watch?v=Z-zNHHpXoMM)
 
-    
+A substantial body of cognitive psychology research demonstrates that *how* we study is often more important than *how long* we study. Two evidence-based strategies—**active recall** and **spaced repetition**—consistently lead to stronger long-term learning, improved retention, and better transfer to new tasks such as NLP problem-solving.
 
+### Active Recall  
+Active recall refers to the deliberate practice of retrieving information from memory rather than simply rereading or highlighting notes. Retrieval strengthens neural pathways and enhances the durability of knowledge. Each time you attempt to recall an answer—whether you succeed or not—you deepen your understanding and reinforce the memory trace. This is why quizzes, self-testing, and practice tasks outperform passive review.
+
+### Spaced Repetition  
+Spaced repetition builds on active recall by scheduling reviews of the same material at **strategically increasing intervals**. Instead of cramming, you revisit the content just before you would naturally forget it, thereby counteracting the *forgetting curve*. This timing effect helps consolidate information into long-term memory and significantly improves retention. Short, distributed review cycles are far more effective than long, massed study sessions.
+
+### Why This Matters for NLP Learning  
+NLP concepts—from n-grams to transformers—require both conceptual understanding and the ability to recall definitions, algorithms, advantages, and limitations. Using spaced repetition quizzes allows you to repeatedly retrieve core ideas, observe knowledge gaps, and strengthen retention over weeks rather than days. This makes your study process more efficient and prepares you more effectively for advanced topics.
+
+### Practice with the NLP Spaced Repetition App  
+Use the dedicated platform below to incorporate these techniques into your study routine:
+
+**NLPSpaceRepetitionAPP:** https://nlpquiz.hausanlp.org/auth/login
+
+### Recommended Readings  
+- **Make It Stick: The Science of Successful Learning**  
+- **Ali Abdallah – The Active Recall Framework**  
+- **Ali Abdallah – Spaced Repetition: Evidence-Based Revision Tips**
+
+
+  
 
 #  Resources  
 
