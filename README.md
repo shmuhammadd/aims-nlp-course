@@ -61,8 +61,12 @@ The course project will be aligned with [SemEval 2026 Task 9: Detecting Multilin
 - **System Description Paper:** You must write a **minimum 4-page system description paper** detailing your methodology, experiments, and results.  
 - **Evaluation and Ranking:** Students will be ranked based on the **accuracy** of their submitted systems in the competition.
 
-
 After the course, students may continue refining their system and paper. You are encouraged to further improve your work and **submit the final version to the SemEval Workshop**, which will be colocated with ACL2025 in San Diego, USA.
+
+  1. [AILS-NTUA at SemEval-2025 Task 4: Parameter-Efficient Unlearning for Large Language Models using Data Chunking](https://aclanthology.org/2025.semeval-1.184.pdf)
+  2. [AAdaM at SemEval-2024 Task 1: Augmentation and Adaptation for Multilingual Semantic Textual Relatedness](https://aclanthology.org/2024.semeval-1.114.pdf)
+  3. [DAMO-NLP at SemEval-2023 Task 2: A Unified Retrieval-augmented System for Multilingual Named Entity Recognition](https://aclanthology.org/2023.semeval-1.277.pdf)
+
 
 
 
