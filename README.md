@@ -67,7 +67,7 @@ After the course, students may continue refining their system and paper. You are
   2. [AAdaM at SemEval-2024 Task 1: Augmentation and Adaptation for Multilingual Semantic Textual Relatedness](https://aclanthology.org/2024.semeval-1.114.pdf)
   3. [DAMO-NLP at SemEval-2023 Task 2: A Unified Retrieval-augmented System for Multilingual Named Entity Recognition](https://aclanthology.org/2023.semeval-1.277.pdf)
 
-- Guidelines for SemEval System Papers: https://semeval.github.io/system-paper-template.html
+- Follow the following guidelines for writting SemEval system papers: https://semeval.github.io/system-paper-template.html
 
 
 ## Effective Learning Technique: Active Recall and Spaced Repetition
