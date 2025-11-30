@@ -49,7 +49,20 @@ Through hands-on work with real-world datasets, students will design NLP pipelin
 - Working with GPUs
 - Build your first classifier
 
-## Projects and Quizzes
+
+## Course Project: SemEval 2026 Task 9 – Detecting Multilingual, Multicultural, and Multievent Online Polarization
+
+The course project will be aligned with **SemEval 2026 Task 9: Detecting Multilingual, Multicultural and Multievent Online Polarization**. This shared task includes **three subtasks**, and **each student is required to participate in all three** as part of the project.
+
+### Project Requirements  
+- **Individual Work:** Each student will work independently on the entire task.  
+- **System Development:** You are expected to design, implement, and evaluate your own model(s) for all three subtasks.  
+- **System Description Paper:** You must write a **minimum 4-page system description paper** detailing your methodology, experiments, and results.  
+- **Evaluation and Ranking:** Students will be ranked based on the **accuracy** of their submitted systems in the competition.
+
+
+After the course, students may continue refining their system and paper. You are encouraged to further improve your work and **submit the final version to the SemEval Workshop**, which will take place in the United States.
+
 
 
 ## Effective Learning Technique: Active Recall and Spaced Repetition
