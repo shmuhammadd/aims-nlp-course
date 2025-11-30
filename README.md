@@ -52,6 +52,13 @@ Through hands-on work with real-world datasets, students will design NLP pipelin
 ## Projects and Quizzes
 
 
+## NLP Quiz for Space Repition 
+
+  - Spaced repetition is a learning method where you review material at increasing intervals, with the goal of strengthening long-term memory and retention. It combats the natural forgetting curve by re-exposing you to information just before you would forget it, making it easier to recall in the future. Instead of cramming, this approach involves multiple, shorter review sessions spread out over time.
+
+    
+
+
 #  Resources  
 
 1.  **Speech and Language Processing** – Jurafsky & Martin ([Online Draft](https://web.stanford.edu/~jurafsky/slp3/))  
