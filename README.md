@@ -61,7 +61,12 @@ The course project will be aligned with [SemEval 2026 Task 9: Detecting Multilin
 - **System Description Paper:** You must write a **minimum 4-page system description paper** detailing your methodology, experiments, and results.  
 - **Evaluation and Ranking:** Students will be ranked based on the **accuracy** of their submitted systems in the competition.
 
-After the course, students may continue refining their system and paper. You are encouraged to further improve your work and submit the final version to the SemEval Workshop, which will be co-located with ACL2025 in San Diego, USA. Follow the following guidelines for writting SemEval system papers: https://semeval.github.io/system-paper-template.html
+After the course, students may continue refining their system and paper. You are encouraged to further improve your work and submit the final version to the SemEval Workshop, which will be co-located with ACL2025 in San Diego, USA. 
+
+Follow the following guidelines for writting SemEval system papers: 
+
+ 1. System paper guide: https://semeval.github.io/system-paper-template.html
+ 2. Writing a System description Paper: https://github.com/nedjmaou/Writing_a_task_description_paper
 
 Below are sample papers for previous shared task: 
 
