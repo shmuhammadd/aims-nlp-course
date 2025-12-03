@@ -67,6 +67,7 @@ Follow the following guidelines for writting SemEval system papers:
 
  1. System paper guide: https://semeval.github.io/system-paper-template.html
  2. Writing a System description Paper: https://github.com/nedjmaou/Writing_a_task_description_paper
+ 3. Latex template to use: https://github.com/acl-org/acl-style-files
 
 Below are sample papers for previous shared task: 
 
