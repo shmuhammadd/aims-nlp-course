@@ -27,10 +27,7 @@ Through hands-on work with real-world datasets, students will design NLP pipelin
 | **8**   | Pretraining Objectives (MLM, CLM, etc.)   | [Slide 1](https://github.com/shmuhammadd/aims-nlp-course/blob/main/slides/08_NLP_Lecture_1.pdf), [Slide 2](https://github.com/shmuhammadd/aims-nlp-course/blob/main/slides/08_NLP_Lecture_2.pdf)    <br><br>  [Pre-training ![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shmuhammadd/aims-nlp-course/blob/main/practicals/pretraining_encoder_decoder.ipynb) <br> [Fine-tuning ![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shmuhammadd/aims-nlp-course/blob/main/practicals/finetuning_afroXLMR_afrisenti.ipynb) <br> [Exercise ![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shmuhammadd/aims-nlp-course/blob/main/practicals/practice_exercises.ipynb)  | 1. [BERT: Pre-training of Deep Bidirectional Transformers](https://arxiv.org/pdf/1810.04805) <br> 2. [GPT-3: Language Models are Few-Shot Learners](https://arxiv.org/pdf/2005.14165)  |
 | **9**   | Fine-tuning and Instruction Tuning        | —         | 1. [FLAN: Finetuned Language Models](https://arxiv.org/pdf/2109.01652) <br> 2. [T0: Multitask Prompted Training](https://arxiv.org/pdf/2110.08207) |
 | **10**   | Prompting, Reasoning, and CoT             | —         | 1. [Wei et al. (2022) — Chain-of-Thought Prompting](https://arxiv.org/pdf/2201.11903) <br> 2. [Kojima et al. (2022) — Zero-Shot CoT](https://arxiv.org/pdf/2205.11916) |
-| **11**  | Evaluation of LLMs (Safety, Bias, Multilinguality) | — | 1. [Holistic Evaluation of Language Models (HELM)](https://arxiv.org/pdf/2211.09110)  |
-| **12**  | LLMs for African Languages                | —         | 1.  |
-| **13**  | Building an LLM from Scratch              | —         | 1. [nanoGPT Codebase](https://github.com/karpathy/nanoGPT) <br> 2. [Transformer Math & Implementation Notes](https://arxiv.org/pdf/2312.00455) |
-
+| **11**  | Benchmarking and Evaluation — | 1. [Holistic Evaluation of Language Models (HELM)](https://arxiv.org/pdf/2211.09110)   |
 
 
 ## Practical Sessions
