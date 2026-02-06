@@ -29,7 +29,7 @@ Through hands-on work with real-world datasets, students will design NLP pipelin
 | **10**   | Model Compression            | [Slide](https://github.com/shmuhammadd/aims-nlp-course/blob/main/slides/08_NLP_Lecture_1.pdf)       | 1. [Wei et al. (2022) — Chain-of-Thought Prompting](https://arxiv.org/pdf/2201.11903) <br> 2. [Kojima et al. (2022) — Zero-Shot CoT](https://arxiv.org/pdf/2205.11916) |
 | **11**  | Benchmarking and Evaluation | [Slide](https://github.com/shmuhammadd/aims-nlp-course/blob/main/slides/08_NLP_Lecture_1.pdf) | 1. [Holistic Evaluation of Language Models (HELM)](https://arxiv.org/pdf/2211.09110)   |
 
-
+<!--
 ## Practical Sessions
 
 #### **Lecture 2: N-grams and Language Modelling**
@@ -72,7 +72,7 @@ Below are sample papers for previous shared task:
   1. [AILS-NTUA at SemEval-2025 Task 4: Parameter-Efficient Unlearning for Large Language Models using Data Chunking](https://aclanthology.org/2025.semeval-1.184.pdf)
   2. [AAdaM at SemEval-2024 Task 1: Augmentation and Adaptation for Multilingual Semantic Textual Relatedness](https://aclanthology.org/2024.semeval-1.114.pdf)
   3. [DAMO-NLP at SemEval-2023 Task 2: A Unified Retrieval-augmented System for Multilingual Named Entity Recognition](https://aclanthology.org/2023.semeval-1.277.pdf)
-
+ -->
 #  Resources  
 
 1.  **Speech and Language Processing** – Jurafsky & Martin ([Online Draft](https://web.stanford.edu/~jurafsky/slp3/))  
