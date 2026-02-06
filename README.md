@@ -29,6 +29,11 @@ Through hands-on work with real-world datasets, students will design NLP pipelin
 | **10**   | Model Compression            | [Slide](https://github.com/shmuhammadd/aims-nlp-course/blob/main/slides/08_NLP_Lecture_1.pdf)       | 1. [Wei et al. (2022) — Chain-of-Thought Prompting](https://arxiv.org/pdf/2201.11903) <br> 2. [Kojima et al. (2022) — Zero-Shot CoT](https://arxiv.org/pdf/2205.11916) |
 | **11**  | Benchmarking and Evaluation | [Slide](https://github.com/shmuhammadd/aims-nlp-course/blob/main/slides/08_NLP_Lecture_1.pdf) | 1. [Holistic Evaluation of Language Models (HELM)](https://arxiv.org/pdf/2211.09110)   |
 
+
+## Project
+
+Coming soon. 
+
 <!--
 ## Practical Sessions
 
