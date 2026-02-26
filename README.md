@@ -5,7 +5,7 @@ This course introduces Natural Language Processing (NLP) and transformer-based L
 
 Through hands-on work with real-world datasets, students will design NLP pipelines and evaluate model performance in multilingual settings, with particular emphasis on low-resource and under-represented languages. By the end of the course, students will also build a simple language model from scratch.
 
-**Note:** We are pairing the ArewaDS programme with the [Google DeepMind: AI Research Foundations learning path](https://www.skills.google/paths/3135). To receive an ArewaDS certificate, participants must complete all courses in the learning path and submit their course completion badges as evidence.
+**Note:** We are pairing this course with the [Google DeepMind: AI Research Foundations learning path](https://www.skills.google/paths/3135). You must complete all courses in the learning path and submit their course completion badges as evidence.
 
 ## Course Updates & Announcements
 For the latest course schedule updates and important announcements, please join our Discord community: 
