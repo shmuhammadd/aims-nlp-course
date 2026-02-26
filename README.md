@@ -78,6 +78,22 @@ Below are sample papers for previous shared task:
   2. [AAdaM at SemEval-2024 Task 1: Augmentation and Adaptation for Multilingual Semantic Textual Relatedness](https://aclanthology.org/2024.semeval-1.114.pdf)
   3. [DAMO-NLP at SemEval-2023 Task 2: A Unified Retrieval-augmented System for Multilingual Named Entity Recognition](https://aclanthology.org/2023.semeval-1.277.pdf)
  -->
+
+
+# How to Share Your Course Completion Badge
+
+Please use a laptop for this process.
+
+Step-by-Step Guide
+1. Click on your profile picture (top right corner).
+2. Select Dashboard.
+3. Scroll down to  below the Achievements  and  Progress sections.
+4. On the right-hand side, click “View badges.”
+5. You will see all the badges you’ve earned.
+6. Click the Share icon on the badge you want to submit.
+7. Click the Copy icon  beside the generated share link ( A sample image has been provided).
+8. Add the links for the completion badges to the Colab Assigment
+
 #  Resources  
 
 1.  **Speech and Language Processing** – Jurafsky & Martin ([Online Draft](https://web.stanford.edu/~jurafsky/slp3/))  
