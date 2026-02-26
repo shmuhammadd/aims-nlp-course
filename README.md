@@ -7,13 +7,6 @@ Through hands-on work with real-world datasets, students will design NLP pipelin
 
 **Note:** We are pairing this course with the [Google DeepMind: AI Research Foundations learning path](https://www.skills.google/paths/3135). You must complete all courses in the learning path and submit their course completion badges as evidence.
 
-## Course Updates & Announcements
-For the latest course schedule updates and important announcements, please join our Discord community: 
-👉 [Join the Discord channel](https://discord.gg/ACt7uGFcw)
-
-
-
-
 ## **Part  A: Natural Language Processing**
 
 
