@@ -94,6 +94,16 @@ Step-by-Step Guide
 7. Click the Copy icon  beside the generated share link ( A sample image has been provided).
 8. Add the links for the completion badges to the Colab Assigment
 
+# How to Write NLP Paper
+
+ 1. [How to Write *ACL Papers](https://github.com/Niko-Group/paper_writing_info)
+ 2. [Tips for Writing NLP Papers](https://medium.com/@vered1986/tips-for-writing-nlp-papers-9c729a2f9e1f)
+ 3. [Scientific Writing for Computer Science Students](https://www.cs.joensuu.fi/pages/whamalai/sciwri/sciwri.pdf)
+ 4. [How to ML Paper - A brief Guide]
+
+
+
+
 #  Resources  
 
 1.  **Speech and Language Processing** – Jurafsky & Martin ([Online Draft](https://web.stanford.edu/~jurafsky/slp3/))  
