@@ -1,6 +1,6 @@
 # Reusable reporting templates
 
-[Course home](../README.md) · [Project brief](PROJECT.md)
+[Course home](../README.md) · [SemEval project brief](PROJECT.md) · [Paper guide](SEMEVAL_PAPER.md)
 
 ## Experiment log
 
@@ -10,13 +10,13 @@
 
 ## Prediction JSONL schema
 
-One JSON object per item per condition. Preserve the same item ID across paired conditions. Required fields:
+This is an internal analysis format, not a SemEval submission schema. Export a separate file matching the selected task’s official format. Use one object per item per condition, preserve IDs across comparisons, and record the task/track in your experiment configuration. Suggested analysis fields:
 
 ```json
 {"id":"item-001","condition":"full","split":"test","language":"en","modalities":["text","image"],"prediction":"B","target":"B","evidence_ids":["doc-1","image-1"],"model":"your-model-id","revision":"resolved-commit-or-local-version","prompt_version":"v1","seed":42,"latency_ms":null}
 ```
 
-Use `null` for abstention predictions or unmeasured costs; document the distinction from a literal string answer. A revision should identify an actual artifact, not a mutable `main` branch. Metric normalization and excluded items must be recorded in configuration.
+Use `null` for abstention predictions, unavailable hidden-test targets, or unmeasured costs; document these distinct meanings by field. Do not infer hidden gold labels or force this example schema onto the official submission. A revision should identify an actual artifact, not a mutable `main` branch. Metric normalization and excluded items must be recorded in configuration.
 
 ## Data statement
 
@@ -37,14 +37,11 @@ Use `null` for abstention predictions or unmeasured costs; document the distinct
 - Resource measurements and deployment assumptions.
 - Known failures, evidence requirements, and abstention behavior.
 
-## Short report outline
+## SemEval paper and participation records
 
-1. **Question:** concrete hypothesis and why it matters (one paragraph).
-2. **Data:** provenance, splits, labels, and scope (half page).
-3. **Method:** baseline, one main change, and computational budget (half page).
-4. **Results:** one table, paired uncertainty, and two ablations (one page).
-5. **Analysis:** five errors, alternative explanations, and limitations (half page).
-6. **Reproduction:** exact commands and artifact locations (short paragraph).
+Use the [system-description paper worksheet](SEMEVAL_PAPER.md) for the full paper, measured-results table, and day-14 peer review. Submit PDF plus editable source. The course planning target is 4–6 main-text pages excluding references, subject to the selected edition’s rules.
+
+In `participation.md`, record the task/year/track; registration status; evaluation and paper deadlines with timezone and official URLs; frozen system version; prediction-file checksum; validation outcome; and actual submission IDs/receipts when available. If evaluation has not opened, state that fact and record the next action and date. Keep course/development scores separate from official evaluation scores.
 
 ## Paper discussion card
 

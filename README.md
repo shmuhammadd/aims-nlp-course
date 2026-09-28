@@ -11,9 +11,9 @@ By the end, students will be able to implement causal attention and next-token t
 1. Read the [syllabus and assessment plan](course/SYLLABUS.md).
 2. Complete the [prerequisite diagnostic](course/PREREQUISITES.md) and [environment setup](course/SETUP.md).
 3. Follow each day's notes, notebook, practical questions, and exercise sheet below.
-4. Start the [capstone project](course/PROJECT.md) in week 1; do not leave it until the final lecture.
+4. Start the [SemEval capstone](course/PROJECT.md) in week 1: develop a shared-task system and write a system-description paper. See the [task specification](course/SEMEVAL_TASK.md) and [paper-writing guide](course/SEMEVAL_PAPER.md).
 
-**Scheduling assumption:** the two-hour daily slot includes explanation, board work, a short break, a 40-minute guided tutorial, and discussion. Exercises take 45–60 minutes after class; project work is separately budgeted at 6–8 hours across three weeks. Optional extensions are enrichment, not additional compulsory daily work. If two hours must be entirely lecture, run the same tutorial in a separate practical slot and add that time to the timetable.
+**Scheduling assumption:** the two-hour daily slot includes explanation, board work, a short break, a 40-minute guided tutorial, and discussion. Exercises take 45–60 minutes after class; SemEval system development and paper writing are separately budgeted at 12–16 hours across three weeks. Official evaluation and paper deadlines may require follow-up after the course. Optional extensions are enrichment, not additional compulsory daily work. If two hours must be entirely lecture, run the same tutorial in a separate practical slot and add that time to the timetable.
 
 ## The 15-session course
 
@@ -35,7 +35,7 @@ Each notes file contains learning outcomes, a timed teaching plan, explanations 
 | 3/2 | 12. Vision-language models, document understanding, and grounding | [Notes](course/lectures/12_vlm.md) | [Notebook](course/tutorials/12_vlm.ipynb) | [Sheet](course/exercises/12_vlm.md) |
 | 3/3 | 13. Speech, audio representations, and multilingual ASR | [Notes](course/lectures/13_speech.md) | [Notebook](course/tutorials/13_speech.ipynb) | [Sheet](course/exercises/13_speech.md) |
 | 3/4 | 14. Video, unified multimodal systems, and generative frontiers | [Notes](course/lectures/14_video_omni.md) | [Notebook](course/tutorials/14_video_omni.ipynb) | [Sheet](course/exercises/14_video_omni.md) |
-| 3/5 | 15. Multimodal system integration, research critique, and project defence | [Notes](course/lectures/15_capstone.md) | [Notebook](course/tutorials/15_capstone.ipynb) | [Sheet](course/exercises/15_capstone.md) |
+| 3/5 | 15. SemEval systems, scientific writing, and project defence | [Notes](course/lectures/15_capstone.md) | [Notebook](course/tutorials/15_capstone.ipynb) | [Sheet](course/exercises/15_capstone.md) |
 
 ## Practical design
 
@@ -46,10 +46,10 @@ The [real-model extensions](course/extensions/README.md) cover Qwen3 text infere
 ## Assessment and teaching support
 
 - Weekly portfolios: 45% (three portfolios, five daily sheets each).
-- Capstone: 45% (question, baseline, method, evaluation, reproducibility, report, and defence).
+- SemEval capstone: 45% (shared-task system, official-format prediction package, experiments, system-description paper, reproducibility, and defence).
 - Individual concepts check: 10%.
 
-The [project brief](course/PROJECT.md) includes milestones, scope options, a marking rubric, and a submission template. [Instructor guidance](course/instructor/README.md) includes answer guides for all 15 sessions and a concept-check marking key. Answers are visible in a public repository: use fresh instances for summative assessment.
+The [project brief](course/PROJECT.md) includes three-week milestones, a paper-focused marking rubric, and a submission checklist. The SemEval year, task, and required subtasks/languages will be set by the instructor; official participation dates are separate from course deadlines. [Instructor guidance](course/instructor/README.md) includes answer guides for all 15 sessions and a concept-check marking key. Answers are visible in a public repository: use fresh instances for summative assessment.
 
 Research readings combine foundations with 2025–2026 case studies. See the [source and model guide](course/READINGS.md) for the research cutoff, primary sources, and distinctions between established methods and recent preprints. State of the art here means current methods and critical evaluation, not a claim that one checkpoint leads every benchmark.
 

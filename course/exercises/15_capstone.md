@@ -1,4 +1,4 @@
-# Lecture 15 exercises — Multimodal system integration, research critique, and project defence
+# Lecture 15 exercises — SemEval systems, scientific writing, and project defence
 
 [Lecture](../lectures/15_capstone.md) · [Tutorial](../tutorials/15_capstone.ipynb)
 
@@ -14,7 +14,7 @@ Extend the integration notebook with a mismatched-policy condition and a JSONL r
 
 ## 3. Investigate (4 points)
 
-Submit the capstone artefacts and defend one error analysis and one claim you deliberately cannot make.
+Draft a 150–250-word analysis paragraph for your SemEval paper using one actual development result and one inspected error. State a supported claim, an alternative explanation, and a limitation; identify the metric, split, and track. If official evaluation is pending, say so. Link the paragraph to the relevant experiment record. This daily exercise assesses the paragraph; the complete paper and submission package are assessed separately under the capstone rubric.
 
 ## Submission checklist
 

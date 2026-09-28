@@ -8,6 +8,14 @@ Run the [checks](../SETUP.md) on the actual teaching platform. Install core depe
 
 Give students the prerequisite diagnostic a week early. In day 1, use their answers to decide whether the matrix/gradient recap needs more board time. The new notes are lecture-ready source material rather than PowerPoint decks; use their examples and equations directly or adapt them to your presentation format. Old PDF slides are supplementary historical material.
 
+## SemEval capstone preparation
+
+Complete the [task specification](../SEMEVAL_TASK.md) before the cohort starts development: select the year/task, required tracks/languages, allowed resources, metric/scorer, data access, and exact deadlines. The user has chosen SemEval, but has not yet specified those identifiers. Do not silently reuse the archived task selection.
+
+Introduce the [paper guide](../SEMEVAL_PAPER.md) in week 1. Check the baseline and outline on day 5, methods draft on day 10, peer review on day 14, and complete course paper on day 15. Reserve the same assessment weight for a strong negative result. If the official evaluation window falls later, grade the complete development-results paper and validated submission workflow, then schedule official evaluation and paper revision separately.
+
+The daily synthetic labs remain teaching demonstrations; the capstone must follow the selected task’s data and rules. Do not require an extra modality if the task is text-only.
+
 ## Daily facilitation
 
 Ask students to predict an invariant before running code. Walk through the first code block, then let pairs inspect the intervention. In discussion, ask “what evidence would make this conclusion false?” Use the final five-minute ticket to record one measured result, one limitation, and one next experiment. Address the most common confusion in the next day's opening quiz.
@@ -40,7 +48,7 @@ The practical questions are formative; answer guides explain the intended concep
 - [12. Vision-language models, document understanding, and grounding](12_vlm.md)
 - [13. Speech, audio representations, and multilingual ASR](13_speech.md)
 - [14. Video, unified multimodal systems, and generative frontiers](14_video_omni.md)
-- [15. Multimodal system integration, research critique, and project defence](15_capstone.md)
+- [15. SemEval systems, scientific writing, and project defence](15_capstone.md)
 
 [Concept-check key](concept_check_key.md)
 

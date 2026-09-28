@@ -8,9 +8,9 @@ Teaching support; distribute after the exercise deadline if using this repositor
 
 Counterfactual swaps with fixed question wording and controlled removal/mismatch of each modality.
 
-**2. Why are null and zero different for an unmeasured runtime?**
+**2. How should the paper report results if the official SemEval evaluation has not opened?**
 
-Zero claims a measurement of no time; null explicitly records missing information.
+Present measured development results with metric, split, and track labels. State that official evaluation is pending; preserve the submission-ready workflow and later deadlines. Do not invent test scores, receipts, or ranks.
 
 **3. What makes a negative result useful?**
 
@@ -22,7 +22,7 @@ A sound baseline, controlled comparison, adequate documentation, and a clear imp
 
 **Exercise 2.** Preserve paired IDs, report coverage and selective accuracy, and distinguish evidence presence from evidence validity.
 
-**Exercise 3.** Use the project rubric; credit justified scope and honest limitations over unsupported performance claims.
+**Exercise 3.** Award one point each for a traceable measured development result, a concrete error linked to the argument, an alternative explanation/limitation, and correct metric/split/track and evaluation-status labels. The full SemEval paper is assessed separately; a synthetic chart example is not a shared-task result.
 
 ## Marking anchors
 
