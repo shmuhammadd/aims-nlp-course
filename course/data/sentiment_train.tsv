@@ -1,0 +1,9 @@
+id	text	label	language
+synthetic-train-0	I enjoyed this helpful lesson	positive	en
+synthetic-train-1	A wonderful clear explanation	positive	en
+synthetic-train-2	The tutor was kind and helpful	positive	en
+synthetic-train-3	This exercise was delightful	positive	en
+synthetic-train-4	I disliked this confusing lesson	negative	en
+synthetic-train-5	A terrible unclear explanation	negative	en
+synthetic-train-6	The tutor was rude and unhelpful	negative	en
+synthetic-train-7	This exercise was awful	negative	en

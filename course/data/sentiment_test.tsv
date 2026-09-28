@@ -1,0 +1,5 @@
+id	text	label	language
+synthetic-test-0	The practical was wonderful and useful	positive	en
+synthetic-test-1	The practical was terrible and confusing	negative	en
+synthetic-test-2	Such a delightful discussion	positive	en
+synthetic-test-3	Such an awful discussion	negative	en

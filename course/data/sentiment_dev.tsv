@@ -1,0 +1,5 @@
+id	text	label	language
+synthetic-dev-0	A helpful and enjoyable tutorial	positive	en
+synthetic-dev-1	A confusing and unpleasant tutorial	negative	en
+synthetic-dev-2	I liked the clear examples	positive	en
+synthetic-dev-3	I hated the unclear examples	negative	en
