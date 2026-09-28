@@ -21,7 +21,7 @@ Validation date: **28 September 2026**. Checks ran on macOS ARM64, Python 3.13.1
 | Visual/audio API imports | Required image/audio classes import in the pinned environment |
 | SVG illustrations | All five original SVG files parse as XML |
 
-Executed outputs are committed as file content in the notebooks, so students can inspect a reference run without a model download. Notebook 15 was rerun after its result records gained an explicit experiment-condition field.
+Executed outputs are saved in the notebooks, so students can inspect a reference run without a model download. Notebook 15 was rerun after its result records gained an explicit experiment-condition field.
 
 ## Measured extension examples
 
