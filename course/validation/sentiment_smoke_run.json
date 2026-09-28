@@ -1,0 +1,48 @@
+{
+  "selected_C": 0.1,
+  "dev_macro_f1": 0.7333333333333334,
+  "test": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0
+  },
+  "language_slices": {
+    "en": {
+      "n": 4,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    }
+  },
+  "labels": [
+    "negative",
+    "positive"
+  ],
+  "sklearn": "1.7.2",
+  "seed": 42,
+  "split_sha256": {
+    "train": "061a88db410ca24f993789f8b4f8dafe1c9cd2891b0af48882a5cda65bb7103e",
+    "dev": "5d198d57f2d9298ad85422d712bc8e05e4467cf03197e94aa8fec3d242791d30",
+    "test": "f94a014d2f0f8f5f54dc449f5466dcfd3d008d07ab67f65ab7ffefbb9491abe1"
+  },
+  "predictions": [
+    {
+      "id": "synthetic-test-0",
+      "target": "positive",
+      "prediction": "positive"
+    },
+    {
+      "id": "synthetic-test-1",
+      "target": "negative",
+      "prediction": "negative"
+    },
+    {
+      "id": "synthetic-test-2",
+      "target": "positive",
+      "prediction": "positive"
+    },
+    {
+      "id": "synthetic-test-3",
+      "target": "negative",
+      "prediction": "negative"
+    }
+  ]
+}
