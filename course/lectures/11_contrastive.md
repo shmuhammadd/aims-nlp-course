@@ -38,6 +38,12 @@ For image classification, encode candidate descriptions such as “a photograph 
 ### A small controlled world
 The core lab generates colored geometric patterns as actual pixel arrays and trains a linear image projection against text-label vectors. It demonstrates alignment and compositional holdout failure; it is not a pretrained vision encoder and it does not understand natural language. Hold out one color-position combination, then inspect generalization. The optional CLIP extension runs a real pretrained dual encoder on locally generated images. Neither toy result establishes performance on natural images or African cultural contexts.
 
+## Visual reference
+
+![The six image-label combinations, with blue-right held out.](../data/paired-shapes.svg)
+
+Original course illustration; the notebook code is the source of measured results.
+
 ## Worked example
 
 For N=3 and all logits zero, each row and column assigns probability 1/3, so symmetric contrastive loss is log(3)=1.0986. If two captions describe the same image equally well, forcing exactly one diagonal positive penalizes a semantically reasonable match.

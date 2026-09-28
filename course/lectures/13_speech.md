@@ -40,6 +40,12 @@ A cascade runs ASR, text reasoning, and speech synthesis; errors can accumulate 
 
 Split by speaker and session to avoid near-identical acoustic conditions across train and test. Use consented speech with documented access conditions. The mandatory lab uses a synthetic tone only to inspect signal processing and authored transcripts only to inspect metrics. It does not claim to transcribe speech.
 
+## Visual reference
+
+![Illustration of a local window over a waveform.](../data/audio-window.svg)
+
+Original course illustration; the notebook code is the source of measured results.
+
 ## Worked example
 
 Reference “the lab opens today”; hypothesis “lab opens on monday”. One optimal alignment has D=1 (“the”), I=1 (“on”), S=1 (“today”→“monday”), so WER=3/4=0.75. Equivalent optimal edit alignments may distribute operations differently; total distance is stable.

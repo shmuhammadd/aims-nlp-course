@@ -38,6 +38,12 @@ Attention without positional information is permutation equivariant. Absolute em
 ### Autoregression and training
 Training uses teacher forcing: inputs \(x_{0:T-1}\) predict targets \(x_{1:T}\). A causal mask permits parallel training across positions. Generation repeatedly appends one sampled token and conditions the next prediction on it. The key test is causal invariance: modifying a future token must leave earlier logits unchanged. Attention visualizations can reveal patterns but are not sufficient explanations of causality in a model.
 
+## Visual reference
+
+![Causal-mask matrix: each row can see its prefix only.](../data/causal-mask.svg)
+
+Original course illustration; the notebook code is the source of measured results.
+
 ## Worked example
 
 For T=4 and d_k=2, QKᵀ is 4×4. Query row 1 (zero-indexed) may use columns 0 and 1 only. Its weights sum to one over those two positions. A batch adds a leading B dimension; heads add H.

@@ -40,6 +40,12 @@ Autoregressive generation predicts discrete tokens sequentially. Diffusion train
 
 The lab demonstrates frame sampling and forward Gaussian noising only. It does not train a video or diffusion model. Discuss generative evaluation using text alignment, consistency, diversity, provenance, and human inspection; one similarity score cannot settle all of these. Keep scope narrow enough for a defensible three-week project.
 
+## Visual reference
+
+![Frame montage showing a brief event missed by uniform sampling.](../data/video-sampling.svg)
+
+Original course illustration; the notebook code is the source of measured results.
+
 ## Worked example
 
 A 10-second clip sampled at 2 fps gives 20 frames. At 256 tokens/frame this is 5120 visual tokens before other modalities. A 0.1-second event can fall entirely between samples. More tokens may improve coverage but increase processing cost.

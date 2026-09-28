@@ -38,6 +38,12 @@ Use separate metrics for answer correctness, evidential support, and abstention.
 ### Recent systems and practical scope
 Gemma 3 offers a case study in modern multimodal model design; do not assume every size in a family has identical modalities. The mandatory lab creates bar-chart pixels and reads them with an explicit geometric baseline, so students can construct controlled evidence and ablations. The SmolVLM extension performs actual learned VLM inference on the same chart and lets students compare a specialized baseline with a general model. A small VLM need not beat a purpose-built chart reader.
 
+## Visual reference
+
+![Two charts with swapped heights and the same labels.](../data/chart-intervention.svg)
+
+Original course illustration; the notebook code is the source of measured results.
+
 ## Worked example
 
 A 448×448 image with nonoverlapping 14×14 patches produces 32×32=1024 patch positions before any pooling or special tokens. Doubling each dimension gives 4096 positions, multiplying raw patch count by four. Actual processors may crop or resample, so inspect their outputs.

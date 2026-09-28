@@ -1,1 +1,9 @@
 *.DS_Store
+
+# Course environments and generated student/model artifacts
+.venv/
+.venv-models/
+__pycache__/
+.ipynb_checkpoints/
+outputs/
+*.pyc
