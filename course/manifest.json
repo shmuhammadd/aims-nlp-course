@@ -1,0 +1,107 @@
+[
+  {
+    "number": 1,
+    "slug": "01_tokenization",
+    "title": "Language models, tokens, and experimental baselines",
+    "week": 1,
+    "day": 1
+  },
+  {
+    "number": 2,
+    "slug": "02_transformers",
+    "title": "Build and inspect a causal Transformer",
+    "week": 1,
+    "day": 2
+  },
+  {
+    "number": 3,
+    "slug": "03_pretraining",
+    "title": "Pretraining: data, objectives, scaling, and small-model training",
+    "week": 1,
+    "day": 3
+  },
+  {
+    "number": 4,
+    "slug": "04_adaptation",
+    "title": "Instruction tuning and parameter-efficient adaptation",
+    "week": 1,
+    "day": 4
+  },
+  {
+    "number": 5,
+    "slug": "05_preferences",
+    "title": "Preference optimization and reinforcement learning for reasoning",
+    "week": 1,
+    "day": 5
+  },
+  {
+    "number": 6,
+    "slug": "06_multilingual",
+    "title": "Multilingual and low-resource language modelling",
+    "week": 2,
+    "day": 1
+  },
+  {
+    "number": 7,
+    "slug": "07_rag",
+    "title": "Retrieval-augmented generation and evidence-based answers",
+    "week": 2,
+    "day": 2
+  },
+  {
+    "number": 8,
+    "slug": "08_reasoning",
+    "title": "Reasoning, test-time compute, and tool-using systems",
+    "week": 2,
+    "day": 3
+  },
+  {
+    "number": 9,
+    "slug": "09_efficiency",
+    "title": "Efficient inference, compression, and deployment tradeoffs",
+    "week": 2,
+    "day": 4
+  },
+  {
+    "number": 10,
+    "slug": "10_evaluation",
+    "title": "Reliable evaluation, calibration, and responsible reporting",
+    "week": 2,
+    "day": 5
+  },
+  {
+    "number": 11,
+    "slug": "11_contrastive",
+    "title": "Multimodal representations: CLIP, SigLIP, and cross-modal retrieval",
+    "week": 3,
+    "day": 1
+  },
+  {
+    "number": 12,
+    "slug": "12_vlm",
+    "title": "Vision-language models, document understanding, and grounding",
+    "week": 3,
+    "day": 2
+  },
+  {
+    "number": 13,
+    "slug": "13_speech",
+    "title": "Speech, audio representations, and multilingual ASR",
+    "week": 3,
+    "day": 3
+  },
+  {
+    "number": 14,
+    "slug": "14_video_omni",
+    "title": "Video, unified multimodal systems, and generative frontiers",
+    "week": 3,
+    "day": 4
+  },
+  {
+    "number": 15,
+    "slug": "15_capstone",
+    "title": "Multimodal system integration, research critique, and project defence",
+    "week": 3,
+    "day": 5
+  }
+]
