@@ -54,3 +54,7 @@ The first two need only the core environment. Kernel checks require `requirement
 The pretrained visual-QA path above was executed. Pretrained Qwen3 inference/LoRA, CLIP, Whisper, and video checkpoint runs were not executed; their syntax/API checks do not substitute for model-download and end-to-end classroom preflight. The offline Qwen3 fixture validates API plumbing, masking, saving, and actual optimization; it does not establish pretrained-model quality. CUDA performance, memory estimates, every Python version in the supported range, Colab UI behavior, real AfriSenti data, and real speech/video datasets were not benchmarked. Historical notebooks and PDF slides were preserved without being revalidated.
 
 Instructor preflight should verify the actual classroom device, chosen model revisions, data access, and runtime before assigning an optional model extension. The offline core remains fully usable without these extensions.
+
+## SemEval capstone curriculum update
+
+The capstone brief, syllabus, overview, reporting templates, instructor guidance, and lecture-15 materials were aligned to SemEval participation and a system-description paper. A task-selection card and paper-writing guide were added. The SemEval year/task/subtasks await instructor selection. Structural, local-link, and syntax checks passed after the update; notebook changes were Markdown only, so the existing code-execution results remain applicable.

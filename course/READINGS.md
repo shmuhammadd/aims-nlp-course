@@ -21,7 +21,7 @@ Read the abstract, the objective or architecture section, and one result/ablatio
 | 12 | [LLaVA](https://arxiv.org/abs/2304.08485) | [Gemma 3](https://arxiv.org/abs/2503.19786), [SmolVLM card](https://huggingface.co/HuggingFaceTB/SmolVLM-256M-Instruct) | What visual information is lost during preprocessing? |
 | 13 | [wav2vec 2.0](https://arxiv.org/abs/2006.11477), [Whisper](https://arxiv.org/abs/2212.04356) | [Whisper implementation](https://huggingface.co/docs/transformers/v4.57.1/en/model_doc/whisper) | How do normalization and speaker splits change the conclusion? |
 | 14 | [DDPM](https://arxiv.org/abs/2006.11239), [flow matching](https://arxiv.org/abs/2210.02747) | [Qwen3.5-Omni (2026)](https://arxiv.org/abs/2604.15804) | Are modality coverage, temporal grounding, and streaming evaluated separately? |
-| 15 | Controlled ablations and the course evaluation protocol | [ReactBench (May 2026)](https://arxiv.org/abs/2605.29579), [KnowHal (August 2026)](https://arxiv.org/abs/2608.03782) | Which failures can the benchmark diagnose, and which causal claims exceed its evidence? |
+| 15 | Controlled ablations, the selected task protocol, and the [SemEval system-paper guide](https://semeval.github.io/system-paper-template.html) | [ReactBench (May 2026)](https://arxiv.org/abs/2605.29579), [KnowHal (August 2026)](https://arxiv.org/abs/2608.03782) | Which failures can the benchmark diagnose, and which causal claims exceed its evidence? |
 
 ## Current-research discussion briefs
 
