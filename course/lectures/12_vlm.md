@@ -25,7 +25,7 @@
 ### Connecting vision to a language decoder
 A common VLM combines a vision encoder, a projector or resampler, and a language decoder. Visual features must be mapped to the decoder hidden dimension. They may be inserted as tokens in the decoder sequence or used through cross-attention. A projector-only alignment stage can precede multimodal instruction tuning; training schedules differ across model families.
 
-The conditional objective is \(-\sum_t\log p_\theta(y_t\mid y_{<t},x_{text},z_{image})\). As in text SFT, mask prompt and padding labels. Image preprocessing and token placement belong to the checkpoint's processor; a generic text tokenizer cannot safely substitute for it. Resolution, cropping, aspect ratio, and patch count affect both cost and information loss.
+The conditional objective is $-\sum_t\log p_\theta(y_t\mid y_{<t},x_{text},z_{image})$. As in text SFT, mask prompt and padding labels. Image preprocessing and token placement belong to the checkpoint's processor; a generic text tokenizer cannot safely substitute for it. Resolution, cropping, aspect ratio, and patch count affect both cost and information loss.
 
 ### Documents require detail
 A chart question may require detecting axes, reading labels, identifying a mark, and performing arithmetic. OCR errors can propagate into numerically fluent but wrong answers. Tables encode relations in layout; flattening them without row/column structure can change meaning. For document QA, compare OCR-plus-text, image-only, and image-plus-text paths. Preserve page IDs, bounding boxes when available, and source evidence.

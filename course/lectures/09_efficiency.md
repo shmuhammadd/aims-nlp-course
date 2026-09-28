@@ -26,7 +26,11 @@
 Weights are one component. At inference, include activations, temporary workspaces, the key/value cache, and serving overhead. During training, also include gradients and optimizer state. For a dense model with N parameters at b bits per weight, idealized weight storage is Nb/8 bytes, before scales, metadata, and unquantized layers.
 
 For batch B, cached length T, layers L, H_kv key/value heads of dimension d_h, and s bytes per cached element, a simple cache estimate is
-\[M_{KV}=2BTLH_{kv}d_hs.\]
+
+$$
+M_{KV}=2BTLH_{kv}d_hs.
+$$
+
 The leading 2 counts keys and values. Grouped-query attention reduces H_kv. Sliding-window layers can bound part of the cache; implementation details determine actual allocation.
 
 ### Prefill versus decode
@@ -35,7 +39,7 @@ Prefill processes the prompt in parallel. Decode generates tokens sequentially, 
 FlashAttention reorganizes exact attention to reduce memory traffic; it is not simply a sparse or approximate attention rule. Paged cache management reduces allocation waste and supports serving many sequences. Neither guarantees a fixed speedup for every device and workload.
 
 ### Quantization and distillation
-For symmetric per-channel quantization, choose \(s_c=\max|W_c|/(2^{b-1}-1)\), quantize \(q=\mathrm{clip}(\mathrm{round}(W/s_c))\), then reconstruct \(\hat W=s_cq\). Handle all-zero channels. Per-channel scaling often reduces error when channel ranges differ, but introduces metadata. Quantization error in weights is not task accuracy; evaluate outputs too.
+For symmetric per-channel quantization, choose $s_c=\max|W_c|/(2^{b-1}-1)$, quantize $q=\mathrm{clip}(\mathrm{round}(W/s_c))$, then reconstruct $\hat W=s_cq$. Handle all-zero channels. Per-channel scaling often reduces error when channel ranges differ, but introduces metadata. Quantization error in weights is not task accuracy; evaluate outputs too.
 
 Knowledge distillation trains a student from teacher outputs or distributions. Temperature-smoothed KL divergence can convey alternatives, but the teacher can transmit errors and data restrictions. Speculative decoding drafts tokens with a cheaper model and verifies them with a target model; correct acceptance/rejection can preserve the target distribution. Speed depends on acceptance, draft cost, and hardware.
 

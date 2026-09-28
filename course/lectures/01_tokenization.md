@@ -24,7 +24,7 @@
 
 ### From an NLP task to a scientific question
 A language model assigns a distribution to sequences. Autoregressive factorization is
-\(p(x_{1:T})=\prod_{t=1}^{T}p(x_t\mid x_{<t})\). A useful assistant additionally needs instruction following, access to evidence, and task-specific evaluation. Lower language-model loss does not by itself establish factuality or usefulness. Begin a project by specifying a user, input, output, unit of evaluation, and failure cost.
+$p(x_{1:T})=\prod_{t=1}^{T}p(x_t\mid x_{<t})$. A useful assistant additionally needs instruction following, access to evidence, and task-specific evaluation. Lower language-model loss does not by itself establish factuality or usefulness. Begin a project by specifying a user, input, output, unit of evaluation, and failure cost.
 
 ### Tokens are an engineering choice
 Whitespace, character, UTF-8 byte, and learned subword tokenizers allocate different numbers of positions to the same string. Unicode code points are not always visible characters: a combining accent can occupy a separate code point. NFC normalization can join some equivalent sequences, but indiscriminate normalization can erase useful distinctions. Byte-level coverage avoids an unknown-character vocabulary problem; it does not make every language equally efficient.
@@ -32,7 +32,7 @@ Whitespace, character, UTF-8 byte, and learned subword tokenizers allocate diffe
 Byte-pair encoding repeatedly merges frequent adjacent symbols. Unigram tokenization instead selects a probabilistic segmentation from a candidate vocabulary. Both learn from a data distribution; underrepresented orthographies may fragment more. Report token counts per word and per UTF-8 byte, with a stated tokenizer, language, and domain. Neither metric alone measures linguistic complexity.
 
 ### Loss and comparability
-Negative log-likelihood (NLL) is \(-\sum_t\log p(x_t\mid x_{<t})\). Perplexity is \(\exp(\mathrm{NLL}/T)\), with natural logarithms. Token perplexities across different vocabularies are generally not directly comparable. Bits per byte uses total NLL divided by \(\log(2)\) and the original byte count, provided the likelihood and boundary conventions are comparable.
+Negative log-likelihood (NLL) is $-\sum_t\log p(x_t\mid x_{<t})$. Perplexity is $\exp(\mathrm{NLL}/T)$, with natural logarithms. Token perplexities across different vocabularies are generally not directly comparable. Bits per byte uses total NLL divided by $\log(2)$ and the original byte count, provided the likelihood and boundary conventions are comparable.
 
 ### Splits precede modelling
 Split by the source of dependence: document, author, speaker, or image, as appropriate. Deduplicate before assigning splits, fit vocabulary and statistics on training data, select configurations on development data, and open the test set only after freezing the method. A random row split can put paraphrases or frames of the same video in both train and test. A majority or unigram baseline reveals whether a sophisticated system adds value.

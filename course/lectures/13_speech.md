@@ -31,7 +31,7 @@ Speech frames greatly outnumber output characters or subwords. CTC sums probabil
 Encoder-decoder ASR attends from text outputs to audio representations and can use preceding generated tokens. Whisper is a useful example of large-scale supervised speech modelling. wav2vec 2.0 illustrates self-supervised representation learning with masked latent audio prediction and a contrastive task. Data, language exposure, and decoding matter as much as architecture labels.
 
 ### Error metrics and normalization
-Word error rate is \((S+D+I)/N_{ref}\), where substitutions, deletions, and insertions come from an edit alignment. WER can exceed one when there are many insertions. Character error rate is useful when word boundaries are ambiguous, but script and normalization choices matter. Report raw and normalized variants if normalization changes the practical task; never silently remove meaningful distinctions.
+Word error rate is $(S+D+I)/N_{ref}$, where substitutions, deletions, and insertions come from an edit alignment. WER can exceed one when there are many insertions. Character error rate is useful when word boundaries are ambiguous, but script and normalization choices matter. Report raw and normalized variants if normalization changes the practical task; never silently remove meaningful distinctions.
 
 A low WER does not ensure correct names, negation, or numbers. Include critical-token accuracy and qualitative error categories. Break down performance by language, recording condition, and other consented relevant factors. Small-group results need sample counts and uncertainty.
 

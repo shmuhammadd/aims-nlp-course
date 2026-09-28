@@ -28,7 +28,7 @@ A score describes a checkpoint, prompt/template, dataset version, decoding rule,
 Choose metrics by task: macro-F1 for imbalanced classification; exact match with declared normalization for short answers; retrieval metrics for evidence selection; word/character error rates for speech; human rubrics for open-ended support and usefulness. Averages hide important errors. Report counts, uncertainty, and meaningful slices.
 
 ### Calibration and abstention
-For binary prediction probability p and label y, the Brier score is \(N^{-1}\sum_i(p_i-y_i)^2\). In multiclass settings, sum across classes and state the convention. Calibration asks whether events assigned probability p occur approximately p of the time. Expected calibration error bins predictions, but results depend on binning and sample size; pair it with reliability tables and proper scores.
+For binary prediction probability p and label y, the Brier score is $N^{-1}\sum_i(p_i-y_i)^2$. In multiclass settings, sum across classes and state the convention. Calibration asks whether events assigned probability p occur approximately p of the time. Expected calibration error bins predictions, but results depend on binning and sample size; pair it with reliability tables and proper scores.
 
 Selective prediction answers only when confidence exceeds a threshold. Coverage is answered/total; selective accuracy is correct/answered. Report both. A system can achieve perfect accuracy by answering one easy question, which may not serve users. Choose the threshold on development data, not the final test set. Raw sequence likelihood is not automatically calibrated correctness confidence.
 

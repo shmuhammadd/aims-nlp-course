@@ -23,12 +23,16 @@
 ## Teaching notes
 
 ### The computational graph
-For token IDs \(x\), embeddings produce \(X\in\mathbb R^{T\times d}\). A pre-norm decoder block computes \(H=X+\mathrm{Attention}(\mathrm{Norm}(X))\), then \(Y=H+\mathrm{MLP}(\mathrm{Norm}(H))\). The final normalized hidden state is projected to vocabulary logits. Residual streams carry information forward; normalization controls activation scale. LayerNorm centers and scales; RMSNorm scales without subtracting the mean.
+For token IDs $x$, embeddings produce $X\in\mathbb R^{T\times d}$. A pre-norm decoder block computes $H=X+\mathrm{Attention}(\mathrm{Norm}(X))$, then $Y=H+\mathrm{MLP}(\mathrm{Norm}(H))$. The final normalized hidden state is projected to vocabulary logits. Residual streams carry information forward; normalization controls activation scale. LayerNorm centers and scales; RMSNorm scales without subtracting the mean.
 
 ### Attention is content-dependent mixing
-Let \(Q=XW_Q\), \(K=XW_K\), and \(V=XW_V\). Then
-\[A=\operatorname{softmax}((QK^\top)/\sqrt{d_k}+M),\qquad O=AV.\]
-The softmax is row-wise. A causal mask sets entries with key position greater than query position to negative infinity. Padding masks are distinct: they suppress padding, not future positions. Subtract each row maximum before exponentiation. The \(\sqrt{d_k}\) factor controls dot-product variance under a simple independent-component model.
+Let $Q=XW_Q$, $K=XW_K$, and $V=XW_V$. Then
+
+$$
+A=\operatorname{softmax}((QK^\top)/\sqrt{d_k}+M),\qquad O=AV.
+$$
+
+The softmax is row-wise. A causal mask sets entries with key position greater than query position to negative infinity. Padding masks are distinct: they suppress padding, not future positions. Subtract each row maximum before exponentiation. The $\sqrt{d_k}$ factor controls dot-product variance under a simple independent-component model.
 
 Multiple heads learn different mixing functions. Concatenate head outputs and project back to the residual dimension. A common modern feed-forward block uses a gated activation such as SwiGLU. These choices alter quality and cost; the notebook uses a deliberately small one-head forward pass so every number can be inspected.
 
@@ -36,7 +40,7 @@ Multiple heads learn different mixing functions. Concatenate head outputs and pr
 Attention without positional information is permutation equivariant. Absolute embeddings add position vectors. Rotary position embeddings rotate query/key pairs as a function of position, making dot products sensitive to relative displacement. RoPE is not a guarantee of extrapolation beyond training length. Grouped-query attention shares key/value heads across several query heads; it reduces KV-cache size, not query-head count.
 
 ### Autoregression and training
-Training uses teacher forcing: inputs \(x_{0:T-1}\) predict targets \(x_{1:T}\). A causal mask permits parallel training across positions. Generation repeatedly appends one sampled token and conditions the next prediction on it. The key test is causal invariance: modifying a future token must leave earlier logits unchanged. Attention visualizations can reveal patterns but are not sufficient explanations of causality in a model.
+Training uses teacher forcing: inputs $x_{0:T-1}$ predict targets $x_{1:T}$. A causal mask permits parallel training across positions. Generation repeatedly appends one sampled token and conditions the next prediction on it. The key test is causal invariance: modifying a future token must leave earlier logits unchanged. Attention visualizations can reveal patterns but are not sufficient explanations of causality in a model.
 
 ## Visual reference
 

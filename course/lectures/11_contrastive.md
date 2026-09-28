@@ -23,9 +23,9 @@
 ## Teaching notes
 
 ### Two encoders, one comparison space
-A dual encoder maps images through f and text through g to vectors in a shared dimension. Normalize embeddings before comparing cosine similarity: \(u=f(I)/\|f(I)\|\), \(v=g(t)/\|g(t)\|\). The similarity matrix for a batch of N paired examples is \(S_{ij}=u_i^\top v_j/\tau\), where temperature tau controls logit scale. Encoders may have different architectures; shared output dimension does not mean shared weights.
+A dual encoder maps images through f and text through g to vectors in a shared dimension. Normalize embeddings before comparing cosine similarity: $u=f(I)/\|f(I)\|$, $v=g(t)/\|g(t)\|$. The similarity matrix for a batch of N paired examples is $S_{ij}=u_i^\top v_j/\tau$, where temperature tau controls logit scale. Encoders may have different architectures; shared output dimension does not mean shared weights.
 
-For a batch with one matched caption per image, image-to-text loss is \(-N^{-1}\sum_i\log\frac{e^{S_{ii}}}{\sum_j e^{S_{ij}}}\). Text-to-image uses the transposed matrix. CLIP-style symmetric loss averages the two. In-batch negatives are convenient but can be false negatives: two images may both match the caption “a red square.” Multi-positive labels require a different treatment than a diagonal-only target.
+For a batch with one matched caption per image, image-to-text loss is $-N^{-1}\sum_i\log\frac{e^{S_{ii}}}{\sum_j e^{S_{ij}}}$. Text-to-image uses the transposed matrix. CLIP-style symmetric loss averages the two. In-batch negatives are convenient but can be false negatives: two images may both match the caption “a red square.” Multi-positive labels require a different treatment than a diagonal-only target.
 
 ### What is being learned
 A vision transformer divides an image into patches, projects them, and processes patch tokens with position information. Image augmentations and caption distributions determine which invariances are learned. Contrastive alignment encourages matching, not detailed causal understanding or generative ability. A retrieval model can perform well while missing counts, relations, or small text.

@@ -28,7 +28,7 @@ A shared model may reuse syntax, semantics, or subword patterns across languages
 A multilingual pipeline can use a frozen encoder with a task head, task-specific fine-tuning, language adapters, continued pretraining, or instruction tuning. Compare an inexpensive classifier before investing in generative fine-tuning. The existing AfriSenti notebook in this repository is an optional historical bridge; its environment needs separate verification.
 
 ### Sampling and representation
-If language l has n_l examples, a temperature-smoothed sampling distribution can be \(q_l=n_l^\alpha/\sum_j n_j^\alpha\), where alpha=1 follows the corpus and alpha=0 samples languages uniformly. Reducing alpha increases exposure for smaller languages, but repeated examples may overfit. Count unique examples and effective repetitions, not only optimizer steps.
+If language l has n_l examples, a temperature-smoothed sampling distribution can be $q_l=n_l^\alpha/\sum_j n_j^\alpha$, where alpha=1 follows the corpus and alpha=0 samples languages uniformly. Reducing alpha increases exposure for smaller languages, but repeated examples may overfit. Count unique examples and effective repetitions, not only optimizer steps.
 
 ### Metrics with explicit denominators
 For a class, precision=TP/(TP+FP), recall=TP/(TP+FN), and F1 is their harmonic mean. State how undefined terms are treated. Macro-F1 averages class F1 values and highlights minority-class failures. Overall accuracy weights examples; equal-language accuracy averages language accuracies. These answer different questions. A language with 20 examples has much wider uncertainty than one with 2,000.

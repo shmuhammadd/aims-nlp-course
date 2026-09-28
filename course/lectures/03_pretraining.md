@@ -23,10 +23,10 @@
 ## Teaching notes
 
 ### What the objective rewards
-For causal pretraining, minimize \(L=-\frac1N\sum_t\log p_\theta(x_t\mid x_{<t})\). The model is rewarded for prediction on the training distribution, including its omissions and errors. Masked language modelling predicts selected missing tokens with bidirectional context; encoder-decoder denoising reconstructs corrupted sequences. Choose an objective appropriate to representation learning, generation, or conditional generation.
+For causal pretraining, minimize $L=-\frac1N\sum_t\log p_\theta(x_t\mid x_{<t})$. The model is rewarded for prediction on the training distribution, including its omissions and errors. Masked language modelling predicts selected missing tokens with bidirectional context; encoder-decoder denoising reconstructs corrupted sequences. Choose an objective appropriate to representation learning, generation, or conditional generation.
 
 ### A tractable training derivation
-Our small model stores a logit vector \(W_{i,:}\) for every preceding character i. Its prediction is \(p_j=\mathrm{softmax}(W_{i,:})_j\). For target y, \(\partial L/\partial W_{i,j}=p_j-\mathbf1[j=y]\). Average gradients across examples and apply gradient descent. This neural bigram model has no long-range context; its value is exposing the full train/evaluate loop before using a decoder implementation.
+Our small model stores a logit vector $W_{i,:}$ for every preceding character i. Its prediction is $p_j=\mathrm{softmax}(W_{i,:})_j$. For target y, $\partial L/\partial W_{i,j}=p_j-\mathbf1[j=y]$. Average gradients across examples and apply gradient descent. This neural bigram model has no long-range context; its value is exposing the full train/evaluate loop before using a decoder implementation.
 
 Initialize from a controlled seed. Shift inputs and targets once, compute training loss, update weights, then evaluate without updates on a separate document set. Do not concatenate documents without explicit boundary handling: an artificial transition between documents changes the task. Repeated epochs can drive down training loss while held-out loss rises.
 
@@ -34,7 +34,7 @@ Initialize from a controlled seed. Shift inputs and targets once, compute traini
 A pretraining pipeline needs provenance, permission to use data, language identification, quality filters, deduplication, and contamination checks. Every filter changes representation: for example, an English-oriented quality classifier may discard useful code-switched text. Record token volume before and after filtering for each language and domain. Deduplication reduces memorization pressure but does not remove all near duplicates.
 
 ### Scaling under constraints
-A rough dense-transformer training estimate is \(C\approx6ND\) floating-point operations for N parameters and D training tokens; attention, embeddings, optimizer, and hardware overhead can matter. It is an estimate, not a runtime promise. Compute-optimal allocation depends on the loss regime and inference demand. The Chinchilla study challenged training larger models on too few tokens under its setting; it is not a universal fixed ratio for every architecture or application.
+A rough dense-transformer training estimate is $C\approx6ND$ floating-point operations for N parameters and D training tokens; attention, embeddings, optimizer, and hardware overhead can matter. It is an estimate, not a runtime promise. Compute-optimal allocation depends on the loss regime and inference demand. The Chinchilla study challenged training larger models on too few tokens under its setting; it is not a universal fixed ratio for every architecture or application.
 
 Mixture-of-experts routes tokens to a subset of feed-forward experts. Total parameters affect storage; active parameters better describe some compute costs. Load balancing, communication, routing stability, and expert capacity still matter. Continued pretraining on a target domain can help but may forget previous capabilities; compare both target and general-domain evaluations.
 
