@@ -23,7 +23,7 @@ def main():
     if len(wave) == 0 or not np.isfinite(wave).all():
         p.error("Audio must be nonempty and finite")
     wave = librosa.resample(wave, orig_sr=original_sr, target_sr=16000)
-    model = AutoModelForSpeechSeq2Seq.from_pretrained(args.model, revision=args.revision, torch_dtype=torch.float32,
+    model = AutoModelForSpeechSeq2Seq.from_pretrained(args.model, revision=args.revision, dtype=torch.float32,
                                                      trust_remote_code=False).to(args.device).eval()
     processor = AutoProcessor.from_pretrained(args.model, revision=args.revision, trust_remote_code=False)
     pipe = pipeline("automatic-speech-recognition", model=model, tokenizer=processor.tokenizer,

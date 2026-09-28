@@ -12,11 +12,11 @@ def main():
     torch = setup(args)
     from transformers import AutoModelForCausalLM, AutoTokenizer
     tok = AutoTokenizer.from_pretrained(args.model, revision=args.revision, trust_remote_code=False)
-    model = AutoModelForCausalLM.from_pretrained(args.model, revision=args.revision, torch_dtype=torch.float32, trust_remote_code=False).to(args.device).eval()
+    model = AutoModelForCausalLM.from_pretrained(args.model, revision=args.revision, dtype=torch.float32, trust_remote_code=False).to(args.device).eval()
     messages = [{"role": "user", "content": args.prompt}]
     # Qwen3 permits explicit non-thinking mode; other templates may ignore this keyword.
     rendered = tok.apply_chat_template(messages, tokenize=False, add_generation_prompt=True, enable_thinking=False)
-    inputs = tok(rendered, return_tensors="pt", add_special_tokens=False).to(args.device)
+    inputs = tok(rendered, return_tensors="pt", add_special_tokens=False, return_token_type_ids=False).to(args.device)
     if inputs.input_ids.shape[1] > 1024:
         p.error("Teaching limit: use at most 1024 prompt tokens")
     if args.device == "cuda":

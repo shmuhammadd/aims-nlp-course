@@ -19,7 +19,7 @@ def main():
     tok = AutoTokenizer.from_pretrained(args.model, revision=args.revision, trust_remote_code=False)
     if tok.pad_token_id is None:
         tok.pad_token = tok.eos_token
-    base = AutoModelForCausalLM.from_pretrained(args.model, revision=args.revision, torch_dtype=torch.float32, trust_remote_code=False).to(args.device)
+    base = AutoModelForCausalLM.from_pretrained(args.model, revision=args.revision, dtype=torch.float32, trust_remote_code=False).to(args.device)
     model = get_peft_model(base, LoraConfig(task_type=TaskType.CAUSAL_LM, r=args.rank, lora_alpha=2*args.rank,
                                           lora_dropout=0., target_modules=["q_proj", "v_proj"]))
     model.print_trainable_parameters()

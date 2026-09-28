@@ -34,7 +34,7 @@ def main():
     else:
         from transformers import AutoProcessor, AutoModelForVision2Seq
         processor = AutoProcessor.from_pretrained(args.model, revision=args.revision, trust_remote_code=False)
-        model = AutoModelForVision2Seq.from_pretrained(args.model, revision=args.revision, torch_dtype=torch.float32,
+        model = AutoModelForVision2Seq.from_pretrained(args.model, revision=args.revision, dtype=torch.float32,
                                                        trust_remote_code=False, attn_implementation="eager").to(args.device).eval()
         values = [7, 3, 5] if args.condition == "swapped" else [3, 7, 5]
         im = Image.new("RGB", (384, 320), "white")

@@ -22,7 +22,7 @@ def main():
         p.error("Use a clip no longer than 10 seconds")
     from transformers import AutoProcessor, AutoModelForImageTextToText
     processor = AutoProcessor.from_pretrained(args.model, revision=args.revision, trust_remote_code=False)
-    model = AutoModelForImageTextToText.from_pretrained(args.model, revision=args.revision, torch_dtype=torch.float32,
+    model = AutoModelForImageTextToText.from_pretrained(args.model, revision=args.revision, dtype=torch.float32,
                                                        trust_remote_code=False, attn_implementation="eager").to(args.device).eval()
     messages = [{"role": "user", "content": [{"type": "video", "path": str(args.video.resolve())},
                                                {"type": "text", "text": args.prompt}]}]
