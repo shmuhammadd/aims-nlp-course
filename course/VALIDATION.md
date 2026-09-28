@@ -18,6 +18,7 @@ Validation date: **28 September 2026**. Checks ran on macOS ARM64, Python 3.13.1
 | Tiny Transformer | 100 training steps, development checkpoint selection, save, and future-token invariance passed |
 | Text/LoRA integration | Both CLIs ran with a locally generated tiny random Qwen3 checkpoint; adapter B weights changed from zero |
 | Sentiment pipeline | Train/dev selection/test output passed on the authored synthetic TSV fixture |
+| Pretrained visual QA | SmolVLM-256M loaded and generated on CPU; pipeline succeeded, chart answer was incorrect |
 | Visual/audio API imports | Required image/audio classes import in the pinned environment |
 | SVG illustrations | All five original SVG files parse as XML |
 
@@ -28,6 +29,12 @@ Executed outputs are saved in the notebooks, so students can inspect a reference
 The [tiny-decoder run](validation/tiny_decoder_run.json) records actual losses on the authored toy corpus. Development loss reached approximately 1.252 at step 60 and rose to approximately 1.405 at step 99 while training loss continued falling. This illustrates why checkpoint selection uses development data. It is not a language-model benchmark result.
 
 The [sentiment smoke-test result](validation/sentiment_smoke_run.json) uses only the synthetic English fixture. Its four-item test accuracy must not be cited as AfriSenti or real-language performance.
+
+## Pretrained visual-QA check
+
+The actual [SmolVLM run](validation/vlm_original_run.json) used revision `7e3e67edbbed1bf9888184d9df282b700a323964` on the [authored chart](validation/vlm_original_chart.png). It returned “A.” while the correct highest bar was B. This is a successful software-path check and a failed task prediction. It is retained as an error-analysis example rather than removed from the materials. No aggregate model-quality claim follows from one example.
+
+The processor produced 17 image patches and 1,156 input-token positions in this run; preprocessing can enlarge a small input and should be included in resource planning.
 
 ## Reproduce the checks
 
@@ -44,6 +51,6 @@ The first two need only the core environment. Kernel checks require `requirement
 
 ## Limits
 
-Remote pretrained-checkpoint validation is listed separately below. The offline Qwen3 fixture validates API plumbing, masking, saving, and actual optimization; it does not establish pretrained-model quality. CUDA performance, memory estimates, every Python version in the supported range, Colab UI behavior, real AfriSenti data, and real speech/video datasets were not benchmarked. Historical notebooks and PDF slides were preserved without being revalidated.
+The pretrained visual-QA path above was executed. Pretrained Qwen3 inference/LoRA, CLIP, Whisper, and video checkpoint runs were not executed; their syntax/API checks do not substitute for model-download and end-to-end classroom preflight. The offline Qwen3 fixture validates API plumbing, masking, saving, and actual optimization; it does not establish pretrained-model quality. CUDA performance, memory estimates, every Python version in the supported range, Colab UI behavior, real AfriSenti data, and real speech/video datasets were not benchmarked. Historical notebooks and PDF slides were preserved without being revalidated.
 
 Instructor preflight should verify the actual classroom device, chosen model revisions, data access, and runtime before assigning an optional model extension. The offline core remains fully usable without these extensions.

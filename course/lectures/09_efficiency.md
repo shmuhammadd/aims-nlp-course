@@ -56,7 +56,7 @@ For B=1, T=4096, L=24, H_kv=8, d_h=64 and s=2 bytes, the KV cache estimate is 20
 
 Open the notebook and predict each result before running it. Spend 5 minutes on setup and data inspection, 15 on the mechanism, 10 on the controlled intervention, and 10 on interpretation. The core uses NumPy and authored/synthetic data; the notebook identifies its limits. Save outputs, configuration, and a short interpretation. Do not report an expected trend as a measured result.
 
-**Real-model or research extension:** Time actual runs of `extensions/hf_text.py` on a declared device. Its wall time includes model loading unless you instrument generation separately; do not call it decode throughput.
+**Real-model or research extension:** Use `extensions/hf_text.py` on a declared device. Its reported generation time includes prefill and excludes model loading; it is not a separate measurement of pure decode throughput.
 
 See the [extension guide](../extensions/README.md) for commands, hardware assumptions, and validation status.
 

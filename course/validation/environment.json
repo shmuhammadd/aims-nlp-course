@@ -22,5 +22,12 @@
   "core_execution": "Python subprocesses and real Jupyter kernels",
   "tiny_decoder_steps": 100,
   "text_lora_api_check": "local randomly initialized Qwen3 fixture, not pretrained weights",
-  "sentiment_check": "authored synthetic TSV fixture, not AfriSenti benchmark"
+  "sentiment_check": "authored synthetic TSV fixture, not AfriSenti benchmark",
+  "pretrained_visual_qa": {
+    "model": "HuggingFaceTB/SmolVLM-256M-Instruct",
+    "revision": "7e3e67edbbed1bf9888184d9df282b700a323964",
+    "pipeline": "passed",
+    "task_prediction": "A",
+    "target": "B"
+  }
 }

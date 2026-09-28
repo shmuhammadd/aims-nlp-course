@@ -58,6 +58,8 @@ Open the notebook and predict each result before running it. Spend 5 minutes on 
 
 See the [extension guide](../extensions/README.md) for commands, hardware assumptions, and validation status.
 
+A [recorded pretrained SmolVLM run](../validation/vlm_original_run.json) answered A on a chart whose tallest bar was B. Inspect the [exact authored chart](../validation/vlm_original_chart.png) and compare this observed error with the correct geometric baseline. One example diagnoses a failure; it does not estimate aggregate quality.
+
 ## Practical questions
 
 1. Why is a blank-image baseline useful?
