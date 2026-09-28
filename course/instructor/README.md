@@ -14,6 +14,10 @@ Ask students to predict an invariant before running code. Walk through the first
 
 Do not let model installation consume the guided tutorial. Core labs deliberately make mechanisms visible on small data; model extensions connect them to practical systems. Keep the distinction explicit. In weeks 2–3, revisit a single capstone example so students see how retrieval, perception, reasoning, and evaluation interact.
 
+## A measured overfitting example
+
+The [tiny-decoder trace](../validation/tiny_decoder_run.json) is an actual CPU run. Ask students to choose a checkpoint using development loss before showing the final steps. Around step 60 the development curve stops improving while training loss continues down. This is useful if the class cannot install PyTorch during week 1.
+
 ## Differentiation
 
 For students needing support, give the worked derivation and ask them to explain the assertions before modifying code. For advanced students, use the optional pretrained pathway, gradient checks, multi-positive retrieval, clustered bootstrap, or compositional holdouts. Do not add marks for compute expenditure.

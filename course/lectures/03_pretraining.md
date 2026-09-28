@@ -52,6 +52,8 @@ Open the notebook and predict each result before running it. Spend 5 minutes on 
 
 See the [extension guide](../extensions/README.md) for commands, hardware assumptions, and validation status.
 
+A [measured 100-step tiny-Transformer run](../validation/tiny_decoder_run.json) is included for comparison: development loss eventually rises while training loss continues to fall. Use it to discuss checkpoint selection; these are toy-corpus measurements.
+
 ## Practical questions
 
 1. Why can training perplexity improve while useful performance gets worse?
