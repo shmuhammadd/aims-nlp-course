@@ -1,0 +1,2 @@
+# CPU/offline core, matching the version used in the local execution checks.
+numpy==2.1.3

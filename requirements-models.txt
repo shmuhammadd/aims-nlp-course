@@ -1,0 +1,10 @@
+# Separate, optional model environment; pilot on the teaching hardware.
+-r requirements-notebooks.txt
+torch==2.8.0
+transformers==4.57.1
+peft==0.17.1
+accelerate==1.10.1
+pillow==11.3.0
+scikit-learn==1.7.2
+librosa==0.11.0
+soundfile==0.13.1
