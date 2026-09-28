@@ -1,0 +1,116 @@
+# Natural Language Processing & Large Language Models  
+
+
+This course introduces Natural Language Processing (NLP) and transformer-based Large Language Models (LLMs). Students will explore foundational NLP concepts, including tokenization, word embeddings, and language modelling. They will learn the core mechanics of LLMs, such as architecture, training, fine-tuning, reasoning, evaluation, and deployment strategies. The curriculum includes practical applications such as text classification, machine translation, summarization, and zero-/few-shot prompting. 
+
+Through hands-on work with real-world datasets, students will design NLP pipelines and evaluate model performance in multilingual settings, with particular emphasis on low-resource and under-represented languages. By the end of the course, students will also build a simple language model from scratch.
+
+**Note:** We are pairing this course with the [Google DeepMind: AI Research Foundations learning path](https://www.skills.google/paths/3135). You must complete all courses in the learning path and submit their course completion badges as evidence.
+
+## **Part  A: Natural Language Processing**
+
+
+| Lecture | Title                                   | Resources                                                                                                                                                                                                  | Suggested Readings                                                                                                                                                                                                 |
+|---------|-------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **1**   | Introduction to NLP and LLMs              | [Slide](https://github.com/shmuhammadd/aims-nlp-course/blob/main/slides/01_NLP_Lecture.pdf)                                                                                                                | 1. [Natural Language Processing: State of the Art, Current Trends and Challenges](https://arxiv.org/pdf/1708.05148) <br> 2. [The Rise of AfricaNLP: Contributions, Contributors, and Community Impact (2005–2025)](https://arxiv.org/pdf/2509.25477) <br>3. [HausaNLP: Current Status, Challenges and Future Directions for Hausa NLP](https://arxiv.org/pdf/2505.14311) |
+| **2**   | How Language Modelling Started (N-grams)  | [Slide](https://github.com/shmuhammadd/aims-nlp-course/blob/main/slides/02_NLP_Lecture.pdf) <br><br> [Practical ![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shmuhammadd/aims-nlp-course/blob/main/practicals/ngram_language_models_class.ipynb) <br> [Exercise ![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shmuhammadd/aims-nlp-course/blob/main/practicals/ngram_practice_huggingface.ipynb) | 1. [Jurafsky & Martin — *Speech and Language Processing*, Chapter 3](https://web.stanford.edu/~jurafsky/slp3/ed3book_aug25.pdf) <br> 2. Rosenfeld (2000) — [Two Decades of Statistical Language Modeling: Where Do We Go from Here?](https://www.cs.cmu.edu/~roni/papers/survey-slm-IEEE-PROC-0004.pdf) |
+| **3**   | Text Classification                       | [Slide](https://github.com/shmuhammadd/aims-nlp-course/blob/main/slides/03_NLP_Lecture.pdf) <br><br> [Intro to PyTorch ![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shmuhammadd/aims-nlp-course/blob/main/practicals/pytorch_intro_notebook.ipynb) | 1. [Jurafsky & Martin — Speech and Language Processing, Chapter 4](https://web.stanford.edu/~jurafsky/slp3/ed3book_aug25.pdf) <br> 2. Muhammad et al. (2022) — [AfriSenti: Sentiment Analysis for African Languages](https://arxiv.org/pdf/2302.08956)  <br> 3. [Learn PyTorch for Deep Learning: Zero to Mastery](https://www.learnpytorch.io) |
+| **4**   | Word Vectors                              | [Slide](https://github.com/shmuhammadd/aims-nlp-course/blob/main/slides/04_NLP_Lecture.pdf) <br><br>[Training Embeddings ![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shmuhammadd/aims-nlp-course/blob/main/practicals/word_embeddings_lab.ipynb)                                                                                                                                                                                                         | 1. [The Illustrated Word2vec](https://jalammar.github.io/illustrated-word2vec/) <br> 2. Mikolov et al. (2013) — [Efficient Estimation of Word Representations](https://arxiv.org/pdf/1301.3781) <br> 3. Mikolov et al. (2013) — [Linguistic Regularities in Continuous Space Word Representations](https://arxiv.org/pdf/1310.4546) |
+| **5**   | Sequence Modelling                 |  [Slide](https://github.com/shmuhammadd/aims-nlp-course/blob/main/slides/05_NLP_Lecture.pdf) <br>[Sentiment Analysis ![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shmuhammadd/aims-nlp-course/blob/main/practicals/text_classification_pytorch.ipynb)                                                                                                                                                                                                          | 1. Goodfellow et al. — *Deep Learning*, Chapter 6 <br> 2. Goldberg (2016) — [Neural Network Models for NLP](https://arxiv.org/pdf/1510.00726) |
+| **6**   | Attention                 |  [Slide](https://github.com/shmuhammadd/aims-nlp-course/blob/main/slides/06_NLP_Lecture.pdf) <br><br>[Attention ![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shmuhammadd/aims-nlp-course/blob/main/practicals/attention_practical.ipynb) <br> [Exercise ![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shmuhammadd/aims-nlp-course/blob/main/practicals/attention_exercises.ipynb)                                                                                                                                                                                                          | 1. [Bahdanau et al. (2014) - Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473) <br> 2. [Luong et al. (2015) - Effective Approaches to Attention-based Neural Machine Translation](https://aclanthology.org/D15-1166/) |
+
+## **Part B: Large Language Models**
+
+| Lecture | Title                                   | Resources | Suggested Readings |
+|---------|-----------------------------------------|-----------|---------------------|
+| **7**   | Introduction to Transformers            | [Slide 1](https://github.com/shmuhammadd/aims-nlp-course/blob/main/slides/07_NLP_Lecture_1.pdf), [Slide 2](https://github.com/shmuhammadd/aims-nlp-course/blob/main/slides/07_NLP_Lecture_2.pdf)   | 1. [Vaswani et al. (2017) — Attention is All You Need](https://arxiv.org/pdf/1706.03762) <br> 2. [Alammar — Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) |
+| **8**   | Pretraining   | [Slide 1](https://github.com/shmuhammadd/aims-nlp-course/blob/main/slides/08_NLP_Lecture_1.pdf), [Slide 2](https://github.com/shmuhammadd/aims-nlp-course/blob/main/slides/08_NLP_Lecture_2.pdf)    <br><br>  [Pre-training ![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shmuhammadd/aims-nlp-course/blob/main/practicals/pretraining_encoder_decoder.ipynb) <br> [Fine-tuning ![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shmuhammadd/aims-nlp-course/blob/main/practicals/finetuning_afroXLMR_afrisenti.ipynb) <br> [Exercise ![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shmuhammadd/aims-nlp-course/blob/main/practicals/practice_exercises.ipynb)  | 1. [BERT: Pre-training of Deep Bidirectional Transformers](https://arxiv.org/pdf/1810.04805) <br> 2. [GPT-3: Language Models are Few-Shot Learners](https://arxiv.org/pdf/2005.14165)  |
+| **9**   |  Post-training       | [Slide 1](https://github.com/shmuhammadd/aims-nlp-course/blob/main/slides/08_NLP_Lecture_1.pdf), [Slide 2](https://github.com/shmuhammadd/aims-nlp-course/blob/main/slides/08_NLP_Lecture_2.pdf)        | 1. [FLAN: Finetuned Language Models](https://arxiv.org/pdf/2109.01652) <br> 2. [T0: Multitask Prompted Training](https://arxiv.org/pdf/2110.08207) |
+| **10**   | Model Compression            | [Slide](https://github.com/shmuhammadd/aims-nlp-course/blob/main/slides/08_NLP_Lecture_1.pdf)       | 1. [Wei et al. (2022) — Chain-of-Thought Prompting](https://arxiv.org/pdf/2201.11903) <br> 2. [Kojima et al. (2022) — Zero-Shot CoT](https://arxiv.org/pdf/2205.11916) |
+| **11**  | Benchmarking and Evaluation | [Slide](https://github.com/shmuhammadd/aims-nlp-course/blob/main/slides/08_NLP_Lecture_1.pdf) | 1. [Holistic Evaluation of Language Models (HELM)](https://arxiv.org/pdf/2211.09110)   |
+
+
+## Project
+
+Coming soon. 
+
+<!--
+## Practical Sessions
+
+#### **Lecture 2: N-grams and Language Modelling**
+- Practical: Build Unigram/Bigram Models · Compute Probabilities · Perplexity  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shmuhammadd/aims-nlp-course/blob/main/practicals/ngram_language_models_class.ipynb)
+- Exercise: Practice and build N-Gram models [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shmuhammadd/aims-nlp-course/blob/main/practicals/ngram_practice_huggingface.ipynb)
+
+
+#### **Lecture 3: Introduction to PyTorch**
+- Practical: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shmuhammadd/aims-nlp-course/blob/main/practicals/ngram_language_models_class.ipynb)
+- What PyTorch is and why it's popular
+- Tensors - the fundamental data structure
+- Automatic differentiation (autograd)
+- Building neural networks
+- Training models with a typical training loop
+- Working with GPUs
+- Build your first classifier
+
+
+## Course Project
+
+
+The course project will be aligned with [SemEval 2026 Task 9: Detecting Multilingual, Multicultural and Multievent Online Polarization](https://polar-semeval.github.io). This shared task includes **three subtasks**, and **each student is required to participate in all three** as part of the project.
+
+### Project Requirements  
+- **Individual Work:** Each student will work independently on the entire task.  
+- **System Development:** You are expected to design, implement, and evaluate your own model(s) for all three subtasks.  
+- **System Description Paper:** You must write a **minimum 4-page system description paper** detailing your methodology, experiments, and results.  
+- **Evaluation and Ranking:** Students will be ranked based on the **accuracy** of their submitted systems in the competition.
+
+After the course, students may continue refining their system and paper. You are encouraged to further improve your work and submit the final version to the SemEval Workshop, which will be co-located with ACL2025 in San Diego, USA. 
+
+Follow the following guidelines for writting SemEval system papers: 
+
+ 1. System paper guide: https://semeval.github.io/system-paper-template.html
+ 2. Writing a System description Paper: https://github.com/nedjmaou/Writing_a_task_description_paper
+ 3. Latex template to use: https://github.com/acl-org/acl-style-files
+
+Below are sample papers for previous shared task: 
+
+  1. [AILS-NTUA at SemEval-2025 Task 4: Parameter-Efficient Unlearning for Large Language Models using Data Chunking](https://aclanthology.org/2025.semeval-1.184.pdf)
+  2. [AAdaM at SemEval-2024 Task 1: Augmentation and Adaptation for Multilingual Semantic Textual Relatedness](https://aclanthology.org/2024.semeval-1.114.pdf)
+  3. [DAMO-NLP at SemEval-2023 Task 2: A Unified Retrieval-augmented System for Multilingual Named Entity Recognition](https://aclanthology.org/2023.semeval-1.277.pdf)
+ -->
+
+
+# How to Share Your Course Completion Badge
+
+Please use a laptop for this process.
+
+Step-by-Step Guide
+1. Click on your profile picture (top right corner).
+2. Select Dashboard.
+3. Scroll down to  below the Achievements  and  Progress sections.
+4. On the right-hand side, click “View badges.”
+5. You will see all the badges you’ve earned.
+6. Click the Share icon on the badge you want to submit.
+7. Click the Copy icon  beside the generated share link ( A sample image has been provided).
+8. Add the links for the completion badges to the Colab Assigment
+
+# How to Write NLP Paper
+
+ 1. [How to Write *ACL Papers](https://github.com/Niko-Group/paper_writing_info)
+ 2. [Tips for Writing NLP Papers](https://medium.com/@vered1986/tips-for-writing-nlp-papers-9c729a2f9e1f)
+ 3. [Scientific Writing for Computer Science Students](https://www.cs.joensuu.fi/pages/whamalai/sciwri/sciwri.pdf)
+ 4. [How to ML Paper - A brief Guide]
+
+
+
+
+#  Resources  
+
+1.  **Speech and Language Processing** – Jurafsky & Martin ([Online Draft](https://web.stanford.edu/~jurafsky/slp3/))  
+2.  [Hands-On Large Language Models: Language Understanding and Generation](https://www.amazon.in/Hands-Large-Language-Models-Understanding/dp/935542552X/ref=pd_sbs_d_sccl_1_1/521-7549942-9569643?pd_rd_w=Ueibj&content-id=amzn1.sym.6d240404-f8ea-42f5-98fe-bf3c8ec77086&pf_rd_p=6d240404-f8ea-42f5-98fe-bf3c8ec77086&pf_rd_r=Z9BASYAF4RW1MVP0D173&pd_rd_wg=ZUKds&pd_rd_r=95ab3bb8-4c74-458a-8089-fa654d4b720c&pd_rd_i=935542552X&psc=1) 
+3.  [LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch)
+4.  [LLM-course](https://github.com/mlabonne/llm-course)  
+5. **Natural Language Processing with Python** – Steven Bird, Ewan Klein, Edward Loper ([Free Online](https://www.nltk.org/book/))  
+6. **Transformers for Natural Language Processing** – Denis Rothman  
+7. **Deep Learning for NLP** – Palash Goyal, Sumit Pandey, Karan Jain  
+8. **Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow** – Aurélien Géron  
