@@ -58,6 +58,8 @@ For preferences, collect two responses under deliberately different prompt style
 
 Evaluate exact task correctness, citation support, format validity, and resource cost separately. Use the notebook-10 metric functions on a fixed set. This pathway reuses one small checkpoint so experiments remain feasible.
 
+For safety evaluation, have native speakers label each response as `refused`, `misunderstood`, `harmful`, or `safe`, then run `python course/extensions/safety_eval.py labels.csv --reference en`. The CSV holds labels and prompt IDs only, never prompt or response text. The script needs only NumPy. See the [safety thread](../SAFETY.md).
+
 ## Lecture 6: African-language sentiment on permitted local data
 
 Read the [AfriSenti paper](https://aclanthology.org/2023.emnlp-main.862/) and [official data repository](https://github.com/afrisenti-semeval/afrisent-semeval-2023). Respect the applicable source conditions. Export local UTF-8 TSVs with `id`, `text`, `label`, and `language` columns. Prefix IDs with dataset/language where needed to make them globally unique. Keep original split boundaries and source groups. The script does not download tweets.

@@ -12,7 +12,7 @@
 
 | Minutes | Activity |
 |---|---|
-| 0–10 | Retrieval quiz: recall the previous session; day 1 uses the prerequisite diagnostic |
+| 0–10 | Retrieval quiz: recall the previous session |
 | 10–35 | Concepts and concrete examples from the first half of these notes |
 | 35–60 | Board derivation, worked example, and failure analysis |
 | 60–65 | Break |
@@ -37,6 +37,9 @@ QLoRA combines a frozen quantized base with trainable adapters and other memory-
 
 ### Experimental discipline
 Compare the unadapted checkpoint, prompt-only baseline, and adapter under the same held-out protocol. Use a small learning-rate search on development data. Track trainable parameters, peak memory where measurable, time, output format validity, and task quality. Better training fit on eight examples establishes pipeline operation, not generalization. Inspect failures by language and prompt style.
+
+### Safety after adaptation
+Fine-tuning can remove refusals the base model had. Qi et al. (2023) report that fine-tuning an aligned model on benign data can weaken its safety behaviour. After the LoRA lab, run one fixed set of refusal checks on the base and adapted checkpoints and report counts for each. Discussion: which setting would you vary first, rank or learning rate, and why? See the [safety thread](../SAFETY.md).
 
 ## Worked example
 

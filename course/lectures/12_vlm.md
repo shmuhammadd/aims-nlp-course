@@ -12,7 +12,7 @@
 
 | Minutes | Activity |
 |---|---|
-| 0–10 | Retrieval quiz: recall the previous session; day 1 uses the prerequisite diagnostic |
+| 0–10 | Retrieval quiz: recall the previous session |
 | 10–35 | Concepts and concrete examples from the first half of these notes |
 | 35–60 | Board derivation, worked example, and failure analysis |
 | 60–65 | Break |
@@ -37,6 +37,11 @@ Use separate metrics for answer correctness, evidential support, and abstention.
 
 ### Recent systems and practical scope
 Gemma 3 offers a case study in modern multimodal model design; do not assume every size in a family has identical modalities. The mandatory lab creates bar-chart pixels and reads them with an explicit geometric baseline, so students can construct controlled evidence and ablations. The SmolVLM extension performs actual learned VLM inference on the same chart and lets students compare a specialized baseline with a general model. A small VLM need not beat a purpose-built chart reader.
+
+### Safety of image inputs
+An image is a second channel for instructions. FigStep embeds a harmful instruction in an image as typographic text to get past text-only safeguards, and MM-SafetyBench collects multimodal safety tests. Text-to-image models show a similar gap. PLACES (FAccT 2026) holds over 26,000 failures found by community red teaming with universities in Ghana, Nigeria, and two regions of India, and its authors describe existing safety frameworks as calibrated to a Western-centric default.
+
+Use a benign proxy in class. Put an instruction such as "answer in one word" inside the image and the same instruction in the typed prompt, then compare compliance. Do not create or share harmful prompts or images in this course. See the [safety thread](../SAFETY.md).
 
 ## Visual reference
 
@@ -75,3 +80,5 @@ Complete the [exercise sheet](../exercises/12_vlm.md) in 45–60 minutes. Read t
 - [Visual Instruction Tuning (LLaVA)](https://arxiv.org/abs/2304.08485)
 - [Gemma 3 Technical Report](https://arxiv.org/abs/2503.19786)
 - [Multimodal chat templates](https://huggingface.co/docs/transformers/main/chat_template_multimodal)
+- [An Introduction to Vision-Language Modeling (Bordes et al., 2024)](https://arxiv.org/abs/2405.17247): free primer; read first if the session's vocabulary is new.
+- [Flamingo](https://arxiv.org/abs/2204.14198) and [BLIP-2](https://arxiv.org/abs/2301.12597): the cross-attention and query-resampler alternatives to the LLaVA projector described above.

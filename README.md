@@ -12,6 +12,7 @@ By the end, students will be able to implement causal attention and next-token t
 2. Complete the [prerequisite diagnostic](course/PREREQUISITES.md) and [environment setup](course/SETUP.md).
 3. Follow each day's notes, notebook, practical questions, and exercise sheet below.
 4. Start the [SemEval capstone](course/PROJECT.md) in week 1: develop a shared-task system and write a system-description paper. See the [task specification](course/SEMEVAL_TASK.md) and [paper-writing guide](course/SEMEVAL_PAPER.md).
+5. Follow the [safety evaluation and alignment thread](course/SAFETY.md) in sessions 4, 5, 6, 10, and 12.
 
 **Scheduling assumption:** the two-hour daily slot includes explanation, board work, a short break, a 40-minute guided tutorial, and discussion. Exercises take 45–60 minutes after class; SemEval system development and paper writing are separately budgeted at 12–16 hours across three weeks. Official evaluation and paper deadlines may require follow-up after the course. Optional extensions are enrichment, not additional compulsory daily work. If two hours must be entirely lecture, run the same tutorial in a separate practical slot and add that time to the timetable.
 
@@ -57,4 +58,4 @@ Research readings combine foundations with 2025–2026 case studies. See the [so
 
 The [previous course outline](archive/README-previous-edition.md), existing [slides](slides/), and [practicals](practicals/) are retained. They are historical foundation resources; their dependencies and external links have not been revalidated for this edition. The new teaching material is under `course/`. No existing slide deck or practical has been replaced.
 
-The earlier [Google DeepMind AI Research Foundations learning path](https://www.skills.google/paths/3135) is optional enrichment in this three-week design; its former badge requirement is recorded in the archived outline. Assigned core readings use primary papers and public documentation; students do not need the bundled books directory to complete the course.
+Students enter having completed the [Google DeepMind AI Research Foundations learning path](https://www.skills.google/paths/3135), which teaches building and fine-tuning language models from scratch. Sessions 1–5 therefore serve as a fast review and research-grade extension; see [Prior learning](course/SYLLABUS.md#prior-learning-deepmind-ai-research-foundations) for how to use the time. Assigned core readings use primary papers and public documentation; students do not need the bundled books directory to complete the course.

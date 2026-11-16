@@ -21,6 +21,7 @@ Validation date: **28 September 2026**. Checks ran on macOS ARM64, Python 3.13.1
 | Pretrained visual QA | SmolVLM-256M loaded and generated on CPU; pipeline succeeded, chart answer was incorrect |
 | Visual/audio API imports | Required image/audio classes import in the pinned environment |
 | SVG illustrations | All five original SVG files parse as XML |
+| Safety outcome script | `safety_eval.py --self-test` passed on simulated labels; no model output was evaluated |
 
 Executed outputs are saved in the notebooks, so students can inspect a reference run without a model download. Notebook 15 was rerun after its result records gained an explicit experiment-condition field.
 
@@ -45,6 +46,7 @@ python scripts/run_notebooks.py --kernel --write-outputs
 python scripts/check_model_extensions.py
 python course/extensions/train_tiny_decoder.py --steps 100 --output outputs/validation-tiny
 python course/extensions/afrisenti_baseline.py --train course/data/sentiment_train.tsv --dev course/data/sentiment_dev.tsv --test course/data/sentiment_test.tsv --output outputs/validation-sentiment.json
+python course/extensions/safety_eval.py --self-test
 ```
 
 The first two need only the core environment. Kernel checks require `requirements-notebooks.txt`; model checks require `requirements-models.txt`. Local Jupyter kernels need permission to open local ports. The validation environment was temporary and did not alter the repository's existing practicals.

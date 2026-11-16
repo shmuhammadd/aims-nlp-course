@@ -12,7 +12,7 @@
 
 | Minutes | Activity |
 |---|---|
-| 0–10 | Retrieval quiz: recall the previous session; day 1 uses the prerequisite diagnostic |
+| 0–10 | Retrieval quiz: recall the previous session |
 | 10–35 | Concepts and concrete examples from the first half of these notes |
 | 35–60 | Board derivation, worked example, and failure analysis |
 | 60–65 | Break |
@@ -39,6 +39,11 @@ Use paired bootstrap resampling when comparing predictions on the same evaluatio
 AfriSenti provides a concrete African-language sentiment benchmark. Read its annotation and access conditions before using it. Do not assume a web-hosted dataset is unrestricted or still available in the same form. For this course, synthetic examples make all mandatory labs independent of downloads; a real-data extension uses student-supplied permitted TSV files.
 
 A dataset statement should identify language varieties, collection context, annotators, consent/access conditions, exclusions, and known limitations. Ask speakers to interpret errors, with credit and appropriate compensation in real projects. Do not make students disclose sensitive language or identity information to participate.
+
+### Safety does not transfer by default
+Most safety training is done in English. Yong et al. (2023) report that translating unsafe English prompts into low-resource languages got past GPT-4's safeguards. The Illusion of Cross-Lingual Safety (2026) probes hidden-state refusal signals in Twi, Hausa, Amharic, and Swahili. For most language-model pairs, harmful prompts kept under 10% of the English refusal signal, although literal and localized versions of a prompt sat close together in meaning. Its dataset pairs literal translations with culturally localized prompts, so a translation test and a localization test can give different answers.
+
+Cultural knowledge fails on its own track. CAB-Igbo finds that fluent answers can lack cultural substance, and that the gap is already present in English. Discussion: a model refuses a literal Hausa translation but answers the localized version of the same request. Which result goes in the safety report? See the [safety thread](../SAFETY.md).
 
 ## Worked example
 

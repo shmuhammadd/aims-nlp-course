@@ -12,7 +12,7 @@
 
 | Minutes | Activity |
 |---|---|
-| 0–10 | Retrieval quiz: recall the previous session; day 1 uses the prerequisite diagnostic |
+| 0–10 | Retrieval quiz: recall the previous session |
 | 10–35 | Concepts and concrete examples from the first half of these notes |
 | 35–60 | Board derivation, worked example, and failure analysis |
 | 60–65 | Break |
@@ -43,6 +43,11 @@ The DeepSeek-R1 report is a case study in reinforcement learning for reasoning a
 
 ### What to evaluate
 Measure held-out task correctness, preference agreement, length, refusal appropriateness, and distribution shift. Longer explanations are not automatically better reasoning. Prefer blinded comparisons with shuffled answer order. Keep a human-reviewed subset to catch reward hacking and annotator artefacts. The lab optimizes a two-response policy to isolate DPO; it does not train a conversational assistant.
+
+### Safety alignment uses these signals
+Safety training applies the same three signals: SFT on refusals, preference pairs that rank a refusal above a harmful answer, and feedback from a model that critiques outputs against written principles (Constitutional AI). Each carries the limits above. Wei et al. (2023) trace jailbreaks to competing objectives and to prompts that fall outside what safety training covered. Qi et al. (2024) argue that the resulting alignment is shallow, because it mostly changes the first few output tokens.
+
+In the HausaSafeLM study, the untuned base model looked safe by refusal rate alone because it wrote Hausa poorly, and its refusals were almost uniformly low quality. The authors then compare SFT with SFT plus DPO on human-corrected (gold) and machine-translated (silver) preference pairs. Discussion: a safety preference set ranks the cautious reply first. What does the policy learn on a benign prompt that sounds risky (XSTest)? See the [safety thread](../SAFETY.md).
 
 ## Worked example
 

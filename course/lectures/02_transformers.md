@@ -12,7 +12,7 @@
 
 | Minutes | Activity |
 |---|---|
-| 0–10 | Retrieval quiz: recall the previous session; day 1 uses the prerequisite diagnostic |
+| 0–10 | Retrieval quiz: recall the previous session |
 | 10–35 | Concepts and concrete examples from the first half of these notes |
 | 35–60 | Board derivation, worked example, and failure analysis |
 | 60–65 | Break |

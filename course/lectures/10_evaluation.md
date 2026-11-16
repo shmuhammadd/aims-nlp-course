@@ -12,7 +12,7 @@
 
 | Minutes | Activity |
 |---|---|
-| 0–10 | Retrieval quiz: recall the previous session; day 1 uses the prerequisite diagnostic |
+| 0–10 | Retrieval quiz: recall the previous session |
 | 10–35 | Concepts and concrete examples from the first half of these notes |
 | 35–60 | Board derivation, worked example, and failure analysis |
 | 60–65 | Break |
@@ -39,6 +39,11 @@ Model-based judges may show position, verbosity, style, or self-preference biase
 A model card records intended use, data provenance, evaluation populations, limitations, and operating constraints. A data statement describes collection and representation. For fairness, ask who uses the system and which harms matter; parity of one aggregate metric does not establish fairness. In low-resource settings, even the label definitions may require local interpretation.
 
 Use paired comparisons for two systems on the same items. Distinguish variation from random seeds from variation in the sampled test population. Include failed runs and decoding failures with a clear policy. Report uncertainty without claiming that a tiny classroom dataset establishes production readiness.
+
+### Safety evaluation
+Attack success rate (ASR) is the share of adversarial prompts that draw a harmful answer. Refusal rate is the share refused. Over-refusal is the share of benign prompts refused (XSTest). A refusal rate alone can mislead. In the Yoruba and Nigerian Pidgin red-teaming study, refusal fell from up to 69% in English to as low as 0% in Yoruba, and the authors say the models failed to understand the prompts. In the Hausa study, the base model looked safe by refusal rate because it produced little usable Hausa.
+
+Label each response as refused, misunderstood, harmful, or safe. Native speakers assign the labels, and Cohen's kappa on a double-labelled subset reports their agreement. Reuse prompt IDs across translations so the gap to English is paired, and resample prompts for the interval, as in session 6. Validate any LLM judge against the native-speaker labels before using it in a low-resource language. `extensions/safety_eval.py` builds this table from a CSV of labels. HarmBench shows a fixed protocol for automated red teaming. See the [safety thread](../SAFETY.md).
 
 ## Worked example
 

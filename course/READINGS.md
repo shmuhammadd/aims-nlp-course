@@ -35,6 +35,18 @@ Read the abstract, the objective or architecture section, and one result/ablatio
 
 **ReactBench and KnowHal (2026 preprints):** compare targeted visual interventions with paired true/false-premise questions. Critique evaluation construction, reliance on model-generated material, and how well labels distinguish perception, knowledge, and reasoning errors. Treat causal interpretations cautiously when based on verbal explanations.
 
+**Safety in African languages (2026 preprints):** The cross-lingual safety and Yoruba/Nigerian Pidgin red-teaming papers report weaker safety behaviour outside English. The Hausa alignment paper shows a refusal rate that looks high for the wrong reason. Build a claim-evidence table for each: dataset size, annotators, models, metric, and what the paper cannot rule out, such as whether a low refusal rate reflects non-comprehension. See the [safety thread](SAFETY.md).
+
+## Multimodal books (sessions 11–14)
+
+No single textbook covers vision-language, speech, and video modeling the way Jurafsky and Martin cover text. Treat the primer and papers above as primary; the two books below are optional practical/research references, not required purchases. They are not bundled as PDFs in `books/` — see `books/README.md` for why.
+
+- **Primer (free, start here):** [An Introduction to Vision-Language Modeling](https://arxiv.org/abs/2405.17247) (Bordes et al., Meta, 2024). Accessible crossover primer; covers architectures, training, and evaluation, with a section on video.
+- **Vision Language Models** (Noyan, Marafioti, Farré, Zohar; O'Reilly, July 2026). Practical, Hugging Face-authored: core architectures, training data, training and post-training, deployment at scale, video-language models, document AI, any-to-any models.
+- **Large Vision-Language Models: Pre-training, Prompting, and Applications** (Springer, Advances in Computer Vision and Pattern Recognition series). Research-oriented edited volume; 17 chapters grouped under pre-training strategies, prompting techniques for adaptation, and real-world applications.
+- **Survey:** [Multimodal Large Language Models and Tunings: Vision, Language, Sensors, Audio, and Beyond](https://arxiv.org/abs/2410.05608). Extends past vision-language into audio and sensor modalities, with instruction tuning among its topics.
+- **Key papers reading list:** Stanford's VLM reading list names [CLIP](https://arxiv.org/abs/2103.00020), [Flamingo](https://arxiv.org/abs/2204.14198), [BLIP-2](https://arxiv.org/abs/2301.12597), and [LLaVA](https://arxiv.org/abs/2304.08485) as the four key architectural ideas to know; all but Flamingo and BLIP-2 are already assigned in sessions 11–12 above.
+
 ## Updating for a later cohort
 
 Before teaching, confirm the date and version of the recent readings, access to model weights, library compatibility, and local hardware performance. Replace a case study if it is superseded while retaining the objective, ablation, and evaluation lesson. Record changes in the validation log. Do not silently update checkpoints mid-assessment: freeze revisions and prompts so student comparisons remain interpretable.

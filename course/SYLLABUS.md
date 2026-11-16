@@ -6,6 +6,16 @@
 
 AIMS students with linear algebra, probability, calculus, Python, and introductory machine learning. No previous LLM API experience is required. Students should know matrix multiplication, gradients, train/test separation, and basic classification metrics. Use the [diagnostic](PREREQUISITES.md) to identify preparation needs; it is not a gatekeeping exam. PyTorch familiarity helps the optional model extensions but is not required for the NumPy core.
 
+## Prior learning: DeepMind AI Research Foundations
+
+Students have completed the Google DeepMind AI Research Foundations learning path (8 activities). Its public page says it teaches building and fine-tuning modern language models from scratch, but hides the module list behind sign-in, so the overlap below is not confirmed module by module.
+
+Before day 1, the instructor maps the path's modules to sessions 1–5 and asks students to run the day-1 diagnostic. Then:
+
+- Where a session repeats a module (likely tokenization, attention, small-model training), cut the board derivation to 10 minutes and spend the freed time on the controlled intervention and the Hausa/AfricaNLP angle the path lacks.
+- Start the SemEval baseline on day 1, not day 3, so week 1 produces a working system.
+- Do not re-award the badge as course evidence. Assess the course on its own portfolios, as set out below.
+
 ## Outcomes and evidence
 
 | Outcome | Where developed | Evidence |
@@ -15,6 +25,7 @@ AIMS students with linear algebra, probability, calculus, Python, and introducto
 | Build evidence and tool pipelines | 7–8 | Retrieval ablation and bounded tool trace |
 | Measure efficiency and reliability | 9–10 | Memory calculation, quantization audit, calibration report |
 | Analyze multimodal representations and perception | 11–14 | Contrastive retrieval, image interventions, WER, temporal sampling |
+| Evaluate safety and alignment across languages and modalities | 4–6, 10, 12 | Refusal check before and after adaptation, per-language outcome table, benign-proxy image test |
 | Conduct reproducible research | 1–15 | SemEval prediction package, system-description paper, ablations, oral defence |
 
 ## Weekly arc

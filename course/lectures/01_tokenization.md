@@ -65,3 +65,6 @@ Complete the [exercise sheet](../exercises/01_tokenization.md) in 45–60 minute
 
 - [Speech and Language Processing, online book](https://web.stanford.edu/~jurafsky/slp3/)
 - [AfriSenti (2023)](https://aclanthology.org/2023.emnlp-main.862/)
+- [Byte-pair encoding for subwords (Sennrich et al., 2015)](https://arxiv.org/abs/1508.07909)
+- [SentencePiece (Kudo and Richardson, 2018)](https://arxiv.org/abs/1808.06226)
+- [Language Model Tokenizers Introduce Unfairness Between Languages (Petrov et al., 2023)](https://arxiv.org/abs/2305.15425): the cross-language token-cost audit in this session, on production tokenizers.
