@@ -2,105 +2,105 @@
   {
     "number": 1,
     "slug": "01_tokenization",
-    "title": "Language models, tokens, and experimental baselines",
+    "title": "Language models, tokens and baselines; the four shared tasks",
     "week": 1,
     "day": 1
   },
   {
     "number": 2,
     "slug": "02_transformers",
-    "title": "Build and inspect a causal Transformer",
+    "title": "The causal Transformer",
     "week": 1,
     "day": 2
   },
   {
     "number": 3,
     "slug": "03_pretraining",
-    "title": "Pretraining: data, objectives, scaling, and small-model training",
+    "title": "Pretraining: data, objectives, scaling; decoding and sampling",
     "week": 1,
     "day": 3
   },
   {
     "number": 4,
     "slug": "04_adaptation",
-    "title": "Instruction tuning and parameter-efficient adaptation",
+    "title": "Post-training I: prompting, instruction tuning and LoRA",
     "week": 1,
     "day": 4
   },
   {
     "number": 5,
-    "slug": "05_preferences",
-    "title": "Preference optimization and reinforcement learning for reasoning",
+    "slug": "05_alignment",
+    "title": "Post-training II: alignment (preference optimisation, RLHF, safety)",
     "week": 1,
     "day": 5
   },
   {
     "number": 6,
     "slug": "06_multilingual",
-    "title": "Multilingual and low-resource language modelling",
+    "title": "Multilingual and low-resource modelling; building data for African languages",
     "week": 2,
     "day": 1
   },
   {
     "number": 7,
-    "slug": "07_rag",
-    "title": "Retrieval-augmented generation and evidence-based answers",
+    "slug": "07_contrastive",
+    "title": "Image-text representations: CLIP and SigLIP",
     "week": 2,
     "day": 2
   },
   {
     "number": 8,
-    "slug": "08_reasoning",
-    "title": "Reasoning, test-time compute, and tool-using systems",
+    "slug": "08_vlm",
+    "title": "Vision-language models",
     "week": 2,
     "day": 3
   },
   {
     "number": 9,
-    "slug": "09_efficiency",
-    "title": "Efficient inference, compression, and deployment tradeoffs",
+    "slug": "09_speech",
+    "title": "Speech and multilingual ASR",
     "week": 2,
     "day": 4
   },
   {
     "number": 10,
     "slug": "10_evaluation",
-    "title": "Reliable evaluation, calibration, and responsible reporting",
+    "title": "Benchmarking and evaluation",
     "week": 2,
     "day": 5
   },
   {
     "number": 11,
-    "slug": "11_contrastive",
-    "title": "Multimodal representations: CLIP, SigLIP, and cross-modal retrieval",
+    "slug": "11_steering",
+    "title": "Interpretability and cross-lingual steering",
     "week": 3,
     "day": 1
   },
   {
     "number": 12,
-    "slug": "12_vlm",
-    "title": "Vision-language models, document understanding, and grounding",
+    "slug": "12_rag_agents",
+    "title": "Retrieval, tools and agents",
     "week": 3,
     "day": 2
   },
   {
     "number": 13,
-    "slug": "13_speech",
-    "title": "Speech, audio representations, and multilingual ASR",
+    "slug": "13_efficiency",
+    "title": "Efficient inference and quantisation",
     "week": 3,
     "day": 3
   },
   {
     "number": 14,
-    "slug": "14_video_omni",
-    "title": "Video, unified multimodal systems, and generative frontiers",
+    "slug": "14_paper_clinic",
+    "title": "Paper clinic and peer review",
     "week": 3,
     "day": 4
   },
   {
     "number": 15,
     "slug": "15_capstone",
-    "title": "SemEval systems, scientific writing, and project defence",
+    "title": "Defence and concept check",
     "week": 3,
     "day": 5
   }

@@ -1,100 +1,91 @@
-# Capstone — SemEval shared-task participation and system-description paper
+# Capstone — a SemEval-2027 system and its paper
 
-[Course home](../README.md) · 45% of the course grade · 12–16 independent hours during the course · pairs or individual work
+[Course home](../README.md) · 45% of the course · 12–16 hours outside class · pairs, or alone by agreement
 
-## Required outcome
+## What each team does
 
-Develop and evaluate a system for an instructor-selected **SemEval shared task**, prepare predictions in the official submission format, and write a **system-description paper**. The capstone combines shared-task participation with reproducible research and scientific writing. The [task specification](SEMEVAL_TASK.md) will identify the year, task, required subtasks/languages, official resources, and deadlines once the instructor selects them.
+Enter **one** SemEval-2027 task: [6, 7, 9 or 12](SEMEVAL_TASK.md). Pick one subtask or track and at most three languages. Build a system, evaluate it with the official metric, package predictions in the official format, and write a system-description paper.
 
-All teams work within the selected task and assigned tracks. A text-only SemEval task is eligible; multimodal comparisons are required only when appropriate to that task. The synthetic chart assistant and other course labs are practice exercises, not substitutes for the shared-task capstone. Use the task's actual permitted data, official metric, and evaluation protocol.
+Each team produces:
 
-Each team must produce:
+1. the organisers' baseline, reproduced, and one justified improvement;
+2. development experiments with at least two controlled ablations and an error analysis;
+3. a prediction file in the official format, checked with the organisers' validator where one exists;
+4. a system-description paper with code, configuration and experiment records;
+5. a six-minute talk and a two-minute defence, with a record of who did what.
 
-1. A reproducible baseline and one justified system improvement.
-2. Development experiments, at least two controlled ablations, and inspected error cases.
-3. A validated prediction file for each assigned subtask/track, using its official format.
-4. A system-description paper, code, configuration, and experiment records.
-5. A six-minute presentation and two-minute defence, with individual contribution evidence.
+Evaluation runs 10–31 January 2027, after the course. The course mark comes from the development experiments, the paper and a submission that is ready to run. Teams then submit during the evaluation window and add official scores to the paper. Leaderboard rank and paper acceptance do not affect the course mark.
 
-Participate in the official evaluation and paper-submission process when the selected edition's schedule permits. The course submission and the external submission are distinct milestones; acceptance and leaderboard rank do not determine the course grade.
+## The task's rules come first
 
-## Task rules govern the experiment
+Read the task page before modelling. Record on your [task card](SEMEVAL_TASK.md) which external data, models and APIs are allowed, how many submissions you get, and what you may do with development and test data. One task's rules do not carry over to another. Three that are easy to miss:
 
-Read the official task description before modelling. Record allowed external data, pretrained models/APIs, track restrictions, submission limits, and permitted use of development/test data in the [task specification](SEMEVAL_TASK.md). Do not assume that one SemEval task's rules apply to another.
+- **Task 7** does not rank a target-language instruction in the prompt.
+- **Task 12** forbids annotations of the evaluation paintings from any other source, and checks that a multimodal run uses the image.
+- **Task 6** test audio is human speech; the training audio is synthetic.
 
-Use the provided training/development splits and official scorer. Fit preprocessing on training data and select configurations using development results under the task rules. If no labelled development set exists, agree a validation split from training data with the instructor and document it. Preserve source groups where available. Never use hidden test labels or repeated leaderboard feedback as a replacement for sound model selection.
+Use the released training and development splits and the official scorer. Fit preprocessing on training data. Choose every setting on development data. If a task has no labelled development set, agree a split of the training data with the instructor and write it down. Leaderboard feedback is not a development set.
 
-Make the main comparison and ablations on identical development items. Report the official metric as primary, with justified secondary metrics, per-language/class/subtask slices, sample counts, and uncertainty where feasible. Inspect at least ten errors, or all errors if fewer. Document scorer version, dataset release, seeds, model revisions, preprocessing, and compute.
+Run the main comparison and the ablations on the same development items. Report the official metric first, then per-language or per-class results with counts, and a paired bootstrap interval for each difference you discuss. Read at least ten errors. Record the scorer version, data release, seeds, model revisions and compute.
 
-Keep development results, official evaluation results, and post-submission experiments clearly labelled. A missing official test score is “not yet available,” not zero. Do not invent a rank, submission receipt, acceptance decision, or experiment.
+Label every number as development, official or post-submission. A missing official score is "pending". Never write a rank, a receipt or a result that does not exist.
 
-## Three-week milestones
+## Milestones
 
-| Due | Deliverable | Suggested effort |
-|---|---|---:|
-| Day 2 | Read the selected task, confirm assigned tracks, data access, and evaluation rules | 1 hour |
-| Day 3 | Task card, research question, dataset audit, and compute plan | 1 hour |
-| Day 5 | Reproducible baseline, scorer sanity check, paper outline | 2 hours |
-| Day 8 | First improvement, development comparison, and inspected errors | 2–3 hours |
-| Day 10 | Freeze the main experiment plan; draft task/data/method/setup sections | 2 hours |
-| Days 11–13 | Two ablations, error analysis, submission-format validation, full paper draft | 2–4 hours |
-| Day 14 | Peer-review exchange and reproducibility check | 1 hour |
-| Day 15 | Revised course paper, code, prediction package, results, presentation, and defence | 1–2 hours |
+| Day | Deliverable | Hours |
+| --- | --- | ---: |
+| 1 | Task, subtask and languages chosen; platform registration | 1 |
+| 3 | Task card filled in: research question, permitted resources, metric, compute limit | 1 |
+| 5 | Baseline reproduced and scored; ten errors read; paper outline ([assignment 1](assignments/week1.md)) | 2–3 |
+| 8 | First improvement compared with the baseline on the same items | 2–3 |
+| 10 | Experiment plan frozen; task, data, system and setup sections drafted ([assignment 2](assignments/week2.md)) | 2 |
+| 11–13 | Two ablations; error analysis; submission file validated; full draft | 3–4 |
+| 14 | Peer review exchanged in the paper clinic | 1 |
+| 15 | Revised paper, package, talk and defence ([assignment 3](assignments/week3.md)) | 1–2 |
 
-Start writing in week 1 and fill the results section from logged runs. Keep the system small enough for the course: a strong sparse/linear baseline, a small pretrained encoder, prompting, or parameter-efficient adaptation can each support a good paper. Training a foundation model or sweeping many large models is unnecessary. Official evaluation and paper revisions after the course may require additional time; announce those dates separately.
+Keep the system small. A strong linear baseline, a small pretrained encoder, a prompt, a LoRA adapter or one steering method is enough for a good paper. Sweeping many large models is not what is marked.
 
-## Course deadline versus SemEval deadlines
+## The paper
 
-**If official evaluation is open:** follow the organiser's registration and prediction-submission procedure, respect submission limits, and retain the submission ID/receipt and the exact submitted system version. Include official scores in the paper only once released.
-
-**If evaluation opens after the course:** submit a complete course paper based on labelled development experiments, a validated development-format rehearsal, and an inference/export command ready for the future test input. State that official test data/results are pending. Submit official predictions during the evaluation window and update the paper afterward. The course grade can be assigned from the completed in-course work; future milestones remain part of the participation plan.
-
-**If a past edition is selected:** describe the work as a retrospective SemEval study. Use the published protocol and report any exposure to released test labels. Do not claim official participation or an official rank. The instructor must explicitly select this route; it is not the default replacement for live participation.
-
-A platform outage or delayed data release should be documented with the instructor. Preserve the validated local package and the submission attempt where applicable. An external delay does not require fabricated evidence and should not penalize otherwise completed course work.
-
-## System-description paper
-
-The course requires a complete paper, not just a proposal or short project summary. Use the [paper-writing guide](SEMEVAL_PAPER.md) and the official ACL style linked there. The course planning target is **4–6 pages of main text, excluding references**, unless the selected edition's rules require another limit. This is a course target, not a statement of SemEval's universal page limit.
-
-The paper should explain the task and chosen tracks, describe the system and resources, specify the experimental protocol, present measured comparisons and ablations, analyze errors, and state limitations. Include a self-contained example and a reproducible link or access recipe for permitted artifacts. List only actual contributions and results. The course paper is assessed whether or not it is later accepted by the workshop.
+Write a complete paper: 4–6 pages of main text, excluding references, in the ACL style, unless the SemEval-2027 call sets another limit. Follow the [paper guide](SEMEVAL_PAPER.md). The paper explains the task and track, describes the system, states the experimental protocol, reports comparisons and ablations, analyses errors and states limits. Day 14 is a [paper clinic](lectures/14_paper_clinic.md) with a peer review.
 
 ## Submission package
 
 ```text
 project/
-  README.md                 # task, setup, train, predict, evaluate, export commands
-  task_specification.md     # completed course task card with official URLs/rules
+  README.md                 # setup, train, predict, score and export commands
+  task_card.md              # task, subtask, languages, rules, official URLs
   paper/
-    system_description.pdf  # complete course paper in the selected ACL style
-    source/                 # editable paper source and bibliography
-  data_statement.md         # provenance, access, split use, limitations
-  environment-lock.txt      # installed versions
+    system_description.pdf
+    source/                 # LaTeX source and bibliography
+  data_statement.md         # where the data came from, how splits were used, limits
+  environment-lock.txt      # pip freeze
   config.json               # seeds, model revisions, prompts, budgets
-  src/                      # runnable code or notebooks
-  predictions/              # development outputs and permitted official outputs
-  submission/               # organiser-format predictions or development rehearsal
-  results.csv               # split/track-labelled tables computed from runs
-  experiment_log.md         # all compared configurations, including failed runs
-  participation.md          # receipts if submitted; otherwise status and next dates
-  contributions.md          # individual roles, collaboration and AI disclosure
+  src/                      # code or notebooks that run
+  predictions/              # development predictions
+  submission/               # file in the organisers' format
+  results.csv               # every number in the paper, with its split
+  experiment_log.md         # every configuration tried, failures included
+  review_response.md        # the review you received and what you changed
+  participation.md          # registration and submission status, next dates
+  contributions.md          # who did what; collaboration and AI assistance
 ```
 
-Provide the editable source alongside the PDF. Do not redistribute restricted datasets or include model weights unnecessarily; provide an access/preparation recipe instead. Keep the course's analysis JSONL separate from the official submission file if schemas differ. Validate IDs, row counts, label ranges, required columns, ordering, and output encoding with the organiser's checker where available.
+Do not redistribute task data or model weights; give the commands that fetch them. [Templates](TEMPLATES.md) for the log, the data statement and the result records are provided.
 
 ## Rubric (100 points)
 
-| Criterion | Points | Full-credit evidence |
-|---|---:|---|
-| Task understanding and data protocol | 10 | Correct assigned tracks, allowed resources, split use, official metric |
-| Baseline and system development | 20 | Runnable baseline, justified improvement, controlled resource choices |
-| Evaluation and analysis | 25 | Measured comparison, two ablations, uncertainty where feasible, inspected errors |
-| System-description paper | 25 | Complete, clear, well-cited paper whose claims match the recorded results |
-| Reproducibility and submission readiness | 15 | Exact commands/configs, validated export, editable paper, participation evidence appropriate to the schedule |
-| Presentation and individual understanding | 5 | Clear defence and documented contributions |
+| Criterion | Points | Full marks look like |
+| --- | ---: | --- |
+| Task understanding and data protocol | 10 | Correct subtask, permitted resources, split use and metric |
+| Baseline and system | 20 | Baseline reproduced; one justified improvement; compute used sensibly |
+| Evaluation and analysis | 25 | Fair comparison, two ablations, uncertainty, errors read and categorised |
+| System-description paper | 25 | Complete and clear; every claim matches a recorded result |
+| Reproducibility and submission readiness | 15 | Commands run; export validated; sources included |
+| Talk and defence | 5 | Each member can explain the system and answer for the results |
 
-A careful negative result can receive full credit. Grade experimental quality, paper quality, and compliance with the task protocol; do not award marks simply for model size, leaderboard rank, or paper acceptance. If official evaluation is not yet open, assess readiness and development evidence under the same rubric.
+A careful negative result can earn full marks. No marks are given for model size, rank or acceptance.
 
-## Presentation logistics
+## Talks
 
-For up to five teams, use the 40-minute day-15 tutorial slot for six-minute talks and two-minute questions; assign the integration notebook as preparation. With more teams, run a poster rotation and schedule individual checks in the final independent-work period. Announce the arrangement before week 3 and keep the course to 30 contact hours.
+With up to five teams, use the 40-minute lab slot on day 15 for six-minute talks and two-minute questions. With more teams, run a poster round and hold individual questions in the final study period. Tell students which format applies before week 3.

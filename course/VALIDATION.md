@@ -2,28 +2,29 @@
 
 [Course home](../README.md)
 
-Validation date: **28 September 2026**. Checks ran on macOS ARM64, Python 3.13.1, CPU. The [environment record](validation/environment.json) lists the installed package versions. Top-level course requirements are pinned; this is not a universal hardware or transitive-dependency lock.
+Last full check: **16 November 2026**, macOS ARM64, Python 3.13.1, NumPy 2.1.3, CPU. The pretrained-model checks further down date from 28 September 2026 and were not repeated.
 
-## Checks completed
+## What was run on 16 November 2026
 
 | Check | Result |
-|---|---|
-| Complete lesson bundles | 15 notes, 15 notebooks, 15 exercise sheets, 15 instructor guides |
-| Core Python execution | All 15 notebooks / 60 code cells passed in fresh processes |
-| Real Jupyter execution | All 15 notebooks / 60 code cells passed with nbclient and ipykernel |
-| Notebook schema | All notebooks validated with nbformat 5.10.4 |
-| Local navigation | All relative links in the new course and root README resolve |
-| Python syntax | All notebook cells, extension scripts, and check scripts parse |
-| Mathematical/behavioral checks | Causal invariance, finite-difference gradient, frozen base weights, DPO equality, memory estimates, CTC/WER, modality interventions, and other embedded assertions passed |
-| Tiny Transformer | 100 training steps, development checkpoint selection, save, and future-token invariance passed |
-| Text/LoRA integration | Both CLIs ran with a locally generated tiny random Qwen3 checkpoint; adapter B weights changed from zero |
-| Sentiment pipeline | Train/dev selection/test output passed on the authored synthetic TSV fixture |
-| Pretrained visual QA | SmolVLM-256M loaded and generated on CPU; pipeline succeeded, chart answer was incorrect |
-| Visual/audio API imports | Required image/audio classes import in the pinned environment |
-| SVG illustrations | All five original SVG files parse as XML |
-| Safety outcome script | `safety_eval.py --self-test` passed on simulated labels; no model output was evaluated |
+| --- | --- |
+| Session bundles | 15 sessions, each with notes, slide source, built deck, notebook with two stub cells, solutions file, exercise sheet, instructor guide; quizzes for sessions 1–14 |
+| Notebooks | All 16 (15 sessions and the optional video module) pass `scripts/run_notebooks.py` in fresh processes, with instructor solutions in place of the stubs |
+| Slide builds | All 15 decks build from source with `scripts/build_slides.py`; the build checks that titles and subtitles fit one line and that text fits its box at 16 pt or larger |
+| Slide geometry | No shape lies outside the slide's content area (python-pptx scan of all 408 slides) |
+| Slide rendering | Every deck was previewed through macOS Quick Look and headless Chrome, and about a fifth of the slides were read by eye |
+| Local links | All relative links in the course and the root README resolve (`scripts/check_course.py`) |
+| arXiv links | All 129 distinct arXiv links were fetched and their titles matched the link text |
+| Task facts | The four task cards were read from the organisers' pages on this date |
 
-Executed outputs are saved in the notebooks, so students can inspect a reference run without a model download. Notebook 15 was rerun after its result records gained an explicit experiment-condition field.
+## What was not run or checked
+
+- **PowerPoint.** No deck was opened in PowerPoint or Keynote. Quick Look is an approximation: open each deck once and look for anything that sits badly.
+- **Pretrained models.** No new pretrained-model code was run. The forward-hook sketch on day 11 and the 4-bit loading sketch on day 13 are labelled as not run. Qwen3, LoRA, CLIP, Whisper and video extension runs remain unexecuted, as before.
+- **Shared-task code and data.** The organisers' baselines for Tasks 6, 7, 9 and 12 were not run, and no task data was downloaded. Published baseline scores are quoted from the task pages.
+- **Facts from memory.** Model configurations (for example Llama-3.1-8B: 4,096 wide, 32 layers, 8 key-value heads), some figures quoted from papers, and the section numbers in "read sections 1–3" were written from memory of the sources. The arXiv check confirms that each paper exists, not each number.
+- **African-language text.** Short Hausa, Yoruba, Swahili and Amharic examples appear on slides and in notes. A speaker of each language should read them before they are shown.
+- **Jupyter kernel and Colab.** This round used the plain-Python runner only.
 
 ## Measured extension examples
 
@@ -42,21 +43,13 @@ The processor produced 17 image patches and 1,156 input-token positions in this 
 ```bash
 python scripts/check_course.py
 python scripts/run_notebooks.py
-python scripts/run_notebooks.py --kernel --write-outputs
-python scripts/check_model_extensions.py
-python course/extensions/train_tiny_decoder.py --steps 100 --output outputs/validation-tiny
-python course/extensions/afrisenti_baseline.py --train course/data/sentiment_train.tsv --dev course/data/sentiment_dev.tsv --test course/data/sentiment_test.tsv --output outputs/validation-sentiment.json
+python -m pip install -r requirements-slides.txt && python scripts/build_slides.py
+python scripts/check_model_extensions.py          # needs requirements-models.txt
 python course/extensions/safety_eval.py --self-test
 ```
 
-The first two need only the core environment. Kernel checks require `requirements-notebooks.txt`; model checks require `requirements-models.txt`. Local Jupyter kernels need permission to open local ports. The validation environment was temporary and did not alter the repository's existing practicals.
-
-## Limits
+## Limits of the September 2026 model checks
 
 The pretrained visual-QA path above was executed. Pretrained Qwen3 inference/LoRA, CLIP, Whisper, and video checkpoint runs were not executed; their syntax/API checks do not substitute for model-download and end-to-end classroom preflight. The offline Qwen3 fixture validates API plumbing, masking, saving, and actual optimization; it does not establish pretrained-model quality. CUDA performance, memory estimates, every Python version in the supported range, Colab UI behavior, real AfriSenti data, and real speech/video datasets were not benchmarked. Historical notebooks and PDF slides were preserved without being revalidated.
 
 Instructor preflight should verify the actual classroom device, chosen model revisions, data access, and runtime before assigning an optional model extension. The offline core remains fully usable without these extensions.
-
-## SemEval capstone curriculum update
-
-The capstone brief, syllabus, overview, reporting templates, instructor guidance, and lecture-15 materials were aligned to SemEval participation and a system-description paper. A task-selection card and paper-writing guide were added. The SemEval year/task/subtasks await instructor selection. Structural, local-link, and syntax checks passed after the update; notebook changes were Markdown only, so the existing code-execution results remain applicable.

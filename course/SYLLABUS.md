@@ -4,60 +4,68 @@
 
 ## Audience and prerequisites
 
-AIMS students with linear algebra, probability, calculus, Python, and introductory machine learning. No previous LLM API experience is required. Students should know matrix multiplication, gradients, train/test separation, and basic classification metrics. Use the [diagnostic](PREREQUISITES.md) to identify preparation needs; it is not a gatekeeping exam. PyTorch familiarity helps the optional model extensions but is not required for the NumPy core.
+AIMS students with linear algebra, probability, calculus, Python and introductory machine learning. Students should know matrix multiplication, gradients, train/test separation and basic classification metrics. The [diagnostic](PREREQUISITES.md) shows what to revise; it is not a gate. The labs need NumPy only. PyTorch helps with the shared task.
 
 ## Prior learning: DeepMind AI Research Foundations
 
-Students have completed the Google DeepMind AI Research Foundations learning path (8 activities). Its public page says it teaches building and fine-tuning modern language models from scratch, but hides the module list behind sign-in, so the overlap below is not confirmed module by module.
+Students have completed the Google DeepMind AI Research Foundations path, which teaches building and fine-tuning a small language model. Week 1 still teaches tokens, the Transformer and pretraining in full, because the rest of the course rests on them. The day-1 diagnostic sets the depth: where the class already knows a derivation, shorten the board work and give the time to the lab. The badge is not course evidence; the course is assessed on its own work.
 
-Before day 1, the instructor maps the path's modules to sessions 1–5 and asks students to run the day-1 diagnostic. Then:
+## The three weeks
 
-- Where a session repeats a module (likely tokenization, attention, small-model training), cut the board derivation to 10 minutes and spend the freed time on the controlled intervention and the Hausa/AfricaNLP angle the path lacks.
-- Start the SemEval baseline on day 1, not day 3, so week 1 produces a working system.
-- Do not re-award the badge as course evidence. Assess the course on its own portfolios, as set out below.
+| Week | Theme | Sessions | Capstone milestone on Friday |
+|---|---|---|---|
+| 1 | Foundations and post-training | 1 tokens and baselines · 2 Transformer · 3 pretraining and decoding · 4 prompting, instruction tuning, LoRA · 5 alignment | Organisers' baseline reproduced |
+| 2 | Languages, modalities and benchmarking | 6 multilingual and data building · 7 CLIP and SigLIP · 8 vision-language models · 9 speech · 10 benchmarking and evaluation | One improvement; experiment plan frozen |
+| 3 | Inside the model, systems and the paper | 11 interpretability and steering · 12 retrieval, tools, agents · 13 efficiency · 14 paper clinic · 15 defence | Paper, package and defence |
+
+Images arrive on day 7. Teams therefore begin with text in week 1: Task 12 requires a text-only run as well as a multimodal one, and Tasks 7 and 9 start from text. Task 6 teams run the organisers' starter code as given from day 1 and open it up in week 2.
+
+Video, omni models and generative media are an [optional module](lectures/x1_video_omni.md). No shared task uses them.
 
 ## Outcomes and evidence
 
-| Outcome | Where developed | Evidence |
+| Outcome | Sessions | Evidence |
 |---|---|---|
-| Explain model objectives and tensor operations | 1–3 | Tokenization audit, causal-invariance check, training curve |
-| Adapt models and critique training signals | 4–6 | Adapter experiment, preference analysis, language-slice report |
-| Build evidence and tool pipelines | 7–8 | Retrieval ablation and bounded tool trace |
-| Measure efficiency and reliability | 9–10 | Memory calculation, quantization audit, calibration report |
-| Analyze multimodal representations and perception | 11–14 | Contrastive retrieval, image interventions, WER, temporal sampling |
-| Evaluate safety and alignment across languages and modalities | 4–6, 10, 12 | Refusal check before and after adaptation, per-language outcome table, benign-proxy image test |
-| Conduct reproducible research | 1–15 | SemEval prediction package, system-description paper, ablations, oral defence |
+| Explain model objectives, tensor shapes and decoding | 1–3 | Tokenisation audit, causal-invariance test, training curve, sampling table |
+| Adapt and align a model, and say what each training signal teaches | 4–5 | Prompt and adapter comparison, DPO calculation, refusal check |
+| Build and audit multilingual data | 6 | Agreement statistic, data statement, per-language scores |
+| Work with image, vision-language and speech models | 7–9 | Contrastive retrieval, image interventions, WER and CER |
+| Benchmark a system honestly | 10 | Task metric by hand, paired test, calibration table |
+| Read and write a model's activations | 11 | Steering vector, compliance and relevance sweep, ablation |
+| Build and bound a system | 12–13 | Retrieval ablation, validated tool calls, memory budget |
+| Do reproducible research and write it up | 1–15 | SemEval predictions, system paper, peer review, defence |
+| Evaluate safety across languages and modalities | 4, 5, 6, 8, 10, 11 | The [safety thread](SAFETY.md) outputs |
 
-## Weekly arc
+## A session
 
-**Week 1 — Model mechanisms and adaptation.** Move rapidly from tokenization and experimental design to causal Transformers, pretraining, instruction tuning, low-rank adaptation, and preference/reward optimization. The foundational recap is compressed; n-grams and classical classification remain support material in the previous edition.
+Every session is 120 minutes: 10 quiz on the previous day, 25 concepts, 25 derivation and worked example, 5 break, 40 notebook lab, 10 discussion, 5 exit ticket. That is 30 contact hours, 10 of them in labs. Day 14 is a writing workshop and day 15 holds the defences; their plans are in the session notes.
 
-**Week 2 — Systems and scientific evaluation.** Study multilingual transfer, retrieval, reasoning and tools, memory and compression, and evaluation. Students use the selected SemEval task protocol and freeze their main experiment plan by day 10, before selecting final results.
-
-**Week 3 — Multimodal learning and integration.** Align images and text, evaluate visual language models and document understanding, analyze speech and video, and transfer evaluation lessons to the SemEval system-description paper and defence. The selected shared task may be text-only or multimodal. Generative media objectives are introduced for comparison; training a large media generator is outside the course scope.
-
-## Contact time and independent work
-
-Every session is exactly 120 minutes: 10 retrieval quiz, 25 concepts, 25 derivation/examples, 5 break, 40 tutorial, 10 practical discussion, 5 exit ticket. This totals 30 contact hours, including 10 hours of guided tutorials. Day 15 uses the same time blocks for a SemEval paper clinic and defence preparation; presentation substitutions are described in the project brief.
-
-Plan 45–60 minutes per day for exercises (11.25–15 hours total), 10–15 minutes for a targeted reading (2.5–3.75 hours), and 12–16 hours for SemEval development and paper writing. Total in-course workload is approximately 56–65 hours. Official shared-task evaluation and paper revisions after the course require separately announced time. Instructors should reduce optional reading before extending the working day. Exercises can use pairs for exploration, with individual explanations submitted. The SemEval capstone can be done in pairs or individually, with contribution records and defence questions.
+Outside class, plan 45–60 minutes a day for the exercise sheet, 15–20 minutes for the required reading, and 12–16 hours over the three weeks for the capstone. Total workload is about 60–70 hours. Official evaluation (10–31 January 2027) and the paper deadline (February 2027) fall after the course.
 
 ## Assessment
 
-Each daily sheet is scored out of 10: derivation 2, implementation 4, investigation 4. Five sheets form a weekly portfolio out of 50; each portfolio contributes 15 course percentage points. Daily practical questions and exit tickets are formative. Weekly portfolios are due after days 5, 10, and 15; instructors announce the local submission time before day 1.
+| Component | Weight | What is marked |
+|---|---:|---|
+| Portfolio 1 (week 1) | 15% | Five exercise sheets and the baseline milestone: [assignment](assignments/week1.md) |
+| Portfolio 2 (week 2) | 15% | Five sheets and the frozen plan: [assignment](assignments/week2.md) |
+| Portfolio 3 (week 3) | 15% | Five sheets and the peer review: [assignment](assignments/week3.md) |
+| SemEval capstone | 45% | [Rubric](PROJECT.md): paper 25, evaluation 25, system 20, reproducibility 15, task protocol 10, defence 5 |
+| Concept check | 10% | [Individual, closed book](CONCEPT_CHECK.md), 25 minutes |
 
-The capstone is participation in an instructor-selected SemEval shared task and a complete system-description paper. It is scored out of 100 and contributes 45%. The [rubric](PROJECT.md) allocates 25 points to the paper, 25 to evaluation/analysis, 20 to system development, 15 to reproducibility/submission readiness, 10 to task/data protocol, and 5 to the defence. Use the [task specification](SEMEVAL_TASK.md) and [paper guide](SEMEVAL_PAPER.md). Course grading does not depend on leaderboard rank or workshop acceptance. If official evaluation is later, day 15 requires a complete development-results paper and a submission-ready workflow; official participation follows the organiser schedule.
+Each sheet is marked out of 10: derivation 2, implementation 4, investigation 4. Portfolios are due at the end of days 5, 10 and 15.
 
-The [individual concepts check](CONCEPT_CHECK.md), out of 20, contributes 10%. Run it for 25 minutes during the final independent-work period or an agreed assessment slot outside the 30 contact hours. If all assessment must fit the contact hours, replace 25 minutes of day-15 project clinic with the check and move that clinic to office hours.
+Overall grade = 0.15 × (P1 + P2 + P3) × 2 + 0.45 × project + 0.10 × concepts × 5, with each portfolio out of 50, the project out of 100 and the concept check out of 20.
 
-Overall grade = 0.15×P1/50×100 + 0.15×P2/50×100 + 0.15×P3/50×100 + 0.45×project + 0.10×concepts/20×100.
+**Quizzes.** Fourteen 10-minute quizzes open days 2 to 15. They are formative by default: mark them in class and use the results to choose what to revisit. An instructor who wants more closed-book individual work can count the best ten quizzes for 9% and reduce each portfolio from 15% to 12%. Announce any such change before day 1.
 
-## Participation and reproducibility
+Course marks do not depend on leaderboard rank or on a paper being accepted. A careful negative result can earn full marks.
 
-Students may discuss approaches and use documentation, coding assistants, or other tools if disclosed. Each must explain their code, verify outputs, cite external ideas, and distinguish generated text from measured evidence. Never fabricate runs, citations, confidence intervals, or compute measurements. Public answer guides are for learning; instructors should change instances for high-stakes assessment.
+## Working rules
 
-Use permitted datasets and consented media. Do not submit private recordings or identifiable student information in public repositories. Synthetic data are appropriate for the daily mechanism labs. The capstone uses the selected SemEval task data and rules; a synthetic-only lab does not replace shared-task work. Projects using natural language claims should include data and interpretation from people able to assess that language, or acknowledge the lack of such validation.
+Students may discuss, use documentation and use coding assistants, and must disclose what they used. Each student must be able to explain every line they submit. No invented runs, citations, intervals or measurements. Sheets may be explored in pairs and are written up alone. Capstone teams record who did what.
 
-## Accessibility and contingency
+Use permitted data and consented media. Keep private recordings and personal information out of public repositories. Where a project makes claims about a language, a speaker of that language should check the outputs, or the paper should say that nobody did.
 
-All core labs work offline after installing NumPy. The SemEval capstone additionally requires access to the selected task data and, during official participation, its submission platform. Choose a feasible baseline and arrange permitted local data access before class. Pair students for scarce GPU access and run optional large downloads before class. Printed notes plus notebook outputs support students without a working laptop. Core labs avoid mandatory accounts and paid APIs. Use captions/transcripts for any instructor-selected audio/video demonstration and provide an equivalent text-based analysis option.
+## Access and contingency
+
+The labs run offline once NumPy is installed. The capstone needs the task data and, for some tasks, model downloads and a GPU: pair students for scarce GPU time and download large files before class. Printed notes and saved notebook outputs support a student without a working laptop. Provide captions or transcripts for any audio or video shown in class.

@@ -9,6 +9,15 @@ import sys
 import time
 
 ROOT = Path(__file__).resolve().parents[1]
+STUB = "# YOUR TURN"  # student stub cells; the runner swaps in course/instructor/solutions/<stem>.py so the tests run
+
+
+def solution_for(path, state):
+    """Source to run in place of a stub cell: the whole solutions file once, then nothing."""
+    if state.setdefault("done", False):
+        return "pass"
+    state["done"] = True
+    return (ROOT / "course/instructor/solutions" / (path.stem + ".py")).read_text()
 
 
 def run_one(path, write_outputs=False, kernel=False):
@@ -18,14 +27,21 @@ def run_one(path, write_outputs=False, kernel=False):
         from nbclient import NotebookClient
         nb = nbformat.read(path, as_version=4)
         nbformat.validate(nb)
+        state, stubs = {}, {}
+        for cell in nb.cells:
+            if cell.cell_type == "code" and cell.source.startswith(STUB):
+                stubs[cell.id], cell.source = cell.source, solution_for(path, state)
         NotebookClient(nb, timeout=120, kernel_name="python3", resources={"metadata": {"path": str(path.parent)}}).execute()
+        for cell in nb.cells:
+            if cell.id in stubs:
+                cell.source, cell.outputs, cell.execution_count = stubs[cell.id], [], None
         if write_outputs:
             nbformat.write(nb, path)
         count = sum(c.cell_type == "code" for c in nb.cells)
     else:
         nb = json.loads(path.read_text())
         namespace = {"__name__": "__main__"}
-        count = 0
+        count, state = 0, {}
         for index, cell in enumerate(nb["cells"]):
             if cell["cell_type"] != "code":
                 continue
@@ -33,6 +49,9 @@ def run_one(path, write_outputs=False, kernel=False):
             source = cell["source"]
             if isinstance(source, list):
                 source = "".join(source)
+            stub = source.startswith(STUB)
+            if stub:
+                source = solution_for(path, state)
             stdout, stderr = io.StringIO(), io.StringIO()
             try:
                 with contextlib.redirect_stdout(stdout), contextlib.redirect_stderr(stderr):
@@ -41,6 +60,9 @@ def run_one(path, write_outputs=False, kernel=False):
                 print(stdout.getvalue(), end="")
                 print(stderr.getvalue(), end="", file=sys.stderr)
                 raise
+            if stub:
+                cell["execution_count"], cell["outputs"] = None, []
+                continue
             cell["execution_count"] = count
             cell["outputs"] = [
                 {"output_type": "stream", "name": name, "text": stream.getvalue()}

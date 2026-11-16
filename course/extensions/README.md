@@ -47,7 +47,7 @@ Inspect the printed supervised token IDs. Prompt and padding labels are ignored 
 
 Repeat with rank 8 in a new directory, keeping examples and seed fixed. Compare trainable parameters and development loss. A decrease is not guaranteed in ten updates; report it honestly. For a project, replace the smoke-test data with a permitted, source-disjoint dataset and add final held-out evaluation. The script does not claim a full instruction-tuning benchmark or implement QLoRA.
 
-## Lectures 5, 7–10: preference, retrieval, reasoning, and evaluation
+## Lectures 5, 10 and 12: preference, evaluation, retrieval and tools
 
 ```bash
 python course/extensions/hf_text.py --prompt 'Evidence [D1]: The library opens at eight on weekdays. Question: When does the library open? Answer using the evidence and cite its ID.' --output outputs/rag-answer.json
@@ -74,7 +74,7 @@ The baseline fits character 2–5-gram TF-IDF on training data, selects logistic
 python course/extensions/afrisenti_baseline.py --train course/data/sentiment_train.tsv --dev course/data/sentiment_dev.tsv --test course/data/sentiment_test.tsv --output outputs/sentiment-smoke.json
 ```
 
-## Lectures 11–12: pretrained cross-modal retrieval and visual QA
+## Lectures 7–8: pretrained cross-modal retrieval and visual QA
 
 ```bash
 python course/extensions/hf_vision.py --mode clip --condition original --output outputs/clip-original.json
@@ -86,9 +86,9 @@ python course/extensions/hf_vision.py --mode vlm --condition swapped --output ou
 
 CLIP compares three generated colored-square images against three descriptions. Check both retrieval directions; candidate softmax scores are not calibrated probabilities. SmolVLM answers the highest-bar question for an authored chart; the original answer is B, the swapped answer A, and the blank condition should be unknown. Inspect actual generated responses rather than assuming these expected answers occur.
 
-The VLM uses the checkpoint's processor and chat template. Compare it against the explicit geometry baseline from lecture 12. Add style and position changes to avoid giving the specialized baseline an unexamined fixed-layout advantage. Keep model revision, image preprocessing, prompt, and token budget fixed across interventions.
+The VLM uses the checkpoint's processor and chat template. Compare it against the explicit geometry baseline from lecture 8. Add style and position changes to avoid giving the specialized baseline an unexamined fixed-layout advantage. Keep model revision, image preprocessing, prompt, and token budget fixed across interventions.
 
-## Lecture 13: pretrained speech recognition
+## Lecture 9: pretrained speech recognition
 
 ```bash
 python course/extensions/hf_audio.py --audio path/to/consented-clip.wav --output outputs/asr.json
@@ -96,7 +96,7 @@ python course/extensions/hf_audio.py --audio path/to/consented-clip.wav --output
 
 Use a short consented clip and an independently prepared reference transcript. The script checks duration, averages channels, resamples to 16 kHz, and requests transcription rather than translation. `--language` supplies a supported language hint when appropriate. Compute WER/CER with declared normalization; inspect names, numbers, and negation separately. A synthetic tone is useful for signal processing but is not a speech-recognition benchmark.
 
-## Lecture 14: optional video model
+## Optional module: video model
 
 Install the extra dependencies with `python -m pip install -r requirements-video.txt`, then:
 
@@ -104,7 +104,7 @@ Install the extra dependencies with `python -m pip install -r requirements-video
 python course/extensions/hf_video.py --video path/to/short-clip.mp4 --frames 8 --output outputs/video.json
 ```
 
-Use a permitted clip of at most ten seconds. Ask one temporal question with a clear reference answer; repeat with reversed and shuffled frame sequences exported as separate clips. Record the sampling timestamps when extending the script into a benchmark. The script limits requested frames but the actual processor and token budget must still be inspected. It is an extension, not a requirement for the offline lecture-14 lab.
+Use a permitted clip of at most ten seconds. Ask one temporal question with a clear reference answer; repeat with reversed and shuffled frame sequences exported as separate clips. Record the sampling timestamps when extending the script into a benchmark. The script limits requested frames but the actual processor and token budget must still be inspected. It is an extension, not a requirement for the offline video lab.
 
 ## Model API references
 

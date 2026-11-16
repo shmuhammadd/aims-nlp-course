@@ -1,54 +1,57 @@
-# Research and model guide
+# Reading guide
 
 [Course home](../README.md)
 
-**Research check: 28 September 2026.** The course combines established mechanisms with selected 2025–2026 research. This is a dated teaching snapshot, not an exhaustive leaderboard survey. Recent preprints are critical-reading material; reported gains require scrutiny of data, baselines, evaluation budgets, and independent reproduction. Small classroom checkpoints are chosen for accessibility rather than state-of-the-art scores.
+Each session has one required reading of 15–20 minutes, done before the next morning's quiz. The session notes list further readings under "for your task" and "going deeper", each with a line on what to read and why. Every arXiv link in the course was checked against its title on 16 November 2026.
 
-## Priority reading map
+## Required reading, one per session
 
-Read the abstract, the objective or architecture section, and one result/ablation per assigned paper. Limit core preparation to 10–15 minutes daily; deep reading is optional.
+| Day | Session | Read | Sections |
+| --- | --- | --- | --- |
+| 1 | Tokens and baselines | [Language Model Tokenizers Introduce Unfairness Between Languages](https://arxiv.org/abs/2305.15425) (Petrov et al., 2023) | 1–3 |
+| 2 | Causal Transformer | [Attention Is All You Need](https://arxiv.org/abs/1706.03762) (Vaswani et al., 2017) | 3.1–3.3 |
+| 3 | Pretraining and decoding | [The Curious Case of Neural Text Degeneration](https://arxiv.org/abs/1904.09751) (Holtzman et al., 2019) | 1–3 |
+| 4 | Prompting, tuning, LoRA | [LoRA](https://arxiv.org/abs/2106.09685) (Hu et al., 2021) | 1 and 4.1 |
+| 5 | Alignment | [Direct Preference Optimization](https://arxiv.org/abs/2305.18290) (Rafailov et al., 2023) | 1, 3, 4 |
+| 6 | Multilingual and data building | [AfriSenti](https://aclanthology.org/2023.emnlp-main.862/) (Muhammad et al., 2023) | Data collection and annotation |
+| 7 | CLIP and SigLIP | [Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020) (Radford et al., 2021) | 1–2, figure 1 |
+| 8 | Vision-language models | [Visual Instruction Tuning](https://arxiv.org/abs/2304.08485) (Liu et al., 2023) | 3–4 |
+| 9 | Speech and ASR | [Robust Speech Recognition via Large-Scale Weak Supervision](https://arxiv.org/abs/2212.04356) (Radford et al., 2022) | 1–2, limitations |
+| 10 | Benchmarking and evaluation | [BERTScore](https://arxiv.org/abs/1904.09675) (Zhang et al., 2019) | 1–3 |
+| 11 | Steering | [Refusal in Language Models Is Mediated by a Single Direction](https://arxiv.org/abs/2406.11717) (Arditi et al., 2024) | 1–3 |
+| 12 | Retrieval, tools, agents | [Retrieval-Augmented Generation](https://arxiv.org/abs/2005.11401) (Lewis et al., 2020) | 1–3 |
+| 13 | Efficiency | [QLoRA](https://arxiv.org/abs/2305.14314) (Dettmers et al., 2023) | 1–3 |
+| 14 | Paper clinic | [Guidelines for SemEval System Papers](https://semeval.github.io/system-paper-template.html) | All, with your draft open |
+| 15 | Defence | Your own paper and the review you received | |
 
-| Sessions | Foundation | Contemporary case study or practical reference | Question to bring to class |
-|---|---|---|---|
-| 1–3 | [Attention Is All You Need](https://arxiv.org/abs/1706.03762), [Chinchilla](https://arxiv.org/abs/2203.15556) | [Qwen3 Technical Report](https://arxiv.org/abs/2505.09388) | Which conclusions depend on data and compute allocation? |
-| 4 | [LoRA](https://arxiv.org/abs/2106.09685), [QLoRA](https://arxiv.org/abs/2305.14314) | [PEFT documentation](https://huggingface.co/docs/peft/quicktour) | Which memory terms are actually reduced? |
-| 5, 8 | [DPO](https://arxiv.org/abs/2305.18290), [DeepSeekMath](https://arxiv.org/abs/2402.03300) | [DeepSeek-R1](https://arxiv.org/abs/2501.12948) | What does the reward or preference signal fail to measure? |
-| 6 | [XLM-R](https://arxiv.org/abs/1911.02116) | [AfriSenti](https://aclanthology.org/2023.emnlp-main.862/) | Which languages, varieties, domains, and annotators are represented? |
-| 7 | [RAG](https://arxiv.org/abs/2005.11401) | [Lost in the Middle](https://arxiv.org/abs/2307.03172) | Is failure caused by retrieval, context use, or generation? |
-| 9 | [FlashAttention](https://arxiv.org/abs/2205.14135), [PagedAttention](https://arxiv.org/abs/2309.06180) | [Speculative decoding](https://arxiv.org/abs/2211.17192) | What workload and hardware produce the reported speedup? |
-| 10 | [HELM](https://arxiv.org/abs/2211.09110), [calibration](https://arxiv.org/abs/1706.04599) | [Model cards](https://arxiv.org/abs/1810.03993) | What is missing from the aggregate metric? |
-| 11 | [CLIP](https://arxiv.org/abs/2103.00020), [SigLIP](https://arxiv.org/abs/2303.15343) | [SigLIP 2](https://arxiv.org/abs/2502.14786) | Does alignment establish counting or spatial understanding? |
-| 12 | [LLaVA](https://arxiv.org/abs/2304.08485) | [Gemma 3](https://arxiv.org/abs/2503.19786), [SmolVLM card](https://huggingface.co/HuggingFaceTB/SmolVLM-256M-Instruct) | What visual information is lost during preprocessing? |
-| 13 | [wav2vec 2.0](https://arxiv.org/abs/2006.11477), [Whisper](https://arxiv.org/abs/2212.04356) | [Whisper implementation](https://huggingface.co/docs/transformers/v4.57.1/en/model_doc/whisper) | How do normalization and speaker splits change the conclusion? |
-| 14 | [DDPM](https://arxiv.org/abs/2006.11239), [flow matching](https://arxiv.org/abs/2210.02747) | [Qwen3.5-Omni (2026)](https://arxiv.org/abs/2604.15804) | Are modality coverage, temporal grounding, and streaming evaluated separately? |
-| 15 | Controlled ablations, the selected task protocol, and the [SemEval system-paper guide](https://semeval.github.io/system-paper-template.html) | [ReactBench (May 2026)](https://arxiv.org/abs/2605.29579), [KnowHal (August 2026)](https://arxiv.org/abs/2608.03782) | Which failures can the benchmark diagnose, and which causal claims exceed its evidence? |
+The section numbers were taken from the papers' structure as remembered, not re-read page by page. Check each one when you set the reading.
 
-## Current-research discussion briefs
+## Reading for your task
 
-**Qwen3 (2025):** inspect dense versus mixture-of-experts design and the relationship between reasoning modes, inference budget, and multilingual evaluation. The 0.6B checkpoint is a feasible teaching example; results for much larger family members do not transfer automatically to it.
+| Task | Start with | Then |
+| --- | --- | --- |
+| 12 ArtEmotion-28 | The [task repository](https://github.com/artemotion-28/artemotion-28) and its baselines | [CLIP](https://arxiv.org/abs/2103.00020), [SigLIP 2](https://arxiv.org/abs/2502.14786), [XLM-R](https://arxiv.org/abs/1911.02116), [AfroXLM-R](https://arxiv.org/abs/2204.06487) |
+| 6 MMCultureQA | The [task site](https://mmcultureqa-semeval27.github.io/) | [BERTScore](https://arxiv.org/abs/1904.09675), [An Introduction to Vision-Language Modeling](https://arxiv.org/abs/2405.17247), [Whisper](https://arxiv.org/abs/2212.04356), [BLEnD](https://arxiv.org/abs/2406.09948) |
+| 7 CLaS | [CLaS-Bench](https://aclanthology.org/2026.findings-acl.1086/) and the [task repository](https://github.com/d-gurgurov/CLaS-SemEval-2027) | [Language-Specific Neurons](https://arxiv.org/abs/2402.16438), [Do Llamas Work in English?](https://arxiv.org/abs/2402.10588), [Contrastive Activation Addition](https://arxiv.org/abs/2312.06681) |
+| 9 Framing | The [task site](https://propaganda.math.unipd.it/semeval2027task9/) and its trial data | [XLM-R](https://arxiv.org/abs/1911.02116), [CLIP](https://arxiv.org/abs/2103.00020), [LoRA](https://arxiv.org/abs/2106.09685) |
 
-**SigLIP 2 (2025):** identify the combined training objectives and multilingual data choices. Use ablations to distinguish effects of the objective, data mixture, and model scale. A stronger encoder does not alone settle downstream grounding.
+## African-language resources named in the course
 
-**Gemma 3 (2025):** examine how local/global attention and visual processing interact with long-context inference. Check modality support by checkpoint; family-level descriptions are not a substitute for a model card.
+- [AfriSenti](https://aclanthology.org/2023.emnlp-main.862/): sentiment in 14 languages (day 6).
+- [AfriHate](https://arxiv.org/abs/2501.08284): hate speech and abusive language (day 6).
+- [IrokoBench](https://arxiv.org/abs/2406.03368) and [AfroBench](https://arxiv.org/abs/2311.07978): LLM benchmarks (day 10).
+- [AfriQA](https://arxiv.org/abs/2305.06897): cross-lingual question answering (day 12).
+- [FLEURS](https://arxiv.org/abs/2205.12446): speech in 102 languages (day 9).
+- The [safety thread](SAFETY.md) lists the 2026 preprints on safety in Hausa, Yoruba, Nigerian Pidgin and Igbo.
 
-**Qwen3.5-Omni (April 2026):** read as a contemporary technical report on multimodal systems. Build a claim-evidence table with section/table references rather than copying benchmark headlines. The course neither requires running this model nor claims to reproduce its results.
+## Reading a recent preprint
 
-**ReactBench and KnowHal (2026 preprints):** compare targeted visual interventions with paired true/false-premise questions. Critique evaluation construction, reliance on model-generated material, and how well labels distinguish perception, knowledge, and reasoning errors. Treat causal interpretations cautiously when based on verbal explanations.
+Several readings are 2025–2026 preprints. For each one, fill a claim-evidence table: the claim, the table or figure behind it, the data size, the baseline, and what the paper cannot rule out. Mark numbers as author-reported. A preprint that nobody has reproduced is a source of hypotheses.
 
-**Safety in African languages (2026 preprints):** The cross-lingual safety and Yoruba/Nigerian Pidgin red-teaming papers report weaker safety behaviour outside English. The Hausa alignment paper shows a refusal rate that looks high for the wrong reason. Build a claim-evidence table for each: dataset size, annotators, models, metric, and what the paper cannot rule out, such as whether a low refusal rate reflects non-comprehension. See the [safety thread](SAFETY.md).
+## Books
 
-## Multimodal books (sessions 11–14)
+No single book covers the course. [Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/) (Jurafsky and Martin) fills gaps in the foundations. [An Introduction to Vision-Language Modeling](https://arxiv.org/abs/2405.17247) (Bordes et al., 2024) is a free primer for week 2. Two paid books, *Vision Language Models* (O'Reilly, 2026) and *Large Vision-Language Models* (Springer), are optional; see [books/README.md](../books/README.md).
 
-No single textbook covers vision-language, speech, and video modeling the way Jurafsky and Martin cover text. Treat the primer and papers above as primary; the two books below are optional practical/research references, not required purchases. They are not bundled as PDFs in `books/` — see `books/README.md` for why.
+## For a later cohort
 
-- **Primer (free, start here):** [An Introduction to Vision-Language Modeling](https://arxiv.org/abs/2405.17247) (Bordes et al., Meta, 2024). Accessible crossover primer; covers architectures, training, and evaluation, with a section on video.
-- **Vision Language Models** (Noyan, Marafioti, Farré, Zohar; O'Reilly, July 2026). Practical, Hugging Face-authored: core architectures, training data, training and post-training, deployment at scale, video-language models, document AI, any-to-any models.
-- **Large Vision-Language Models: Pre-training, Prompting, and Applications** (Springer, Advances in Computer Vision and Pattern Recognition series). Research-oriented edited volume; 17 chapters grouped under pre-training strategies, prompting techniques for adaptation, and real-world applications.
-- **Survey:** [Multimodal Large Language Models and Tunings: Vision, Language, Sensors, Audio, and Beyond](https://arxiv.org/abs/2410.05608). Extends past vision-language into audio and sensor modalities, with instruction tuning among its topics.
-- **Key papers reading list:** Stanford's VLM reading list names [CLIP](https://arxiv.org/abs/2103.00020), [Flamingo](https://arxiv.org/abs/2204.14198), [BLIP-2](https://arxiv.org/abs/2301.12597), and [LLaVA](https://arxiv.org/abs/2304.08485) as the four key architectural ideas to know; all but Flamingo and BLIP-2 are already assigned in sessions 11–12 above.
-
-## Updating for a later cohort
-
-Before teaching, confirm the date and version of the recent readings, access to model weights, library compatibility, and local hardware performance. Replace a case study if it is superseded while retaining the objective, ablation, and evaluation lesson. Record changes in the validation log. Do not silently update checkpoints mid-assessment: freeze revisions and prompts so student comparisons remain interpretable.
-
-The original [Speech and Language Processing online draft](https://web.stanford.edu/~jurafsky/slp3/) remains a useful reference for foundational gaps. The old books/slides directory is not a prerequisite for accessing these primary sources.
+Before teaching again, re-check the task cards, the recent preprints and the model versions. Replace a case study that has been superseded and keep the lesson it carried. Freeze model revisions and prompts for the length of the course.

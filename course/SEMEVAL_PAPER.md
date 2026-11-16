@@ -4,13 +4,13 @@
 
 ## Purpose and official references
 
-Write a self-contained account of what your team built, how it was evaluated, and what the results support. The official [SemEval system-paper guide](https://semeval.github.io/system-paper-template.html) recommends explaining the task, method, experiment setup, results, and system behavior, including ablations and errors. Use the [official ACL style files](https://github.com/acl-org/acl-style-files) and check the selected edition's current paper call for its specific requirements. These references were checked on 28 September 2026; no task, deadline, or page limit has been selected for this class yet.
+Write a self-contained account of what your team built, how it was evaluated, and what the results support. The official [SemEval system-paper guide](https://semeval.github.io/system-paper-template.html) recommends explaining the task, method, experiment setup, results, and system behavior, including ablations and errors. Use the [official ACL style files](https://github.com/acl-org/acl-style-files) and check the selected edition's current paper call for its specific requirements. These references were checked on 16 November 2026. Teams enter SemEval-2027 Task 6, 7, 9 or 12; papers are due in February 2027 (tentative), and the page limit is set by the SemEval-2027 paper call.
 
 ## Course writing plan
 
 Aim for 4–6 main-text pages excluding references for course planning, subject to the selected edition's actual limit. This length is a course choice. Start with an editable ACL template, keep a bibliography from day 3, and add each experiment to your log before writing a claim about it. Submit both the PDF and editable source. This guide is a writing scaffold, not a finished scientific paper or a substitute for measured results.
 
-Suggested title pattern: **TeamName at SemEval-YEAR Task N: A Specific Description of Your Approach**. Replace the identifiers only after task selection. A retrospective study should identify itself as retrospective.
+Suggested title pattern: **TeamName at SemEval-YEAR Task N: A Specific Description of Your Approach**. For example: *TeamName at SemEval-2027 Task 12: Does the Painting Help? Late Fusion for Emotion Prediction in Hausa, Igbo and Yoruba*.
 
 ## Drafting worksheet
 
@@ -42,6 +42,8 @@ If official evaluation has not occurred, omit the official-score row or mark it 
 For non-additive metrics such as macro-F1, recompute the full metric for every paired bootstrap resample rather than averaging per-item “F1 contributions.” Respect grouped evaluation units when dependence exists. Do not invent confidence intervals if you only have a public aggregate score without the predictions/labels needed to estimate them.
 
 ## Day-14 peer review
+
+The exchange happens in the [paper clinic](lectures/14_paper_clinic.md).
 
 Exchange complete drafts. Each reviewer returns 300–500 words covering: one clearly supported claim, one claim needing evidence, one reproducibility gap, one issue in the results/error analysis, and three prioritized revisions. Check every quoted number against a recorded run. Authors submit a short response explaining what they changed or why they retained a decision.
 

@@ -18,8 +18,13 @@ for row in manifest:
     assert "120 minutes" in note and "## Practical questions" in note and "## Worked example" in note
     exercise = (ROOT / "course/exercises" / (slug + ".md")).read_text()
     assert all(f"## {i}." in exercise for i in [1, 2, 3])
+    for item in [f"slides/src/{slug}.md", f"slides/{slug}.pptx", f"instructor/solutions/{slug}.py"]:
+        assert (ROOT / "course" / item).is_file(), item
+    assert row["number"] == 15 or (ROOT / "course/quizzes" / (slug + ".md")).is_file(), ("quiz", slug)
+    assert "# YOUR TURN" in (ROOT / "course/tutorials" / (slug + ".ipynb")).read_text(), ("no student stub", slug)
 
-paths = [ROOT / "README.md"] + list((ROOT / "course").rglob("*.md")) + list((ROOT / "course/tutorials").glob("*.ipynb"))
+notes = [p for p in (ROOT / "course").rglob("*.md") if "slides/src" not in p.as_posix()]  # slide sources resolve pictures from course/slides
+paths = [ROOT / "README.md"] + notes + list((ROOT / "course/tutorials").glob("*.ipynb"))
 for path in paths:
     if path.suffix == ".ipynb":
         nb = json.loads(path.read_text())
@@ -53,4 +58,4 @@ for path in paths:
         checked_links += 1
 for path in list((ROOT / "scripts").glob("*.py")) + list((ROOT / "course/extensions").glob("*.py")):
     ast.parse(path.read_text(), filename=str(path))
-print(f"PASS: 15 complete lesson bundles; {checked_links} local links; notebook structure and Python syntax.")
+print(f"PASS: 15 complete lesson bundles (notes, slides, notebook with stubs and solutions, sheet, quiz, guide); {checked_links} local links; notebook structure and Python syntax.")

@@ -1,24 +1,35 @@
-# Lecture 15 exercises — SemEval systems, scientific writing, and project defence
+# Exercise sheet 15 — Defence and concept check
 
-[Lecture](../lectures/15_capstone.md) · [Tutorial](../tutorials/15_capstone.ipynb)
+[Course home](../../README.md) · [Lecture notes](../lectures/15_capstone.md) · [Notebook](../tutorials/15_capstone.ipynb)
 
-Budget: 45–60 minutes. Submit your calculations, changed code or notebook, measured results, and 150–250 words interpreting the result. This sheet is worth 10 points; the optional model extension is not required for full credit.
+Budget: 45–60 minutes. This sheet is worth 10 points and is the last sheet of portfolio 3. Submit your working, your changed notebook, the numbers you measured and the script asked for in part 3.
 
 ## 1. Derive (2 points)
 
-For full and ablated predictions on the same n items, express the paired accuracy difference and describe a bootstrap interval.
+A full system and an ablated system are scored on the same 12 items. Both are right on 6 items. Only the full system is right on 4. Only the ablated system is right on 1. Both are wrong on 1.
+
+a. Compute each system's accuracy, the paired difference, and the exact one-sided McNemar p-value that the full system is better.
+b. A third system answers 8 of the 12 items and gets 6 right. Compute its coverage, its selective accuracy, and its overall accuracy with abstentions counted as wrong.
 
 ## 2. Implement (4 points)
 
-Extend the integration notebook with a mismatched-policy condition and a JSONL report. Add a check that every non-abstained answer includes both evidence IDs.
+In notebook 15, add a mismatched-policy condition: case $i$ keeps its chart and gold answer and takes the policy of case $(i+1) \bmod 12$. Run the system on the 12 mismatched cases and report accuracy, coverage and the number of answers that changed.
+
+Write the full, decoy-chart and mismatched-policy predictions to one JSONL file with the fields from section 3 of the notebook, one line per item per condition. Add an assertion that every answer that is not an abstention carries both evidence IDs.
+
+Explain in two sentences why the mismatched policy still gives some right answers, and what that says about a decoy test with three options.
 
 ## 3. Investigate (4 points)
 
-Draft a 150–250-word analysis paragraph for your SemEval paper using one actual development result and one inspected error. State a supported claim, an alternative explanation, and a limitation; identify the metric, split, and track. If official evaluation is pending, say so. Link the paragraph to the relevant experiment record. This daily exercise assesses the paragraph; the complete paper and submission package are assessed separately under the capstone rubric.
+Use your team's own SemEval results.
+
+a. Write the script of your "one result" slide in 150–250 words: the comparison, the metric and split, the difference with its interval, one failure with its count, and the next experiment.
+b. Write the three hardest questions an examiner could ask about that result, and your answer to each in two or three sentences. One answer must name a result that would change your conclusion.
+c. Add to `participation.md` the status of your official submission, the next action, its date and the person who does it.
 
 ## Submission checklist
 
-- Identify data provenance and split; record seed and software versions.
-- Include a baseline and the requested comparison, with failures retained.
-- Distinguish observations from hypotheses and identify a limitation.
-- Disclose collaboration and any AI assistance; you must explain your code.
+- Seed, NumPy version and every changed setting are recorded.
+- Each number in your write-up appears in a notebook output or in `experiment_log.md`.
+- You say which results are measured and which are your explanation.
+- Collaboration and any AI assistance are disclosed. You can explain every line you submit.
