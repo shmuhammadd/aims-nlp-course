@@ -22,7 +22,7 @@ subtitle: The model stays fixed. The system around it changes.
 | **Tools** | **What it may call** | **A dispatcher and a budget** | **12** |
 
 - Task 6 asks about local culture from an image, in Kiswahili and Amharic among others. A small vision-language model may lack the fact.
-- Voting over several samples is a cheap method for any of the four tasks
+- Voting over several samples is a cheap method for any of the five tasks
 
 Notes: Task 6 facts are from the task card. Its rules on external data were not stated on the page; a team that wants to retrieve from outside sources must ask the organisers first.
 

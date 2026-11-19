@@ -186,7 +186,8 @@ title: The course ends today. The shared task does not.
 
 | Date | What happens |
 |---|---|
-| 10–31 January 2027 | Official evaluation, all four tasks |
+| 24 December 2026 – 5 January 2027 | AfriGuard test phase; paper due 10 January |
+| 10–31 January 2027 | Official SemEval evaluation, Tasks 6, 7, 9 and 12 |
 | 16 January, 23:59 UTC | Task 12 subtask 3 closes |
 | 17 January | Task 12 test files for subtasks 1 and 2 released |
 | February 2027 (tentative) | System papers due |

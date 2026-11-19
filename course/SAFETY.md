@@ -28,7 +28,7 @@ The CSV has three columns: `language`, `prompt_id`, `label`. Reuse the prompt ID
 
 ## Capstone angle
 
-Any SemEval system can add a per-language or per-slice error analysis. Task 7 has a bonus track on refusing in the requested language, which is a safety evaluation in its own right. For a system built on an instruction-tuned model, repeat the session 4 refusal check after fine-tuning. This work counts inside the existing evaluation and analysis marks of the [rubric](PROJECT.md), unless the instructor decides otherwise.
+AfriGuard (AfricaNLP 2027) is a safety task: refuse harmful prompts in ten African languages, with a model of at most 5B parameters and no external safety component. Any shared-task system can add a per-language or per-slice error analysis. Task 7 has a bonus track on refusing in the requested language, which is a safety evaluation in its own right. For a system built on an instruction-tuned model, repeat the session 4 refusal check after fine-tuning. This work counts inside the existing evaluation and analysis marks of the [rubric](PROJECT.md), unless the instructor decides otherwise.
 
 ## Working with harmful content
 

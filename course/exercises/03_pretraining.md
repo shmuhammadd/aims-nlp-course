@@ -21,7 +21,7 @@ Say which method you would use to show a visitor "what the model writes", and wh
 
 ## 3. Investigate (4 points)
 
-Use your team's SemEval task and its baseline.
+Use your team's shared task and its baseline.
 
 - Name the pretrained model the baseline uses, its pretraining objective (causal, masked or denoising) and its parameter count. Give the source of each fact.
 - Tasks 6 and 7: find the generation settings the baseline uses (sampling on or off, temperature, top-p, top-k, beams, maximum new tokens, repetition penalty). List each value and where you found it. If a value comes from a library default, say so. Tasks 9 and 12: say how the baseline turns model outputs into labels, and where a threshold or an argmax is applied.

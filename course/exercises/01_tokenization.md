@@ -23,7 +23,7 @@ State who wrote the sentences and in which language.
 
 ## 3. Investigate (4 points)
 
-Use your team's SemEval task data.
+Use your team's shared task data.
 
 - Open the training file, or for Task 7 the development sentences for three of your languages. Report the number of rows per language, and per label where the task has labels.
 - Compute one baseline that uses no model. For a classification task, predict the majority label and score it with the task's metric. For Task 6, answer every question with the most frequent training answer. For Task 7, report mean characters and UTF-8 bytes per sentence for each language.

@@ -20,7 +20,7 @@ In notebook 2, build a decoder with two blocks and two heads from your `multi_he
 
 ## 3. Investigate (4 points)
 
-Count a real model before you download it. Use the model your team plans to run for its SemEval task. If you have not chosen one, use `meta-llama/Llama-3.1-8B-Instruct` (Task 7) or the text encoder of your task's baseline.
+Count a real model before you download it. Use the model your team plans to run for its shared task. If you have not chosen one, use `meta-llama/Llama-3.1-8B-Instruct` (Task 7) or the text encoder of your task's baseline.
 
 - Open the model's `config.json` on its model page. Record the width, the number of layers, the number of heads, the MLP width, the vocabulary size and the kind of norm.
 - Count the parameters of one block and of the whole model, showing the formula for each part. Compare your total with the published parameter count and explain any gap above 1%.

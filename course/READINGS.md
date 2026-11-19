@@ -34,6 +34,7 @@ The section numbers were taken from the papers' structure as remembered, not re-
 | 6 MMCultureQA | The [task site](https://mmcultureqa-semeval27.github.io/) | [BERTScore](https://arxiv.org/abs/1904.09675), [An Introduction to Vision-Language Modeling](https://arxiv.org/abs/2405.17247), [Whisper](https://arxiv.org/abs/2212.04356), [BLEnD](https://arxiv.org/abs/2406.09948) |
 | 7 CLaS | [CLaS-Bench](https://aclanthology.org/2026.findings-acl.1086/) and the [task repository](https://github.com/d-gurgurov/CLaS-SemEval-2027) | [Language-Specific Neurons](https://arxiv.org/abs/2402.16438), [Do Llamas Work in English?](https://arxiv.org/abs/2402.10588), [Contrastive Activation Addition](https://arxiv.org/abs/2312.06681) |
 | 9 Framing | The [task site](https://propaganda.math.unipd.it/semeval2027task9/) and its trial data | [XLM-R](https://arxiv.org/abs/1911.02116), [CLIP](https://arxiv.org/abs/2103.00020), [LoRA](https://arxiv.org/abs/2106.09685) |
+| AfriGuard | The [task page](https://africanlp.github.io/2027/shared-task) and [paper](https://arxiv.org/abs/2610.26474) | [LoRA](https://arxiv.org/abs/2106.09685), then the day 5 and day 11 readings |
 
 ## African-language resources named in the course
 

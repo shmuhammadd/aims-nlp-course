@@ -15,13 +15,13 @@ Last full check: **16 November 2026**, macOS ARM64, Python 3.13.1, NumPy 2.1.3, 
 | Slide rendering | Every deck was previewed through macOS Quick Look and headless Chrome, and about a fifth of the slides were read by eye |
 | Local links | All relative links in the course and the root README resolve (`scripts/check_course.py`) |
 | arXiv links | All 129 distinct arXiv links were fetched and their titles matched the link text |
-| Task facts | The four task cards were read from the organisers' pages on this date |
+| Task facts | The five task cards were read from the organisers' pages on this date |
 
 ## What was not run or checked
 
 - **PowerPoint.** No deck was opened in PowerPoint or Keynote. Quick Look is an approximation: open each deck once and look for anything that sits badly.
 - **Pretrained models.** No new pretrained-model code was run. The forward-hook sketch on day 11 and the 4-bit loading sketch on day 13 are labelled as not run. Qwen3, LoRA, CLIP, Whisper and video extension runs remain unexecuted, as before.
-- **Shared-task code and data.** The organisers' baselines for Tasks 6, 7, 9 and 12 were not run, and no task data was downloaded. Published baseline scores are quoted from the task pages.
+- **Shared-task code and data.** The organisers' baselines for Tasks 6, 7, 9, 12 and AfriGuard were not run, and no task data was downloaded. Published baseline scores are quoted from the task pages.
 - **Facts from memory.** Model configurations (for example Llama-3.1-8B: 4,096 wide, 32 layers, 8 key-value heads), some figures quoted from papers, and the section numbers in "read sections 1–3" were written from memory of the sources. The arXiv check confirms that each paper exists, not each number.
 - **African-language text.** Short Hausa, Yoruba, Swahili and Amharic examples appear on slides and in notes. A speaker of each language should read them before they are shown.
 - **Jupyter kernel and Colab.** This round used the plain-Python runner only.

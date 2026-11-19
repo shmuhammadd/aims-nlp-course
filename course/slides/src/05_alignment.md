@@ -53,7 +53,7 @@ title: Three signals, three kinds of data
 - Preferences differ by language, context and annotator
 - Record ties, disagreement and the rubric the annotators used
 
-Notes: Ask which signal each of the four capstone tasks supplies. All four supply labels, so SFT. None supplies preferences. That is why today's lab is a toy.
+Notes: Ask which signal each of the five capstone tasks supplies. All five supply labels, so SFT. None supplies preferences, though AfriGuard allows teams to build their own and use preference optimisation. That is why today's lab is a toy.
 
 ---
 title: Bradley–Terry turns comparisons into scores

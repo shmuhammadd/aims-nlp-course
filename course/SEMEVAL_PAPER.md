@@ -1,10 +1,10 @@
-# Writing the SemEval system-description paper
+# Writing the shared-task system-description paper
 
 [Course home](../README.md) · [Capstone](PROJECT.md) · [Task specification](SEMEVAL_TASK.md)
 
 ## Purpose and official references
 
-Write a self-contained account of what your team built, how it was evaluated, and what the results support. The official [SemEval system-paper guide](https://semeval.github.io/system-paper-template.html) recommends explaining the task, method, experiment setup, results, and system behavior, including ablations and errors. Use the [official ACL style files](https://github.com/acl-org/acl-style-files) and check the selected edition's current paper call for its specific requirements. These references were checked on 16 November 2026. Teams enter SemEval-2027 Task 6, 7, 9 or 12; papers are due in February 2027 (tentative), and the page limit is set by the SemEval-2027 paper call.
+Write a self-contained account of what your team built, how it was evaluated, and what the results support. The official [SemEval system-paper guide](https://semeval.github.io/system-paper-template.html) recommends explaining the task, method, experiment setup, results, and system behavior, including ablations and errors. Use the [official ACL style files](https://github.com/acl-org/acl-style-files) and check the selected edition's current paper call for its specific requirements. These references were checked on 16 November 2026. Teams enter SemEval-2027 Task 6, 7, 9 or 12, or the AfricaNLP 2027 AfriGuard task. SemEval papers are due in February 2027 (tentative) and the page limit is set by the SemEval-2027 paper call. AfriGuard papers are due 10 January 2027 and the AfricaNLP call, whose format details were still to come, sets the limit; the title pattern below becomes **TeamName at AfricaNLP 2027 AfriGuard: ...**.
 
 ## Course writing plan
 

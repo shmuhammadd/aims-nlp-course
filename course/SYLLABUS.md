@@ -33,7 +33,7 @@ Video, omni models and generative media are an [optional module](lectures/x1_vid
 | Benchmark a system honestly | 10 | Task metric by hand, paired test, calibration table |
 | Read and write a model's activations | 11 | Steering vector, compliance and relevance sweep, ablation |
 | Build and bound a system | 12–13 | Retrieval ablation, validated tool calls, memory budget |
-| Do reproducible research and write it up | 1–15 | SemEval predictions, system paper, peer review, defence |
+| Do reproducible research and write it up | 1–15 | Shared-task predictions, system paper, peer review, defence |
 | Evaluate safety across languages and modalities | 4, 5, 6, 8, 10, 11 | The [safety thread](SAFETY.md) outputs |
 
 ## A session
@@ -49,7 +49,7 @@ Outside class, plan 45–60 minutes a day for the exercise sheet, 15–20 minute
 | Portfolio 1 (week 1) | 15% | Five exercise sheets and the baseline milestone: [assignment](assignments/week1.md) |
 | Portfolio 2 (week 2) | 15% | Five sheets and the frozen plan: [assignment](assignments/week2.md) |
 | Portfolio 3 (week 3) | 15% | Five sheets and the peer review: [assignment](assignments/week3.md) |
-| SemEval capstone | 45% | [Rubric](PROJECT.md): paper 25, evaluation 25, system 20, reproducibility 15, task protocol 10, defence 5 |
+| Shared-task capstone | 45% | [Rubric](PROJECT.md): paper 25, evaluation 25, system 20, reproducibility 15, task protocol 10, defence 5 |
 | Concept check | 10% | [Individual, closed book](CONCEPT_CHECK.md), 25 minutes |
 
 Each sheet is marked out of 10: derivation 2, implementation 4, investigation 4. Portfolios are due at the end of days 5, 10 and 15.

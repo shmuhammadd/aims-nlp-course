@@ -27,11 +27,11 @@ Notes: The deadlines are the class fields in SEMEVAL_TASK.md. Day 14 is the peer
 ---
 type: section
 title: Part 1: The capstone
-subtitle: One SemEval-2027 task per team
+subtitle: One shared task per team
 
 ---
-title: Four tasks, and your team enters one
-subtitle: SemEval-2027. Evaluation runs 10 to 31 January 2027.
+title: Five tasks, and your team enters one
+subtitle: SemEval-2027 shared task (evaluation 10 to 31 January 2027) and AfricaNLP 2027 shared task (test phase to 5 January).
 
 | Task | You build | African languages | Starting point |
 |---|---|---|---|
@@ -39,8 +39,9 @@ subtitle: SemEval-2027. Evaluation runs 10 to 31 January 2027.
 | 6 MMCultureQA | Image plus spoken or written question → short answer | Swahili, Amharic; Oromo and Somali announced | Dev-test leaderboard on EvalAI |
 | 7 CLaS | Steer an LLM to answer in a target language | Swahili, as a target | Prompting baseline and scorer |
 | 9 Multimodal framing | Frame labels for news paragraphs and images | None | Trial data |
+| AfriGuard | Refuse harmful prompts in 10 African languages | Amharic, Hausa, Igbo, Oromo and 6 more | Starter notebook on Colab |
 
-Notes: Read from the task websites on 16 November 2026. The other seven languages in Task 12 are Kinyarwanda, Emakhuwa, isiZulu, isiXhosa, Setswana, isiNdebele and Darija. Task 9 covers Bulgarian, English, Portuguese and Russian. The organisers' pages govern.
+Notes: Read from the task websites on 16 November 2026. The other seven languages in Task 12 are Kinyarwanda, Emakhuwa, isiZulu, isiXhosa, Setswana, isiNdebele and Darija. Task 9 covers Bulgarian, English, Portuguese and Russian. AfriGuard is the AfricaNLP 2027 task; the other four are SemEval-2027. The organisers' pages govern.
 
 ---
 title: Each task is scored differently
@@ -353,7 +354,7 @@ title: Readings
 - Petrov et al., 2023. Language Model Tokenizers Introduce Unfairness Between Languages. Sections 1 to 3.
 
 ### For your task
-- The rules page of your SemEval task, and its card in `course/SEMEVAL_TASK.md`
+- The rules page of your shared task, and its card in `course/SEMEVAL_TASK.md`
 
 ### Going deeper
 - Sennrich et al., 2015. Neural Machine Translation of Rare Words with Subword Units. The BPE paper.

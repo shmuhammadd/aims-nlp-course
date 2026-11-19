@@ -10,7 +10,7 @@ title: Model A scores 71.2. Model B scores 70.4. Is A better?
 Notes: Take answers for a minute. Push for the questions a reviewer would ask: on how many items, the same items, the same prompt, the same scorer, how many runs were tried before this one. Each question is a slide today.
 
 ---
-title: Four tasks, four ways of keeping score
+title: Five tasks, five ways of keeping score
 subtitle: By the end of today every team can compute its own metric by hand
 
 | Task | Ranked on | Today |
@@ -18,6 +18,7 @@ subtitle: By the end of today every team can compute its own metric by hand
 | 6 MMCultureQA | BERTScore F1 | Greedy token matching |
 | 7 CLaS | Language compliance and relevance | Two scores, one system |
 | 9 Framing | Multi-label micro-F1; macro-F1 secondary | Pooled and per-frame counts |
+| AfriGuard | Weighted F1, per language then averaged | Per-class counts weighted by gold |
 | 12 ArtEmotion-28 | Macro-F1 over languages; log loss in bits; within-painting Pearson | Three subtasks, three metrics |
 
 - Days 6 to 9 built systems for languages, images and speech. Today we ask what their scores mean.

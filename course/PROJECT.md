@@ -1,10 +1,10 @@
-# Capstone — a SemEval-2027 system and its paper
+# Capstone — a shared-task system and its paper
 
 [Course home](../README.md) · 45% of the course · 12–16 hours outside class · pairs, or alone by agreement
 
 ## What each team does
 
-Enter **one** SemEval-2027 task: [6, 7, 9 or 12](SEMEVAL_TASK.md). Pick one subtask or track and at most three languages. Build a system, evaluate it with the official metric, package predictions in the official format, and write a system-description paper.
+Enter **one** task from the SemEval-2027 shared task ([6, 7, 9 or 12](SEMEVAL_TASK.md)) or the AfricaNLP 2027 shared task ([AfriGuard](SEMEVAL_TASK.md#afriguard--africanlp-2027-shared-task)). Pick one subtask or track and at most three languages. Build a system, evaluate it with the official metric, package predictions in the official format, and write a system-description paper.
 
 Each team produces:
 
@@ -47,7 +47,7 @@ Keep the system small. A strong linear baseline, a small pretrained encoder, a p
 
 ## The paper
 
-Write a complete paper: 4–6 pages of main text, excluding references, in the ACL style, unless the SemEval-2027 call sets another limit. Follow the [paper guide](SEMEVAL_PAPER.md). The paper explains the task and track, describes the system, states the experimental protocol, reports comparisons and ablations, analyses errors and states limits. Day 14 is a [paper clinic](lectures/14_paper_clinic.md) with a peer review.
+Write a complete paper: 4–6 pages of main text, excluding references, in the ACL style, unless the SemEval-2027 or AfricaNLP 2027 call sets another limit. Follow the [paper guide](SEMEVAL_PAPER.md). The paper explains the task and track, describes the system, states the experimental protocol, reports comparisons and ablations, analyses errors and states limits. Day 14 is a [paper clinic](lectures/14_paper_clinic.md) with a peer review.
 
 ## Submission package
 

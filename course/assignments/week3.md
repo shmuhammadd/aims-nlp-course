@@ -30,7 +30,8 @@ Your response to the review is part of the day-15 submission: list each point, s
 
 | Date | What happens |
 | --- | --- |
-| 10 January 2027 | Evaluation opens for all four tasks; test inputs are released |
+| 5 January 2027 | AfriGuard test phase ends; its system paper is due 10 January |
+| 10 January 2027 | SemEval evaluation opens for Tasks 6, 7, 9 and 12; test inputs are released |
 | 16 January 2027, 23:59 UTC | Task 12 subtask 3 closes |
 | 31 January 2027 | Evaluation closes |
 | February 2027 (tentative) | System papers due |

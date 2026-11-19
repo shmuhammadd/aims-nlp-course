@@ -1,10 +1,10 @@
-# Lecture 01 — Language models, tokens and baselines; the four shared tasks
+# Lecture 01 — Language models, tokens and baselines; the five shared tasks
 
 [Course home](../../README.md) · Week 1, day 1 · 120 minutes · [Slides](../slides/01_tokenization.pptx) · [Notebook](../tutorials/01_tokenization.ipynb) · [Exercises](../exercises/01_tokenization.md) · [Quiz](../quizzes/01_tokenization.md)
 
 ## Learning outcomes
 
-- Choose one SemEval-2027 task with your team and name its metric, its data and its rules.
+- Choose one shared task with your team and name its metric, its data and its rules.
 - Run one byte-pair-encoding merge by hand, and measure what a tokeniser costs in tokens per letter.
 - Convert a negative log-likelihood into perplexity and bits per byte, and say which of the three can be compared across tokenisers.
 - Split data by its source of dependence and report a baseline beside every result.
@@ -14,7 +14,7 @@
 | Minutes | Activity |
 |---|---|
 | 0–10 | [Prerequisite diagnostic](../PREREQUISITES.md): students mark their own answers; go over questions 2, 4 and 6 |
-| 10–25 | Slides 1–7: the capstone. Four tasks, one per team, and today's action |
+| 10–25 | Slides 1–7: the capstone. Five tasks, one per team, and today's action |
 | 25–45 | Slides 8–16: tokens. Units, Unicode, BPE by hand on the board, what tokenisers cost |
 | 45–60 | Slides 17–24: NLL, perplexity and bits per byte; splits, leaks and baselines |
 | 60–65 | Break |
@@ -25,7 +25,7 @@
 ## Teaching notes
 
 ### The capstone starts today
-Every team enters one of four SemEval-2027 tasks, one subtask or track, and at most three languages. The [task cards](../SEMEVAL_TASK.md) hold the facts; the organisers' pages govern.
+Every team enters one of five tasks, four from the SemEval-2027 shared task and AfriGuard from the AfricaNLP 2027 shared task, one subtask or track, and at most three languages. The [task cards](../SEMEVAL_TASK.md) hold the facts; the organisers' pages govern.
 
 | Task | You build | African languages | Metric | Starting point |
 |---|---|---|---|---|
@@ -125,7 +125,7 @@ Complete the [exercise sheet](../exercises/01_tokenization.md) in 45–60 minute
 - [Language Model Tokenizers Introduce Unfairness Between Languages](https://arxiv.org/abs/2305.15425) (Petrov et al., 2023). Sections 1–3: the token-count audit across languages, on production tokenisers.
 
 **For your task**
-- [SemEval-2027 task cards](../SEMEVAL_TASK.md). Read your task's card, then its rules page.
+- [Shared task cards](../SEMEVAL_TASK.md). Read your task's card, then its rules page.
 
 **Going deeper**
 - [Neural Machine Translation of Rare Words with Subword Units](https://arxiv.org/abs/1508.07909) (Sennrich et al., 2015). The BPE paper; it gives the merge algorithm as a short Python listing.

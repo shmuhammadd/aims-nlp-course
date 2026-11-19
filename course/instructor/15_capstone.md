@@ -10,7 +10,7 @@ Keep this file private if the cohort can see the repository. Change the numbers 
 - Session 15 has no quiz. The concept check replaces it. Use CONCEPT_CHECK.md with the numbers changed; the key is in [concept_check_key.md](concept_check_key.md). Collect the reference sheets with the scripts.
 - Read each team's day-14 review before class. The reviewer's "claim that needs evidence" is the best defence question.
 - Common confusion: students present every experiment they ran. Ask for one result, one failure, one next experiment.
-- Common confusion: a development score is described as "our SemEval result". Ask for the split after every number.
+- Common confusion: a development score is described as "our shared-task result". Ask for the split after every number.
 - Common confusion: passing a removal ablation is taken as proof that the input is used. The decoy row in the lab is there for this.
 
 ## Marking the defence

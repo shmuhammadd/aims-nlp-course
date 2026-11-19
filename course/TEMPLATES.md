@@ -1,6 +1,6 @@
 # Reusable reporting templates
 
-[Course home](../README.md) · [SemEval project brief](PROJECT.md) · [Paper guide](SEMEVAL_PAPER.md)
+[Course home](../README.md) · [Capstone brief](PROJECT.md) · [Paper guide](SEMEVAL_PAPER.md)
 
 ## Experiment log
 
@@ -10,7 +10,7 @@
 
 ## Prediction JSONL schema
 
-This is an internal analysis format, not a SemEval submission schema. Export a separate file matching the selected task’s official format. Use one object per item per condition, preserve IDs across comparisons, and record the task/track in your experiment configuration. Suggested analysis fields:
+This is an internal analysis format, not a shared-task submission schema. Export a separate file matching the selected task’s official format. Use one object per item per condition, preserve IDs across comparisons, and record the task/track in your experiment configuration. Suggested analysis fields:
 
 ```json
 {"id":"item-001","condition":"full","split":"test","language":"en","modalities":["text","image"],"prediction":"B","target":"B","evidence_ids":["doc-1","image-1"],"model":"your-model-id","revision":"resolved-commit-or-local-version","prompt_version":"v1","seed":42,"latency_ms":null}
@@ -37,7 +37,7 @@ Use `null` for abstention predictions, unavailable hidden-test targets, or unmea
 - Resource measurements and deployment assumptions.
 - Known failures, evidence requirements, and abstention behavior.
 
-## SemEval paper and participation records
+## Shared-task paper and participation records
 
 Use the [system-description paper worksheet](SEMEVAL_PAPER.md) for the full paper, measured-results table, and day-14 peer review. Submit PDF plus editable source. The course planning target is 4–6 main-text pages excluding references, subject to the selected edition’s rules.
 

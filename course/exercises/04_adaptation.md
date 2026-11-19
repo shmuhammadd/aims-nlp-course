@@ -19,7 +19,7 @@ In notebook 04 the true change has rank 2. Keep it at rank 2 and train adapters 
 
 a. In section 4 of the notebook, score all 24 orderings for $\gamma$ = 1, 0.8, 0.5 and 0.2. Tabulate the minimum, mean and maximum test accuracy. For $\gamma=0.5$, list the label sequences of the three best and three worst orderings and state the pattern.
 
-b. For your team's SemEval task, write the few-shot prompt you would try first, using four demonstrations taken from the training split. Give the label list, the demonstrations in order, the rule that maps a reply to a label, and what you do with a reply that fits no label. Then take one of your examples, split it into tokens by hand (words will do), and mark which positions would carry loss in response-only fine-tuning.
+b. For your team's shared task, write the few-shot prompt you would try first, using four demonstrations taken from the training split. Give the label list, the demonstrations in order, the rule that maps a reply to a label, and what you do with a reply that fits no label. Then take one of your examples, split it into tokens by hand (words will do), and mark which positions would carry loss in response-only fine-tuning.
 
 ## Submission checklist
 

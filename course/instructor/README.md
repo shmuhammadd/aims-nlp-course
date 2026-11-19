@@ -7,7 +7,7 @@
 - Run `python scripts/check_course.py` and `python scripts/run_notebooks.py` on the teaching machines.
 - Open each deck in [course/slides/](../slides/README.md) in PowerPoint and read the speaker notes. The decks were built from text sources and checked in a preview renderer, not in PowerPoint itself, so look once for anything that sits badly.
 - Send students the [diagnostic](../PREREQUISITES.md) and the [task cards](../SEMEVAL_TASK.md). Ask Task 7 teams to request the Llama-3.1 licence on Hugging Face now; approval can take days.
-- Re-read the four task pages. The cards were written on 16 November 2026 and organisers change dates and rules. Task 9's dates need confirming.
+- Re-read the five task pages. The cards were written on 16 November 2026 (AfriGuard on 19 November) and organisers change dates and rules. Task 9's dates need confirming.
 - Download task data and any model weights to a shared disk. Check that the room's network can reach Codabench, EvalAI and Hugging Face.
 - You co-organise Task 12. Tell your co-organisers that your students are entering, keep test labels off any machine the class can reach, and have each Task 12 paper state the connection.
 

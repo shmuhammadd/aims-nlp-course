@@ -1,8 +1,6 @@
 # Advanced Language and Multimodal Models
 
-**AIMS · 2026 edition · 3 weeks · 5 days a week · 2 hours a day · 30 contact hours**
-
-A course on how language and multimodal models are trained, adapted, aligned, evaluated and steered, taught with African languages and limited compute in view. Students build each mechanism in a small NumPy lab, then use it in a SemEval-2027 shared task and write a system-description paper.
+A course on how language and multimodal models are trained, adapted, aligned, evaluated and steered, taught with African languages and limited compute in view. Students build each mechanism in a small NumPy lab, then use it in a shared task, either the SemEval-2027 shared task or the AfricaNLP 2027 shared task and write a system-description paper.
 
 By the end, students can implement causal attention and next-token training; explain prompting, LoRA, preference optimisation and safety alignment; build a multilingual dataset and measure annotator agreement; work with image-text, vision-language and speech models; benchmark a system with the right metric and a paired test; find and steer a direction in a model's activations; and defend a result with controlled ablations.
 
@@ -10,7 +8,7 @@ By the end, students can implement causal attention and next-token training; exp
 
 1. Read the [syllabus](course/SYLLABUS.md).
 2. Do the [prerequisite diagnostic](course/PREREQUISITES.md) and the [setup](course/SETUP.md).
-3. Choose one of the four [SemEval-2027 tasks](course/SEMEVAL_TASK.md) on day 1 and read the [capstone brief](course/PROJECT.md).
+3. Choose one of the five [shared tasks](course/SEMEVAL_TASK.md) on day 1 and read the [capstone brief](course/PROJECT.md).
 4. Each day: slides and notes, the notebook, the exercise sheet, and next morning the quiz.
 
 Each two-hour session has a 10-minute quiz on the previous day, about 50 minutes of teaching, a 40-minute notebook lab and a discussion. Exercise sheets take 45–60 minutes after class. The capstone takes 12–16 hours across the three weeks.
@@ -21,7 +19,7 @@ By Friday each team has reproduced the organisers' baseline for its task, starti
 
 | Day | Session | Slides | Notes | Notebook | Exercises | Quiz |
 |---|---|---|---|---|---|---|
-| 1 | Language models, tokens and baselines; the four shared tasks | [Deck](course/slides/01_tokenization.pptx) | [Notes](course/lectures/01_tokenization.md) | [Lab](course/tutorials/01_tokenization.ipynb) | [Sheet](course/exercises/01_tokenization.md) | [Quiz](course/quizzes/01_tokenization.md) |
+| 1 | Language models, tokens and baselines; the five shared tasks | [Deck](course/slides/01_tokenization.pptx) | [Notes](course/lectures/01_tokenization.md) | [Lab](course/tutorials/01_tokenization.ipynb) | [Sheet](course/exercises/01_tokenization.md) | [Quiz](course/quizzes/01_tokenization.md) |
 | 2 | The causal Transformer | [Deck](course/slides/02_transformers.pptx) | [Notes](course/lectures/02_transformers.md) | [Lab](course/tutorials/02_transformers.ipynb) | [Sheet](course/exercises/02_transformers.md) | [Quiz](course/quizzes/02_transformers.md) |
 | 3 | Pretraining: data, objectives, scaling; decoding and sampling | [Deck](course/slides/03_pretraining.pptx) | [Notes](course/lectures/03_pretraining.md) | [Lab](course/tutorials/03_pretraining.ipynb) | [Sheet](course/exercises/03_pretraining.md) | [Quiz](course/quizzes/03_pretraining.md) |
 | 4 | Post-training I: prompting, instruction tuning and LoRA | [Deck](course/slides/04_adaptation.pptx) | [Notes](course/lectures/04_adaptation.md) | [Lab](course/tutorials/04_adaptation.ipynb) | [Sheet](course/exercises/04_adaptation.md) | [Quiz](course/quizzes/04_adaptation.md) |
@@ -57,7 +55,7 @@ By Friday each team submits its paper, prediction package and defence.
 
 **Alignment** on day 5 means making a model's behaviour match what people want and what is safe. In SemEval Task 7, taught on day 11, it means the same content landing in the same place in a model's activations across languages.
 
-## Capstone: one SemEval-2027 task per team
+## Capstone: one shared task per team
 
 | Task | What the team builds |
 |---|---|
@@ -65,13 +63,14 @@ By Friday each team submits its paper, prediction package and defence.
 | [7 CLaS](https://clas-semeval2027.github.io/clas.semeval2027/task/) | Steer an LLM to answer in a target language by editing its activations |
 | [9 Multimodal framing](https://propaganda.math.unipd.it/semeval2027task9/) | Label the frames in news paragraphs and news images |
 | [12 ArtEmotion-28](https://github.com/artemotion-28/artemotion-28) | Predict emotion and sentiment for paintings across 28 languages, 11 of them African |
+| [AfriGuard](https://africanlp.github.io/2027/shared-task) (AfricaNLP 2027) | Make a model of at most 5B parameters refuse harmful prompts in 10 African languages |
 
-Evaluation runs 10–31 January 2027 and system papers are due in February 2027. Details, rules and the course milestones are in the [task cards](course/SEMEVAL_TASK.md), the [capstone brief](course/PROJECT.md) and the [paper guide](course/SEMEVAL_PAPER.md). The weekly [assignments](course/assignments/) tie each week's sheets to a capstone milestone.
+SemEval evaluation runs 10–31 January 2027 and system papers are due in February 2027. Details, rules and the course milestones are in the [task cards](course/SEMEVAL_TASK.md), the [capstone brief](course/PROJECT.md) and the [paper guide](course/SEMEVAL_PAPER.md). The weekly [assignments](course/assignments/) tie each week's sheets to a capstone milestone.
 
 ## Assessment
 
 - Three weekly portfolios, 15% each: five exercise sheets and that week's capstone milestone. See [week 1](course/assignments/week1.md), [week 2](course/assignments/week2.md), [week 3](course/assignments/week3.md).
-- SemEval capstone, 45%: system, experiments, system-description paper, reproducible package and defence.
+- Shared-task capstone, 45%: system, experiments, system-description paper, reproducible package and defence.
 - Individual [concept check](course/CONCEPT_CHECK.md), 10%.
 - Daily quizzes are formative by default. An instructor who wants them to count can use the option in the [syllabus](course/SYLLABUS.md#assessment).
 

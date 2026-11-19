@@ -87,7 +87,8 @@ Label every table with its split and track. Describe the submitted system separa
 
 | Date | What happens |
 |---|---|
-| 10–31 January 2027 | Official evaluation for Tasks 6, 7, 9 and 12 |
+| 24 December 2026 – 5 January 2027 | AfriGuard test phase; paper due 10 January |
+| 10–31 January 2027 | Official SemEval evaluation for Tasks 6, 7, 9 and 12 |
 | 16 January 2027, 23:59 UTC | Task 12 subtask 3 closes |
 | 17 January 2027 | Task 12 test files for subtasks 1 and 2 are released |
 | February 2027 (tentative) | System papers due |
@@ -114,7 +115,7 @@ The notebook builds 12 authored cases and a deterministic system of about twenty
 ## Practical questions
 
 1. What experiment separates a system that uses a modality from one that has memorised the answer?
-2. How does the paper report results if the official SemEval evaluation has not opened?
+2. How does the paper report results if the official shared-task evaluation has not opened?
 3. What makes a negative result useful?
 
 ## After class

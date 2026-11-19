@@ -29,7 +29,7 @@ Report macro-F1 per language for both systems and the mean over languages. Then 
 
 ## 3. Investigate (4 points)
 
-Use your team's SemEval task data.
+Use your team's shared task data.
 
 a. For each language your team has chosen (three at most), tabulate the number of training and development items per class, or per track if your task has no classes. Name the smallest cell. Compute the score of a system that always predicts the largest class, with the task's own metric.
 

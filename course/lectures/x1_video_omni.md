@@ -2,7 +2,7 @@
 
 [Course home](../../README.md) · Not timetabled in the 2026 edition · 120 minutes if taught
 
-No SemEval-2027 task in the course uses video, so this session is optional reading. Its notebook and exercise sheet still run.
+No shared task in the course uses video, so this session is optional reading. Its notebook and exercise sheet still run.
 
 ## Learning outcomes
 

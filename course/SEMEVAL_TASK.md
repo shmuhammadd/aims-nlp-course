@@ -1,10 +1,10 @@
-# SemEval-2027 task cards
+# Task cards: SemEval-2027 shared task and AfricaNLP 2027 shared task
 
 [Course home](../README.md) · [Capstone brief](PROJECT.md) · [Paper guide](SEMEVAL_PAPER.md)
 
-Each team enters **one** of the four tasks below, one subtask or track, and at most three languages. The facts on this page were read from the task websites on 16 November 2026. The organisers' pages govern: check them before you rely on a date, a rule or a number here.
+Each team enters **one** of the five tasks below, one subtask or track, and at most three languages. The facts on this page were read from the task websites on 16 November 2026 (AfriGuard: 19 November 2026). The organisers' pages govern: check them before you rely on a date, a rule or a number here.
 
-All four tasks share the SemEval-2027 calendar: evaluation runs **10–31 January 2027**, system papers are due in February 2027 (tentative), and the workshop is at ACL 2027 in Kyoto, 17–22 August 2027. See the [SemEval-2027 site](https://semeval.github.io/SemEval2027/) and its [task list](https://semeval.github.io/SemEval2027/tasks).
+Tasks 6, 7, 9 and 12 share the SemEval-2027 calendar: evaluation runs **10–31 January 2027**, system papers are due in February 2027 (tentative), and the workshop is at ACL 2027 in Kyoto, 17–22 August 2027. See the [SemEval-2027 site](https://semeval.github.io/SemEval2027/) and its [task list](https://semeval.github.io/SemEval2027/tasks). AfriGuard is not a SemEval task. It belongs to the AfricaNLP 2027 workshop at EACL and has its own, earlier calendar, given on its card.
 
 ## Which task suits which team
 
@@ -14,6 +14,7 @@ All four tasks share the SemEval-2027 calendar: evaluation runs **10–31 Januar
 | 6 MMCultureQA | Image plus spoken or written question → short answer | Swahili, Amharic; Oromo and Somali announced | 8, 9, 12 | Dev-test leaderboard on EvalAI |
 | 7 CLaS | Steer an LLM to answer in a target language by editing activations | Swahili (target, track 2) | 11, 13 | Prompting baseline and scorer |
 | 9 Multimodal framing | Frame labels for news paragraphs and images | None (Bulgarian, English, Portuguese, Russian) | 6, 7, 8 | Trial data |
+| AfriGuard (AfricaNLP) | Make a small model refuse harmful prompts in 10 African languages | Amharic, Hausa, Igbo, Oromo, Shona, Swahili, Twi, Wolof, Yoruba, isiZulu | 5, 6, 10, 11 | Starter notebook on Colab |
 
 Task 12 is the default for a team with no strong preference: it has the most African languages, a 130 MB dataset and working baselines.
 
@@ -55,6 +56,20 @@ Task 12 is the default for a team with no strong preference: it has the most Afr
 - **Metric:** multi-label micro-F1; macro-F1 is reported as secondary.
 - **Submission:** Codabench, after the organisers approve the team. Training data is released in stages; confirm the release and evaluation dates on the task page, where the years shown were inconsistent when this card was written.
 
+## AfriGuard — AfricaNLP 2027 shared task
+
+- **Site and paper:** <https://africanlp.github.io/2027/shared-task>; "AfriGuard: Safety and Robust Refusal For African Languages", [arXiv 2610.26474](https://arxiv.org/abs/2610.26474). Starter notebook: [Colab](https://colab.research.google.com/drive/1pvvGCm113GfuouzjAktq_hdrWEd4SHuq?usp=sharing).
+- **Goal:** a small model that refuses harmful requests in African languages and still answers harmless ones. The paper reports that guardrail models trail open and closed LLMs, and that models score under 60% F1 at judging safe behaviour.
+- **Languages:** Amharic, Hausa, Igbo, Oromo, Shona, Swahili, Twi, Wolof, Yorùbá and isiZulu. Enter one or more tasks in one or more languages; the course limit of three languages still applies.
+- **Task 1, safe or unsafe:** a user prompt in an African language → safe or unsafe (gold field `safe_unsafe`).
+- **Task 2, safety category:** a user prompt → one of 10 categories (gold field `class`): Criminal Activity & Exploitation; Political & Societal Manipulation; Violence & Physical Harm; Systemic Risks; Sexual & Exploitative Content; Unsafe or High-Risk Advice; Privacy & Data Misuse; Hate, Harassment & Discrimination; Ethical & Moral Risk; Intellectual Property & Content Integrity.
+- **Metric:** weighted F1 (`f1_score(gold, pred, average="weighted")` in scikit-learn), per language and averaged over all ten. The official ranking uses the held-out test split on the verified leaderboard; the Codabench leaderboard is guidance only.
+- **Rules:** the model must be openly available, at most 5B parameters, and generative (decoder-only or encoder-decoder). Encoder-only models such as BERT, XLM-R and AfroXLMR are rejected. No external safety component at inference: no guardrail model, safety classifier or closed API. Any training data is allowed if documented, except the AfriGuard test split. Fine-tuning, preference optimisation, augmentation, translation, prompting and activation steering are all allowed.
+- **Submission:** predictions on [Codabench](https://www.codabench.org/competitions/18627/). Afterwards each team gives a Hugging Face link to the final model and a system paper with approach, training data, model size, compute and per-language results. The organisers re-run every model; a team whose score does not reproduce, or whose model breaks a rule, is left off the verified leaderboard.
+- **Calendar:** dev phase 18 November – 23 December 2026; test phase 24 December 2026 – 5 January 2027; paper 10 January; notification 15 January; camera-ready 17 January. Workshop at EACL 2027, Athens, 9–14 March (day to be announced). This ends before the SemEval evaluation window, so plan the baseline and experiments around it.
+- **Prizes:** $1,000, $500 and $300 for the top three, judged on the paper, the verified leaderboard and novelty. Organisers may withhold prizes.
+- **Contact:** organisers Tadesse Destaw Belay, Israel Abebe Azime, Jesujoba O. Alabi, Alexander D. Cai and Atnafu Lambebo Tonja; tadesseit@gmail.com; announcements at africanlp-2027@googlegroups.com; questions on the task's Slack channel (link on the site).
+
 ## Class fields
 
 | Field | Value |
@@ -63,7 +78,7 @@ Task 12 is the default for a team with no strong preference: it has the most Afr
 | Team size | Pairs, or individual by agreement |
 | Course deadlines | Day 5 organisers' baseline reproduced; day 10 experiment plan frozen; day 14 peer review; day 15 paper, package and defence |
 | Official submission owner | One named person per team checks and submits the agreed files |
-| After the course | Evaluation 10–31 January 2027; paper in February 2027 |
+| After the course | SemEval evaluation 10–31 January 2027, paper in February 2027; AfriGuard test phase ends 5 January, paper 10 January |
 
 ## Team addendum
 
